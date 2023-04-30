@@ -1,0 +1,19 @@
+/* Main */
+main {
+    background-color: gray;
+    display: flex;
+    flex-grow: 2;
+}
+/* Main */
+
+/* Header */
+header {
+    background-color: blue;
+}
+/* Header */
+
+/* Footer */
+footer {
+    background-color: white;
+}
+/* Footer */
