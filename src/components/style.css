@@ -50,5 +50,9 @@ footer {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.socialMedia > i {
+    margin: 0 10px;
+}
 /* Footer */
 
