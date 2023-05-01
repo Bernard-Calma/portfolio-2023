@@ -1,6 +1,11 @@
 const Header = () => {
     return <header>
-        Header
+        <ul className="navBar">
+            <li>Home</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Let's Connect</li>
+        </ul>
     </header>
 }
 

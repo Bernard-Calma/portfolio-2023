@@ -1,6 +1,8 @@
 const Footer = () => {
     return <footer>
-        Footer
+        <ul>
+            <i class="fa-brands fa-github"></i>
+        </ul>
     </footer>
 }
 
