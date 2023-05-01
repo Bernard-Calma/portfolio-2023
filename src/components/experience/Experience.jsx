@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./styles.css"
+import School from "./School"
 
 const Experience = () => {
     const [view,setView] = useState("Education")
@@ -41,7 +42,7 @@ const Experience = () => {
             ]
           },
           {
-            name: "STI College Bacoor",
+            name: "STI College",
             course: "Computer Technology",
             degree: "AS",
             yearGraduate: "(Graduated: 2009)",
@@ -67,8 +68,8 @@ const Experience = () => {
         <div className="experience top">
             <h1 className="name">Experience</h1>
             <div className="experienceCategory">
-                <h2 className="title">Education</h2>
-                <h2 className="title">Professional</h2>
+                <h2 className={`title ${view === "Education" ? "selected" : ''}`}>Education</h2>
+                <h2 className={`title ${view === "Professional" ? "selected" : ''}`}>Professional</h2>
             </div>
         </div>
         <div className="experience bottom">
@@ -80,7 +81,7 @@ const Experience = () => {
                         schools.map((school, index) => 
                         <li 
                             key={index} 
-                            className={`item schoolName ${school.name === eduView ? "selected" : ''}`}
+                            className={`item schoolName title ${school.name === eduView ? "selected" : ''}`}
                             onClick={() => handleChangeEduView(school.name)}
                         >
                             {school.name}
@@ -91,7 +92,13 @@ const Experience = () => {
                 }
             </div>
             <div className="experience right">
-                Logo
+                {
+                    schools.map(school => school.name === eduView 
+                        ? <School 
+                            school = {school}
+                            /> 
+                        : "")
+                }
             </div>
         </div>
         

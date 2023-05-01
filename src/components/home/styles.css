@@ -23,7 +23,8 @@
     color: rgb(1, 224, 224);
 }
 
-.introduction {
+.introduction, .description {
+    font-family: 'Courier New', Courier, monospace;
     text-align: start;
     padding-left: 20px;
     color: white;

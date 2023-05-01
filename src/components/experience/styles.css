@@ -3,6 +3,10 @@
     cursor: pointer;
 }
 
+.experience.right, .experience.left, .experienceCategory , .experienceCategory > .title.selected {
+    border: gray 1px solid;
+}
+
 /* Common */
 .sectionExperience {
     width: 100%;
@@ -25,10 +29,9 @@
 }
 
 .experienceCategory > h2 {
-    margin: 0 10px;
+    padding: 0 10px;
+    background-color: rgb(0, 0, 0);
 }
-
-
 
 .experience.bottom {
     position: relative;
@@ -42,7 +45,6 @@
 .experience.right, .experience.left {
     display: flex;
     width: 50%; 
-    border: red 1px solid;
 }
 
 .experience.left {
@@ -50,7 +52,8 @@
 }
 
 .experience.right {
-    flex: 5
+    flex: 5;
+    padding: 0 10px;
 }
 
 .item.schoolName {

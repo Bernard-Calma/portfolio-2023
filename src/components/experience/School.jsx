@@ -3,16 +3,14 @@ const School = (props) => {
         <div className="divSchool">
             <img className="schoolLogo" src={props.school.image} alt={props.school.name} />
             <div className="schoolInfo">
-                <h2 className="schoolName">{props.school.name}</h2>
-                <p className="course">{`${props.school.course}(${props.school.degree})`}</p>
-                <p className = "yearGraduated">{props.school.yearGraduate}</p>
-                <p className = "courseDescription">{props.school.description}</p>
-                {/* { props.school.projects.map((project, index) => 
-                    <SchoolProject 
-                        key={index}
-                        project={project}
-                    />
-                )} */}
+                <h2 className="schoolName name">{props.school.name}</h2>
+                <p className="course title">{`${props.school.course}(${props.school.degree})`}</p>
+                <p className = "yearGraduated title">{props.school.yearGraduate}</p>
+                <p className = "courseDescription description">{props.school.description}</p>
+                
+            </div>
+            <div>
+                { props.school.projects.map((project, index) => <p className="schoolProject name">{project}</p>)}
             </div>
         </div>
     )
