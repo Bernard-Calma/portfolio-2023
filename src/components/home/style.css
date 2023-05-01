@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap');
+
+.sectionHome {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionHome > .left, .sectionHome > .right {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.name {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+.title, .introduction {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(1, 224, 224);
+}
+
+.introduction {
+    text-align: start;
+    padding-left: 20px;
+    color: white;
+}
+
+.skillIcon {
+    width: 60px;
+    margin: 0 10px;
+}

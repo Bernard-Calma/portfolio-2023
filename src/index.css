@@ -1,6 +1,7 @@
 html {
   margin: 20px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  color: #f8fc06;
 }
 
 body {
