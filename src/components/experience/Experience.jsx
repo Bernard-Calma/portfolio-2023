@@ -3,6 +3,7 @@ import "./styles.css"
 
 const Experience = () => {
     const [view,setView] = useState("Education")
+    const [eduView, setEduView] = useState("Arizona State University")
 
     const [schools] = useState(
         [{
@@ -58,6 +59,10 @@ const Experience = () => {
           }]
     )
 
+    const handleChangeEduView = (schoolName) => {
+        setEduView(schoolName)
+    }
+
     return <section className="sectionExperience">
         <div className="experience top">
             <h1 className="name">Experience</h1>
@@ -70,7 +75,18 @@ const Experience = () => {
             <div className="experience left">
                 {
                     view === "Education"
-                    ? <></>
+                    ? <ul className="list schoolName">
+                    {
+                        schools.map((school, index) => 
+                        <li 
+                            key={index} 
+                            className={`item schoolName ${school.name === eduView ? "selected" : ''}`}
+                            onClick={() => handleChangeEduView(school.name)}
+                        >
+                            {school.name}
+                        </li>)
+                    }
+                    </ul>
                     : <></>
                 }
             </div>

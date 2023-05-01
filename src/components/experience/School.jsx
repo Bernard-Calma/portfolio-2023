@@ -7,12 +7,12 @@ const School = (props) => {
                 <p className="course">{`${props.school.course}(${props.school.degree})`}</p>
                 <p className = "yearGraduated">{props.school.yearGraduate}</p>
                 <p className = "courseDescription">{props.school.description}</p>
-                { props.school.projects.map((project, index) => 
+                {/* { props.school.projects.map((project, index) => 
                     <SchoolProject 
                         key={index}
                         project={project}
                     />
-                )}
+                )} */}
             </div>
         </div>
     )
