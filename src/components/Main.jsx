@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import './style.css'
+import './styles.css'
 import Home from './home/Home'
+import Experience from './experience/Experience'
 
-const Main = () => {
-    const [view, setView] = useState("Home")
+const Main = (props) => {
     return <main className="main">
         {
-            view === "Home"
-            ?<Home />
+            props.mainView === "Home"
+            ? <Home />
+            : props.mainView === "Experience"
+            ? <Experience />
             : <></>
         }
     </main>

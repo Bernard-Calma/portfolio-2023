@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './style.css'
+import './styles.css'
 import SkillIcon from './SkillIcon';
 
 const Home = () => {
@@ -242,7 +242,7 @@ const Home = () => {
                     )}
                 </div>
         </div>
-         </section>
+    </section>
 }
 
 export default Home;
