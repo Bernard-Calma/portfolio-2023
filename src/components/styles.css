@@ -1,6 +1,6 @@
 /* Commom */
 header, footer {
-    padding-left: 20px;
+    overflow: hidden;
     border: solid gray;
 }
 /* Commom */
@@ -60,12 +60,39 @@ header {
 
 /* Footer */
 footer {
+    position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.socialMedia > i {
-    margin: 0 10px;
+.socialMedia {
+    margin: 0;
+}
+
+.socialMedia > a {
+    border: gray solid 1px;
+    padding: 0 10px;
+}
+
+.socialMedia > a > i {
+    color: yellow;
+    font-size: 25px;
+
+
+}
+
+.socialMedia > a > i:hover {
+    cursor: pointer;
+}
+
+.emailAddress {
+    margin: 0;
+    padding: 0 10px;
+    border: gray solid 1px;
+    border-bottom-left-radius: 10px;
 }
 /* Footer */
 

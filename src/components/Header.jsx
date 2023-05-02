@@ -11,7 +11,6 @@ const Header = (props) => {
                 onClick={() => handleChangeView('Experience')}>Experience</li>
             <li className={props.view === 'Projects' ? 'selected' : ''}
                 onClick={() => handleChangeView('Projects')}>Projects</li>
-            <li>Let's Connect</li>
         </ul>
     </header>
 }
