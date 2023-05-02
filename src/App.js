@@ -10,6 +10,7 @@ const App = () => {
     <div className="App">
       <Header 
         setMainView = {setMainView}
+        view = {mainView}
       />
       <Main 
         mainView = {mainView}

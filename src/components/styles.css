@@ -10,6 +10,7 @@ main {
     display: flex;
     flex-grow: 1;
     border: solid gray;
+    border-top: 0;
 }
 /* Main */
 
@@ -18,7 +19,7 @@ header {
     position: relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
+    overflow: hidden;
 }
 
     /* NavBar */
@@ -27,18 +28,31 @@ header {
         display: flex;
         flex: row;
         justify-content: flex-end;
-        padding-right: 20px;
+        margin: 0;
     }
 
     .navBar > li {
         width: auto;
-        margin: auto 5px;
+        padding: 0 10px;
         list-style: none;
         font-family: monospace;
+        border: solid gray 1px;
+        border-bottom: none;
+        border-top: none;
+        font-size: 24px;
     }
 
     .navBar > li:hover {
         cursor: pointer;
+    }
+
+    .navBar > li.selected {
+        font-weight: bolder;
+    }
+
+    .navBar > li:last-child {
+        border-right: 0.5px;
+        border-top-right-radius: 10px;
     }
     /* NavBar */
 
