@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = (props) => {
     return <footer>
         <p className="emailAddress">nard.calma@gmail.com</p>
         <div className="socialMedia">
@@ -6,6 +6,10 @@ const Footer = () => {
                 href=""
                 target="_black"
                 rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault()
+                    props.setMainView("Contact")
+                }}
             >
                 <i className="fa-solid fa-envelope"></i></a>
             <a 

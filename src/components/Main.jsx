@@ -2,6 +2,7 @@ import './styles.css'
 import Home from './home/Home'
 import Experience from './experience/Experience'
 import Project from './projects/Projects'
+import Contact from './contact/Contact'
 
 const Main = (props) => {
     return <main className="main">
@@ -12,6 +13,10 @@ const Main = (props) => {
             ? <Experience />
             : props.mainView === "Projects"
             ? <Project />
+            : props.mainView === "Contact"
+            ? <Contact 
+                setMainView = {props.setMainView}
+                />
             : <></>
         }
     </main>

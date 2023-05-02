@@ -1,0 +1,60 @@
+.section.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section.contact > h1 {
+    width: 100%;
+    border: solid gray 1px;
+    text-align: center;
+}
+
+.formContainer {
+    height: 100%
+}
+
+.formContactMe{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 500px;
+    margin: 50px auto;
+    border: solid gray;
+    padding: 50px
+}
+
+.formContactMe > label {
+    color: rgb(1, 224, 224);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    
+}
+
+.formContactMe > label > input {
+    font-size: 30px;
+}
+
+.formContactMe > textarea {
+    resize: none;
+    height: 200px;
+    font-size: 30px;
+}
+
+#submitMessage {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 150px;
+    margin: auto;
+    color: yellow;
+    background-color: black;
+    border: yellow solid;
+    box-shadow: 0 0 5px 1px yellow;
+    padding: 5px 0;
+}
+
+#submitMessage:hover {
+    color: black;
+    background-color: yellow;
+    border: black solid;
+}

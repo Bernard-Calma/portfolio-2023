@@ -13,9 +13,12 @@ const App = () => {
         view = {mainView}
       />
       <Main 
+        setMainView = {setMainView}
         mainView = {mainView}
       />
-      <Footer />
+      <Footer 
+        setMainView = {setMainView}
+      />
     </div>
   );
 }

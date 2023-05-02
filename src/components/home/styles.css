@@ -15,7 +15,7 @@
     border: solid gray 1px;
 }
 
-.sectionHome > .left > i{
+.sectionHome > .left > a > i{
     color: rgb(1, 224, 224);
 }
 
