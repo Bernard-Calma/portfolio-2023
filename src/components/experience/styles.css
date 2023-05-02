@@ -68,3 +68,10 @@
 .courseDescription {
     white-space: break-spaces;
 }
+
+/* WORK */
+.companyLogo {
+    width: 200px;
+    height: 200px;
+}
+/* WORK */

@@ -96,7 +96,10 @@ const Experience = () => {
                         "Presidential Election 2020",
                         "California Gubernatorial Recall Election",
                         "June 2022 California Primary Election",
-                        "2022 United States elections (Roaming Field Service Technician)"
+                        "2022 United States elections (Roaming Field Service Technician)",
+                        "Maintain and Troubleshoot all election equipment at multiple voting centers",
+                        "Assist election workers on any issue regarding different election equipment",
+                        "Track, Log and Report all problem or issue regarding voting experience and equipment"
                     ],
                 },
             ]
