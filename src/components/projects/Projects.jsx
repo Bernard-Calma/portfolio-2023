@@ -88,6 +88,29 @@ const Project = () => {
                                         </li>)
                                     }
                                 </ul>
+                                <div className="project links">
+                                    <div className="project links">
+                                        <p className="linkName">link</p>
+                                        <a 
+                                            href={project.websiteLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                                <i className="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div className="project links">
+                                        <p className="linkName">github</p>
+                                        <a 
+                                            href={project.frontEndRepo}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                                <i className="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
                             </>
                             : <></>
                             )
@@ -101,22 +124,6 @@ const Project = () => {
                                 alt={project.name}
                                 className="project image"
                                 />
-                                <div className="project links">
-                                    <a 
-                                        href={project.websiteLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                            <i className="fa-solid fa-link"></i>
-                                    </a>
-                                    <a 
-                                        href={project.frontEndRepo}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                            <i className="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
                                 </>
                                 
                             : <></>
