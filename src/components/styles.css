@@ -2,6 +2,7 @@
 header, footer {
     overflow: hidden;
     border: solid gray;
+    background-color: rgb(82, 80, 80);
 }
 /* Commom */
 
@@ -93,6 +94,7 @@ footer {
     padding: 0 10px;
     border: gray solid 1px;
     border-bottom-left-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* Footer */
 

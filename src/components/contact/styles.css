@@ -21,7 +21,8 @@
     width: 500px;
     margin: 50px auto;
     border: solid gray;
-    padding: 50px
+    padding: 0 50px 20px;
+    box-shadow: 0 0 5px 2px gray;
 }
 
 .formContactMe > label {
@@ -31,14 +32,20 @@
     
 }
 
-.formContactMe > label > input {
+.formContactMe > label > input, .formContactMe > textarea {
     font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
 }
 
 .formContactMe > textarea {
     resize: none;
     height: 200px;
-    font-size: 30px;
+}
+
+.formContactMe > p {
+    padding: 10px 0;
 }
 
 #submitMessage {

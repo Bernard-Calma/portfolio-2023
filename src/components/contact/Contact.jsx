@@ -42,6 +42,7 @@ const Contact = (props) => {
             <h1 className="name">Send me a message</h1>
             <div className="formContainer">
                 <form className="formContactMe" onSubmit={handleSendEmail} ref={form}>
+                    <p className="introduction">"I'm open to any projects."</p>
                     <label htmlFor="senderName">Your Name: 
                         <input type="text" name="senderName" id="senderName" value={emailContent.senderName} onChange = {handleChange} required/>
                     </label>
