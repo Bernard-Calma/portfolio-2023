@@ -1,6 +1,7 @@
 import './styles.css'
 import Home from './home/Home'
 import Experience from './experience/Experience'
+import Project from './projects/Projects'
 
 const Main = (props) => {
     return <main className="main">
@@ -9,6 +10,8 @@ const Main = (props) => {
             ? <Home />
             : props.mainView === "Experience"
             ? <Experience />
+            : props.mainView === "Projects"
+            ? <Project />
             : <></>
         }
     </main>
