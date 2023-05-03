@@ -65,3 +65,26 @@
     background-color: yellow;
     border: black solid;
 }
+
+@media screen and (max-width: 900px) {
+    .contact .name {
+        font-size: 1.5em;
+    }
+    .formContainer {
+        width: 100%;
+    }
+
+   .formContactMe {
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    #senderMessage {
+        width: 85%;
+        height: 150px;
+    }
+
+    .message {
+        margin: 0;
+    }
+}
