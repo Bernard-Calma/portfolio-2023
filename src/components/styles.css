@@ -98,3 +98,18 @@ footer {
 }
 /* Footer */
 
+@media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+    }
+
+    .navBar > li:first-child {
+        border-left: none
+    }
+
+    .navBar {
+        justify-content: center;
+        padding: 0;
+    }
+
+}
