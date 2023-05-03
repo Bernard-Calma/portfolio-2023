@@ -75,3 +75,46 @@
     height: 200px;
 }
 /* WORK */
+
+@media screen and (max-width: 900px) {
+    .experience.top .experienceCategory .title {
+        width: 50%;
+        font-size: 26px;
+    }
+    .experience.bottom {
+        flex-direction: column;
+    }
+    .experience.left, .experience.right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list.schoolName {
+        margin: 0;
+    }
+
+    .experience .divSchool, .divWork {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .experience .schoolLogo {
+        display: block;
+
+    }
+
+    .schoolInfo ul, .containerPosition ul {
+        padding: 0 10px 0 20px;
+        list-style: "-";
+    }
+
+    .jobDescription {
+        padding: 0;
+    }
+
+
+}
