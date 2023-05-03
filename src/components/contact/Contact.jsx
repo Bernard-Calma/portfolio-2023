@@ -19,7 +19,7 @@ const Contact = (props) => {
 
     const handleSendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_72qxcai','template_4pfa7ci',form.  current,'8pCzt_Ck1JFlrLO8q')
+        emailjs.sendForm('service_72qxcai','template_4pfa7ci',form.current,'8pCzt_Ck1JFlrLO8q')
         .then(result => 
             {
                 setMessage("Message sent succesfully, Thank you!")

@@ -73,16 +73,14 @@ footer {
     margin: 0;
 }
 
-.socialMedia > a {
+.socialMedia > a, .socialMedia > span  {
     border: gray solid 1px;
     padding: 0 10px;
 }
 
-.socialMedia > a > i {
+.socialMedia > a > i, .socialMedia > span > i {
     color: yellow;
     font-size: 25px;
-
-
 }
 
 .socialMedia > a > i:hover {
@@ -92,8 +90,6 @@ footer {
 .emailAddress {
     margin: 0;
     padding: 0 10px;
-    border: gray solid 1px;
-    border-bottom-left-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 /* Footer */
