@@ -79,15 +79,17 @@ const Project = () => {
                             ? <>
                                 <h1 className="name">{project.name}</h1>
                                 <p className="description">- {project.summary}</p>
-                                <h2 className="title">Technologies Used</h2>
-                                <ul>
-                                    {
-                                        project.skills.map(skill => 
-                                        <li className="description">
-                                            {skill}
-                                        </li>)
-                                    }
-                                </ul>
+                                <div className="technologies">
+                                    <h2 className="title">Technologies Used</h2>
+                                    <ul>
+                                        {
+                                            project.skills.map(skill => 
+                                            <li className="description">
+                                                {skill}
+                                            </li>)
+                                        }
+                                    </ul>
+                                </div>
                                 <div className="project links">
                                     <a 
                                         href={project.websiteLink}

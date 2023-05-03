@@ -47,6 +47,7 @@
 .project.description {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex: 1;
     padding: 0;
     padding: 10px;
@@ -58,6 +59,12 @@
 
 .project.description > .description {
     padding: 0;
+    flex: 1.1;
+    overflow: hidden;
+}
+
+.project.description > .technologies {
+    flex: 2
 }
 
 .project.imageContainer {
@@ -84,7 +91,7 @@
 .project.links > a > i {
     color: rgb(0, 255, 255);
     font-size: 40px;
-    margin: 0 10px;
+    margin: 0 10px 20px;
 }
 
 .linkName {
