@@ -59,12 +59,16 @@
 
 .project.description > .description {
     padding: 0;
-    flex: 1.1;
+    flex: 2;
     overflow: hidden;
 }
 
-.project.description > .technologies {
-    flex: 2
+
+.technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start space-evenly;
+    padding: 0;
 }
 
 .project.imageContainer {
@@ -74,8 +78,8 @@
 }
 
 .project.image{
-    width: 800px;
-    height: 600px;
+    width: 80%;
+    height: 60%;
     padding: 20px;
     margin: auto;
     border: solid gray;
