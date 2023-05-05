@@ -7,18 +7,25 @@ const School = (props) => {
                 <p className="course title">{`${props.school.course}(${props.school.degree})`}</p>
                 <p className = "yearGraduated title">{props.school.yearGraduate}</p>
                 <ul>
-                    {
-                        props.school.descriptions.map((description, index) => 
-                        <li className = "jobDescription description" key={index}>{description}</li>
-                        )
-                    }
+                    {props.school.descriptions.map((description, index) => 
+                        <li 
+                            className = "jobDescription description" 
+                            key={index}
+                        >
+                            {description}
+                        </li>
+                    )}
                 </ul>
             </div>
             <div>
-                { props.school.projects.map((project, index) => <p className="schoolProject name">{project}</p>)}
+                {props.school.projects.map(project => 
+                    <p className="schoolProject name">
+                        {project}
+                    </p>
+                )}
             </div>
         </div>
     )
 }
 
-export default School
+export default School;

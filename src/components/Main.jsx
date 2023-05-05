@@ -14,12 +14,10 @@ const Main = (props) => {
             : props.mainView === "Projects"
             ? <Project />
             : props.mainView === "Contact"
-            ? <Contact 
-                setMainView = {props.setMainView}
-                />
+            ? <Contact setMainView = {props.setMainView} />
             : <></>
         }
     </main>
-}
+};
 
-export default Main
+export default Main;

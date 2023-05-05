@@ -29,39 +29,68 @@ const Contact = (props) => {
                     senderSubject: "",
                     senderMessage: "",
                 })
-                setTimeout(() => {
-                    props.setMainView("Home")
-                }, 1000);
-        
-        }, error => setMessage(error.text))
-
-        
+                setTimeout(() => props.setMainView("Home"), 1000);
+            }, error => setMessage(error.text)
+        )
     }
     return (
         <div className="section contact">
             <h1 className="name">Send me a message</h1>
             <div className="formContainer">
-                <form className="formContactMe" onSubmit={handleSendEmail} ref={form}>
+                <form 
+                    className="formContactMe" 
+                    onSubmit={handleSendEmail} 
+                    ref={form}
+                >
                     <p className="introduction">"I'm open to any projects."</p>
-                    <label htmlFor="senderName">Your Name: 
-                        <input type="text" name="senderName" id="senderName" value={emailContent.senderName} onChange = {handleChange} required/>
+                    <label htmlFor="senderName">Your Name:
+                        <input 
+                            type="text" 
+                            name="senderName" 
+                            id="senderName" 
+                            value={emailContent.senderName} 
+                            onChange = {handleChange} 
+                            required
+                        />
                     </label>
-                    <label htmlFor="senderEmail">Your Email: 
-                        <input type="email" name="senderEmail" id="senderEmail" value={emailContent.senderEmail} onChange = {handleChange} required/>
+                    <label htmlFor="senderEmail">Your Email:
+                        <input 
+                            type="email" 
+                            name="senderEmail" 
+                            id="senderEmail" 
+                            value={emailContent.senderEmail} 
+                            onChange = {handleChange} 
+                            required/>
                     </label>
-                    <label htmlFor="senderSubject">Subject: 
-                        <input type="text" name="senderSubject" id="senderSubject" value={emailContent.senderSubject} onChange = {handleChange}required/>
+                    <label htmlFor="senderSubject">Subject:
+                        <input 
+                            type="text" 
+                            name="senderSubject" 
+                            id="senderSubject" 
+                            value={emailContent.senderSubject} 
+                            onChange = {handleChange}
+                            required/>
                     </label>
-                    <label id="lblSenderMessage">Your Message: </label>
-                    <textarea placeholder="Enter your message here" name="senderMessage" id="senderMessage" value={emailContent.senderMessage} onChange = {handleChange} required></textarea>
+                    <label id="lblSenderMessage">Your Message:</label>
+                    <textarea 
+                        placeholder="Enter your message here" 
+                        name="senderMessage" 
+                        id="senderMessage" 
+                        value={emailContent.senderMessage} 
+                        onChange = {handleChange} 
+                        required>
+                    </textarea>
                     <p className="message">{message}</p>
-                    <input type="submit" name="submitMessage" id="submitMessage" value="SEND" />
+                    <input 
+                        type="submit" 
+                        name="submitMessage" 
+                        id="submitMessage" 
+                        value="SEND" 
+                    />
                 </form>
             </div>
-
         </div>
-
     )
 }
 
-export default Contact
+export default Contact;

@@ -190,65 +190,68 @@ const Home = () => {
             category: "Framework"
         }
     ])
-    return <section className='sectionHome'>
-        <div className='left'>
-            <h1 className='name'>Bernard Calma</h1>
-            <h2 className='title'>Full Stack Developer</h2>
-            <p className='introduction'> - More than 1 year of experience in Full Stack Development (React, Node, Python, Express, Flask, Django, SQL and NoSQL) and 10 years of experience in the IT Industry in different line of business. Expert in troubleshooting, analysis, advanced resolution procedures and complex problem solving. Skilled in Six Sigma, Cloud Computing, Team/Project Management and Automation.</p>
-            <h1 className='resume name'>Resume</h1>
-            <a href="https://drive.google.com/file/d/1vZb6hpalAFujDZCz3DNJWfwDAFjVJsR4/view?usp=sharing"
-            target='_black'
-            rel='noreferrer'>
-                <i className="fa-solid fa-file"></i>
+    
+    return (
+        <section className='sectionHome'>
+            <div className='left'>
+                <h1 className='name'>Bernard Calma</h1>
+                <h2 className='title'>Full Stack Developer</h2>
+                <p className='introduction'> - More than 1 year of experience in Full Stack Development (React, Node, Python, Express, Flask, Django, SQL and NoSQL) and 10 years of experience in the IT Industry in different line of business. Expert in troubleshooting, analysis, advanced resolution procedures and complex problem solving. Skilled in Six Sigma, Cloud Computing, Team/Project Management and Automation.</p>
+                <h1 className='resume name'>Resume</h1>
+                <a href="https://drive.google.com/file/d/1vZb6hpalAFujDZCz3DNJWfwDAFjVJsR4/view?usp=sharing"
+                    target='_black'
+                    rel='noreferrer'>
+                    <i className="fa-solid fa-file" />
                 </a>
-        </div>
-        <div className='right skills'>
-            <h2>Languages</h2>
+            </div>
+
+            <div className='right skills'>
+                <h2>Languages</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => skill.category === "Programming Language"
-                        ?
-                        <SkillIcon 
+                    {skillsList.map(skill => skill.category === "Programming Language"
+                        ? <SkillIcon 
                             skill = {skill}
                             key={skill.id}
                         />       
-                        :<></>
+                        : <></>
                     )}
                 </div>
+
                 <h2>Frameworks</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => skill.category === "Framework"
-                        ?
-                        <SkillIcon 
+                    {skillsList.map(skill => skill.category === "Framework"
+                        ? <SkillIcon 
                             skill = {skill}
                             key={skill.id}
                         /> 
-                        :<></>
+                        : <></>
                     )}
                 </div>
+
                 <h2>Libraries</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => skill.category === "Library"
-                        ?
-                        <SkillIcon 
+                    {skillsList.map(skill => skill.category === "Library"
+                        ? <SkillIcon 
                             skill = {skill}
                             key={skill.id}
                         /> 
-                        :<></>
+                        : <></>
                     )}
                 </div>
+
                 <h2>Databases</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => skill.category === "Database"
-                        ?
-                        <SkillIcon 
+                    {skillsList.map(skill => skill.category === "Database"
+                        ? <SkillIcon 
                             skill = {skill}
                             key={skill.id}
                         /> 
-                        :<></>
+                        : <></>
                     )}
                 </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    )
 }
 
 export default Home;

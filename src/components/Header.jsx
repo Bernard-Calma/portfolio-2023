@@ -13,6 +13,6 @@ const Header = (props) => {
                 onClick={() => handleChangeView('Projects')}>Projects</li>
         </ul>
     </header>
-}
+};
 
-export default Header
+export default Header;
