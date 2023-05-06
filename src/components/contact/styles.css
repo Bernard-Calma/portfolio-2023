@@ -77,10 +77,10 @@
    .formContactMe {
         padding: 5px;
         margin: 0 auto;
+        width: auto;
     }
 
     #senderMessage {
-        width: 85%;
         height: 150px;
     }
 
