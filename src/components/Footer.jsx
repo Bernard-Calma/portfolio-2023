@@ -8,7 +8,7 @@ const Footer = (props) => {
                         props.setMainView("Contact")
                     }}
                 >
-                    <i className="fa-solid fa-envelope"></i>
+                    <i className="fa-solid fa-envelope"/>
                 </span>
 
                 <a 
@@ -16,7 +16,7 @@ const Footer = (props) => {
                     target="_black"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"/>
                 </a>
 
                 <a 
@@ -24,16 +24,28 @@ const Footer = (props) => {
                     target="_black"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"/>
                 </a>
 
                 <a 
+                    className="twitter"
                     href="https://twitter.com/ryznrd"
                     target="_black"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"/>
                 </a>
+
+                    
+                <a 
+                    className="portfolioCode"
+                    href="https://github.com/Bernard-Calma/portfolio-2023"
+                    target="_black"
+                    rel="noreferrer"
+                >
+                    <i class="fa-solid fa-code"/>
+                </a>
+                
             </div>    
         </footer>
     );
