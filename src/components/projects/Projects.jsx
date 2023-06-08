@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./styles.css"
+import ProjectDetails from "./ProjectDetails"
 
 const Project = () => {
     const [view,setView] = useState("Streamin")
@@ -76,39 +77,11 @@ const Project = () => {
 
                 <div className="project right">
                     <div className="project description">
-                        {projects.map(project => project.name === view 
-                            ? <>
-                                <h1 className="name">{project.name}</h1>
-                                <p className="description">- {project.summary}</p>
-                                <div className="technologies">
-                                    <h2 className="title">Technologies Used</h2>
-                                    <ul>
-                                        {project.skills.map(skill =>
-                                            <li className="description">
-                                                {skill}
-                                            </li>
-                                        )}
-                                    </ul>
-                                </div>
-                                <div className="project links">
-                                    <a 
-                                        href={project.websiteLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <p className="linkName">link</p>
-                                        <i className="fa-solid fa-link" />
-                                    </a>
-                                    <a 
-                                        href={project.frontEndRepo}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <p className="linkName">github</p>
-                                        <i className="fa-brands fa-github"/>
-                                    </a>
-                                </div>
-                            </>
+                        {projects.map((project, index) => project.name === view 
+                            ? <ProjectDetails
+                                key = {index}
+                                project = {project}
+                            />
                             : <></>
                         )}
                     </div>
