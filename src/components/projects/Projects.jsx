@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./styles.css"
 import ProjectDetails from "./ProjectDetails"
 import ProjectImage from "./ProjectImage"
@@ -54,10 +54,48 @@ const Project = () => {
         }
     ])
 
+    let [skillsCategories, setSkillsCategories] = useState([])
+    let [filteredCategories, setFilteredCategories] = useState([])
+    let [filteredProjects, setFilterProjects] = useState([])
+    
+
     const handleChangeView = (e) => {
         setView(e.target.innerText)
     }
 
+    const handleFilterProjects = (e) => {
+        if(!filteredCategories.includes(e.target.value))
+            setFilteredCategories([...filteredCategories, e.target.value])
+        else
+            setFilteredCategories(filteredCategories.filter(category => 
+                category !== e.target.value
+            ))
+        // console.log(filteredCategories)
+        setFilterProjects(projects.filter(project => 
+            project.skills.some(skill => 
+                filteredCategories.includes(skill)
+            )
+        ))
+        // console.log(filteredProjects)
+    }
+
+    useEffect(()=>{
+
+        const getSkillsCategories = () => {
+            let skills = [];
+            projects.forEach(project => 
+                project.skills.forEach(skill => {
+                    // console.log(skill)
+                    if(!skills.includes(skill)) 
+                        skills.push(skill)
+                })
+            )
+            // console.log(skills)
+            setSkillsCategories(skills)
+        }
+
+        getSkillsCategories()
+    },[])
     return (
         <section className="sectionProject">
             <div className="project top">
@@ -66,7 +104,21 @@ const Project = () => {
 
             <div className="project bottom">
                 <div className="project left">
+                    <div>
+                        <h4 className="name">Filters</h4>
+                        {skillsCategories.map(skill => 
+                            <li className="title">
+                                <input 
+                                    type="checkbox"
+                                    value={skill}
+                                    onClick={handleFilterProjects}
+                                />
+                                {skill}
+                            </li>    
+                        )}
+                    </div>
                     <ul>
+                        <h4 className="name">List</h4>
                         {projects.map(project => 
                             <li
                                 className={`title ${view === project.name ? "selected" : ''}`}
@@ -74,6 +126,7 @@ const Project = () => {
                             >{project.name} </li>
                         )}
                     </ul>
+               
                 </div>
 
                 <div className="project right">
