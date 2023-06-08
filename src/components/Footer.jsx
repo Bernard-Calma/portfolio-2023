@@ -43,7 +43,7 @@ const Footer = (props) => {
                     target="_black"
                     rel="noreferrer"
                 >
-                    <i class="fa-solid fa-code"/>
+                    <i className="fa-solid fa-code"/>
                 </a>
                 
             </div>    
