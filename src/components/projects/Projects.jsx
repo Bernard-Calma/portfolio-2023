@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./styles.css"
 import ProjectDetails from "./ProjectDetails"
+import ProjectImage from "./ProjectImage"
 
 const Project = () => {
     const [view,setView] = useState("Streamin")
@@ -87,14 +88,11 @@ const Project = () => {
                     </div>
 
                     <div className="project imageContainer">
-                        {projects.map(project => project.name === view 
-                            ? <>
-                                <img 
-                                    src={`images/projects/${project.name}.png`} 
-                                    alt={project.name}
-                                    className="project image"
-                                />
-                            </>  
+                        {projects.map((project, index) => project.name === view 
+                            ? <ProjectImage
+                                key = {index}
+                                project = {project}
+                            />
                             : <></>
                         )}
                     </div>
