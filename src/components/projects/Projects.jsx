@@ -106,8 +106,8 @@ const Project = () => {
                 <div className="project left">
                     <div>
                         <h4 className="name">Filters</h4>
-                        {skillsCategories.map(skill => 
-                            <li className="title">
+                        {skillsCategories.map((skill, index) => 
+                            <li className="title" key={`skillsCat_${index}`}>
                                 <input 
                                     type="checkbox"
                                     value={skill}
@@ -119,8 +119,9 @@ const Project = () => {
                     </div>
                     <ul>
                         <h4 className="name">List</h4>
-                        {projects.map(project => 
+                        {projects.map((project, index) => 
                             <li
+                                key = {`projects_${index}`}
                                 className={`title ${view === project.name ? "selected" : ''}`}
                                 onClick={handleChangeView}
                             >{project.name} </li>
@@ -131,22 +132,22 @@ const Project = () => {
 
                 <div className="project right">
                     <div className="project description">
-                        {projects.map((project, index) => project.name === view 
-                            ? <ProjectDetails
-                                key = {index}
+                        {projects.map(project => 
+                            project.name === view &&
+                            <ProjectDetails
+                                key={`projectDetails_${project.name}`}
                                 project = {project}
                             />
-                            : <></>
                         )}
                     </div>
 
                     <div className="project imageContainer">
-                        {projects.map((project, index) => project.name === view 
-                            ? <ProjectImage
-                                key = {index}
+                        {projects.map(project => 
+                            project.name === view && 
+                            <ProjectImage 
+                                key={`projectImage_${project.name}`}
                                 project = {project}
                             />
-                            : <></>
                         )}
                     </div>
                 </div>

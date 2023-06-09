@@ -6,8 +6,8 @@ const ProjectDetails = (props) => {
             <div className="technologies">
                 <h2 className="title">Technologies Used</h2>
                 <ul>
-                    {props.project.skills.map(skill =>
-                        <li className="description">
+                    {props.project.skills.map((skill, index) =>
+                        <li className="description" key = {`projectSkills_${index}`}>
                             {skill}
                         </li>
                     )}
