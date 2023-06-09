@@ -107,7 +107,7 @@ const Project = () => {
                     <div>
                         <h4 className="name">Filters</h4>
                         {skillsCategories.map((skill, index) => 
-                            <li className="title" key={`skillsCat_${index}`}>
+                            <li className="title" key={index}>
                                 <input 
                                     type="checkbox"
                                     value={skill}
@@ -121,7 +121,7 @@ const Project = () => {
                         <h4 className="name">List</h4>
                         {projects.map((project, index) => 
                             <li
-                                key = {`projects_${index}`}
+                                key = {index}
                                 className={`title ${view === project.name ? "selected" : ''}`}
                                 onClick={handleChangeView}
                             >{project.name} </li>
@@ -135,7 +135,7 @@ const Project = () => {
                         {projects.map(project => 
                             project.name === view 
                             && <ProjectDetails
-                                key={`projectDetails_${project.name}`}
+                                key={`projectDetails${project.name}`}
                                 project = {project}
                             />
                         )}
@@ -145,7 +145,7 @@ const Project = () => {
                         {projects.map(project => 
                             project.name === view
                             && <ProjectImage 
-                                key={`projectDetails_${project.name}`}
+                                key={`projectDetails${project.name}`}
                                 project = {project}
                             />
                         )}

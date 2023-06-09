@@ -222,11 +222,12 @@ const Experience = () => {
                             )}
                         </>
                         : <>
-                            {works.map(work => work.name === workView 
-                                ? <Work 
+                            {works.map(work => 
+                                work.name === workView 
+                                && <Work 
+                                    key = {`workName${work.name}`}
                                     work = {work}
-                                /> 
-                                : <></>
+                                />
                             )}
                         </>
                     }
