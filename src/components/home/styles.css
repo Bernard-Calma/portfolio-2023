@@ -19,7 +19,7 @@
     color: rgb(1, 224, 224);
 }
 
-.name {
+.name, .filters {
     font-family: 'Fredoka', sans-serif;
     margin: 0;
 }

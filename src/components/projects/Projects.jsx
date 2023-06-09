@@ -86,7 +86,10 @@ const Project = () => {
             projects.forEach(project => 
                 project.skills.forEach(skill => {
                     // console.log(skill)
-                    if(!skills.includes(skill)) 
+                    // REMOVE COMMON CATEGORIES
+                    const commonCat = ["HTML", "CSS"]
+                    // console.log(commonCat.includes(skill))
+                    if(!skills.includes(skill) && !commonCat.includes(skill)) 
                         skills.push(skill)
                 })
             )
@@ -104,11 +107,12 @@ const Project = () => {
 
             <div className="project bottom">
                 <div className="project left">
-                    <div>
-                        <h4 className="name">Filters</h4>
+                    <div className="divFilters">
+                        <h4 className="filters">Filters</h4>
                         {skillsCategories.map((skill, index) => 
-                            <li className="title" key={index}>
+                            <li className="option" key={index}>
                                 <input 
+                                    defaultChecked
                                     type="checkbox"
                                     value={skill}
                                     onClick={handleFilterProjects}

@@ -26,6 +26,22 @@
     flex: 1;
 }
 
+.project.left > .divFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divFilters > .filters {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.project.left .option {
+    font-size: 16px;
+    width: 120px;
+}
+
 .project.left .title:hover{
     cursor: pointer;
 }
