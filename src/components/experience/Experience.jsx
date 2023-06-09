@@ -213,11 +213,12 @@ const Experience = () => {
                 <div className="experience right">
                     {view === "Education"
                         ? <>
-                            {schools.map(school => school.name === eduView 
-                                ? <School 
+                            {schools.map(school => 
+                                school.name === eduView 
+                                && <School
+                                    key = {`school${school.name}`} 
                                     school = {school}
-                                /> 
-                                : <></>
+                                />
                             )}
                         </>
                         : <>

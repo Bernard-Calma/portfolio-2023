@@ -18,8 +18,8 @@ const School = (props) => {
                 </ul>
             </div>
             <div>
-                {props.school.projects.map(project => 
-                    <p className="schoolProject name">
+                {props.school.projects.map((project, index) => 
+                    <p className="schoolProject name" key={index}>
                         {project}
                     </p>
                 )}

@@ -133,8 +133,8 @@ const Project = () => {
                 <div className="project right">
                     <div className="project description">
                         {projects.map(project => 
-                            project.name === view &&
-                            <ProjectDetails
+                            project.name === view 
+                            && <ProjectDetails
                                 key={`projectDetails_${project.name}`}
                                 project = {project}
                             />
@@ -143,9 +143,9 @@ const Project = () => {
 
                     <div className="project imageContainer">
                         {projects.map(project => 
-                            project.name === view && 
-                            <ProjectImage 
-                                key={`projectImage_${project.name}`}
+                            project.name === view
+                            && <ProjectImage 
+                                key={`projectDetails_${project.name}`}
                                 project = {project}
                             />
                         )}
