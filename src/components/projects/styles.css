@@ -32,9 +32,10 @@
     justify-content: space-evenly;
 }
 
-.divFilters > .filters {
+.divFilters > .filters, .project.left > ul > .name {
     width: 100%;
     flex-grow: 1;
+    text-align: center;
 }
 
 .project.left .option {
@@ -136,7 +137,6 @@
     }
 
     .project.left > ul {
-        width: 100%;
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -148,6 +148,10 @@
     .project.left .selected {
         font-weight: bolder;
         list-style: none;
+    }
+
+    .project.left > .divFilters {
+        display: none;
     }
 
     .project.right {
