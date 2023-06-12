@@ -76,7 +76,6 @@ const Project = () => {
                 filteredCategories.includes(skill)
             )
         ))
-        // console.log(filteredProjects)
     }
 
     useEffect(()=>{
@@ -95,6 +94,9 @@ const Project = () => {
             )
             // console.log(skills)
             setSkillsCategories(skills)
+            // Set all projects inside filtered projects on load
+            setFilterProjects(projects)
+            console.log(filteredProjects)
         }
 
         getSkillsCategories()
