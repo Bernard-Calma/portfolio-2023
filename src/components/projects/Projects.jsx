@@ -70,11 +70,13 @@ const Project = () => {
             return filteredCategories.filter(category => category !== e.target.value)
     }
 
-    const handleFilterProjects = (e) => {
+    const handleFilterProjects = async (e) => {
         const filteredCat = (handleFilterCategories(e));
         setFilteredCategories(filteredCat);
         // console.log(filteredCat)
-        setFilterProjects(projects.filter(project => project.skills.some(skill => filteredCat.indexOf(skill) >= 0)))
+        const filterProj = projects.filter(project => project.skills.some(skill => filteredCat.indexOf(skill) >= 0))
+        setFilterProjects(filterProj)
+        setView(filterProj[0].name)
         // {
         //     // console.log("Project Skills: ", project.skills);
         //     // console.log("Filtered Categories: ", filteredCat);
