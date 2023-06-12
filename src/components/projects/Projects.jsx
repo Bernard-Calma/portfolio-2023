@@ -63,23 +63,28 @@ const Project = () => {
         setView(e.target.innerText)
     }
 
-    const handleFilterProjects = (e) => {
+    const handleFilterCategories = (e) => {
         if(!filteredCategories.includes(e.target.value))
-            setFilteredCategories([...filteredCategories, e.target.value])
+            return [...filteredCategories, e.target.value]
         else
-            setFilteredCategories(filteredCategories.filter(category => 
-                category !== e.target.value
-            ))
-        // console.log(filteredCategories)
-        setFilterProjects(projects.filter(project => 
-            project.skills.some(skill => 
-                filteredCategories.includes(skill)
-            )
-        ))
+            return filteredCategories.filter(category => category !== e.target.value)
     }
 
-    useEffect(()=>{
+    const handleFilterProjects = async (e) => {
+        const filteredCat = (handleFilterCategories(e));
+        setFilteredCategories(filteredCat);
+        // console.log(filteredCat)
+        setFilterProjects(projects.filter(project => project.skills.some(skill => filteredCat.indexOf(skill) >= 0)))
+        // {
+        //     // console.log("Project Skills: ", project.skills);
+        //     // console.log("Filtered Categories: ", filteredCat);
+        //     // Check if project skill array matches something in filteredCat
+        //     console.log(project.skills.some(skill => filteredCat.indexOf(skill) >= 0))
+        // )}
+    }
 
+
+    useEffect(()=>{
         const getSkillsCategories = () => {
             let skills = [];
             projects.forEach(project => 
@@ -95,8 +100,7 @@ const Project = () => {
             // console.log(skills)
             setSkillsCategories(skills)
             // Set all projects inside filtered projects on load
-            setFilterProjects(projects)
-            console.log(filteredProjects)
+            // console.log(filteredProjects)
         }
 
         getSkillsCategories()
@@ -114,10 +118,9 @@ const Project = () => {
                         {skillsCategories.map((skill, index) => 
                             <li className="option" key={index}>
                                 <input 
-                                    defaultChecked
                                     type="checkbox"
                                     value={skill}
-                                    onClick={handleFilterProjects}
+                                    onChange={handleFilterProjects}
                                 />
                                 {skill}
                             </li>    
@@ -125,7 +128,7 @@ const Project = () => {
                     </div>
                     <ul>
                         <h4 className="name">List</h4>
-                        {projects.map((project, index) => 
+                        {filteredProjects.map((project, index) => 
                             <li
                                 key = {index}
                                 className={`title ${view === project.name ? "selected" : ''}`}
