@@ -70,7 +70,7 @@ const Project = () => {
             return filteredCategories.filter(category => category !== e.target.value)
     }
 
-    const handleFilterProjects = async (e) => {
+    const handleFilterProjects = (e) => {
         const filteredCat = (handleFilterCategories(e));
         setFilteredCategories(filteredCat);
         // console.log(filteredCat)
@@ -105,6 +105,11 @@ const Project = () => {
 
         getSkillsCategories()
     },[])
+
+    // Use effect to show all projects if filterCategories is empty
+    useEffect(()=>{
+        if(filteredCategories.length === 0) setFilterProjects(projects)
+    },[filteredCategories])
     return (
         <section className="sectionProject">
             <div className="project top">
