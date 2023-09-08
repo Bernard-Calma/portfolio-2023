@@ -35,6 +35,15 @@ const Project = () => {
             screenshot: "images/projects/NexChapters.png"
         }, 
         {
+            name: "HelloTube",
+            websiteLink: "https://hello-tube-1db40b56a45b.herokuapp.com/",
+            frontEndRepo: "https://github.com/Bernard-Calma/hello-tube",
+            backEndRepo: "https://github.com/Bernard-Calma/nexchapter-backend",
+            summary: "Cheap copy of YouTube",
+            skills: ["Typscript", "JavaScript", "React", "Redux", "Sass", "HTML", "CSS"],
+            screenshot: "images/projects/HelloTube.png"
+        },
+        {
             name: "Floating Shoe",
             websiteLink: "https://bernard-calma.github.io/project-1/",
             frontEndRepo: "https://github.com/Bernard-Calma/project-1",
