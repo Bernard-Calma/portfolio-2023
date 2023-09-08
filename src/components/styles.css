@@ -12,6 +12,11 @@ main {
     flex-grow: 1;
     border: solid gray;
     border-top: 0;
+    overflow: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
 /* Main */
 
