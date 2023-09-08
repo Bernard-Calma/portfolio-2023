@@ -1,3 +1,5 @@
+import { ToolTip } from "../common";
+
 const ProjectDetails = (props) => {
     return(
         <div>
@@ -19,15 +21,19 @@ const ProjectDetails = (props) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <p className="linkName">link</p>
-                    <i className="fa-solid fa-link" />
-                </a>
+                    <ToolTip 
+                        description={"Link"}
+                    />
+                        <i className="fa-solid fa-link" />
+                    </a>
                 <a 
                     href={props.project.frontEndRepo}
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <p className="linkName">github</p>
+                    <ToolTip 
+                        description={"Github"}
+                    />
                     <i className="fa-brands fa-github"/>
                 </a>
             </div>

@@ -108,6 +108,7 @@
 
 .project.links {
     display: flex;
+    position: relative;
 }
 
 .project.links > a > i {
