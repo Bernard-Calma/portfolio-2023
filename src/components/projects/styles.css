@@ -75,10 +75,11 @@
     color: yellow;
 }
 
-.project.description > .description {
+.project.description  .description {
     padding: 0;
     flex: 2;
-    overflow: hidden;
+    font-size: 1rem;
+    /* overflow: hidden; */
 }
 
 
@@ -111,25 +112,15 @@
     position: relative;
 }
 
+.project.links a {
+    position: relative;
+}
+
+
 .project.links > a > i {
     color: rgb(0, 255, 255);
     font-size: 40px;
     margin: 0 10px 20px;
-}
-
-.linkName {
-    position: absolute;
-    font-size: 20px;
-    color: white;
-    opacity: 0;
-    margin: 0;
-}
-
-.linkName:hover {
-    cursor: pointer;
-    opacity: 100%;
-    padding-top: 40px;
-    
 }
 
 @media screen and (max-width: 900px) {
