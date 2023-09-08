@@ -1,7 +1,9 @@
-const ToolTip = () => {
+import "./styles.css"
+
+const ToolTip = ({description}) => {
     return(
-        <div>
-            <p>Tool Tip</p>
+        <div className="toolTipContainer">
+            <p>{description}</p>
         </div>
     )
 }

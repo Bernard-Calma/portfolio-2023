@@ -60,7 +60,7 @@ const Home = () => {
         },
         {
             id: 9,
-            skil: "Flask",
+            skill: "Flask",
             imageLink: "images/skills/flask.png",
             category: "Back-End"
         },
@@ -217,7 +217,6 @@ const Home = () => {
                         : ''
                     )}
                 </div>
-
                 <h2>Front-End</h2>
                 <div className="skillsSubList">
                     {skillsList.map(skill => skill.category === "Front-End"

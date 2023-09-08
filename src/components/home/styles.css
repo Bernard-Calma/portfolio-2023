@@ -6,7 +6,8 @@
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .sectionHome > .left, .sectionHome > .right {
@@ -41,9 +42,25 @@ h2 {
     color: white;
 }
 
+.skillsSubList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 20%;
+}
+
+.skillIconContainer {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    flex: 1;
+}
+
 .skillIcon {
-    width: 10%;
-    margin: 0 10px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -56,5 +73,4 @@ h2 {
         padding-bottom: 10px;
     }
 
-    
 }
