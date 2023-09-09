@@ -27,14 +27,14 @@ const Footer = (props) => {
                     <i className="fa-brands fa-linkedin"/>
                 </a>
 
-                <a 
+                {/* <a 
                     className="twitter"
                     href="https://twitter.com/ryznrd"
                     target="_black"
                     rel="noreferrer"
                 >
                     <i className="fa-brands fa-twitter"/>
-                </a>
+                </a> */}
 
                     
                 <a 
