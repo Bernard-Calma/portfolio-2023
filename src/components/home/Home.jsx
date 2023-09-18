@@ -199,7 +199,7 @@ const Home = () => {
                 <h2 className='title'>Full Stack Developer</h2>
                 <p className='introduction'> - More than 1 year of experience in Full Stack Development (React, Node, Python, Express, Flask, Django, SQL and NoSQL) and 10 years of experience in the IT Industry in different line of business. Expert in troubleshooting, analysis, advanced resolution procedures and complex problem solving. Skilled in Six Sigma, Cloud Computing, Team/Project Management and Automation.</p>
                 <h1 className='resume name'>Resume</h1>
-                <a href="https://drive.google.com/file/d/1vZb6hpalAFujDZCz3DNJWfwDAFjVJsR4/view?usp=sharing"
+                <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"
                     target='_black'
                     rel='noreferrer'>
                     <i className="fa-solid fa-file" />
