@@ -16,7 +16,8 @@
 
   .App {
     overflow: hidden;
-    height: 100vh;
+    min-height: 90vh;
+    height: 100%;
     box-shadow: none;
   }
 }
