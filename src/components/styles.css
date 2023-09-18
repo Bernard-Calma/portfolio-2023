@@ -9,10 +9,10 @@ header, footer {
 /* Main */
 main {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     border: solid gray;
     border-top: 0;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 main::-webkit-scrollbar {
@@ -50,6 +50,7 @@ header {
 
     .navBar > li:hover {
         cursor: pointer;
+        
     }
 
     .navBar > li.selected {

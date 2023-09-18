@@ -37,9 +37,10 @@
     position: relative;
     width: 100%;
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .experience.right, .experience.left {
@@ -67,6 +68,14 @@
 
 .courseDescription {
     white-space: break-spaces;
+}
+
+.divWork, .divSchool {
+    overflow: scroll;
+}
+
+.divWork::-webkit-scrollbar , .divSchool::-webkit-scrollbar {
+    display: none;
 }
 
 /* WORK */
