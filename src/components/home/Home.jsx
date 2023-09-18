@@ -196,9 +196,9 @@ const Home = () => {
         <section className='sectionHome'>
             <div className='left'>
                 <h1 className='name'>Bernard Calma</h1>
-                <h2 className='title'>Full Stack Developer</h2>
-                <p className='introduction'> - More than 1 year of experience in Full Stack Development (React, Node, Python, Express, Flask, Django, SQL and NoSQL) and 10 years of experience in the IT Industry in different line of business. Expert in troubleshooting, analysis, advanced resolution procedures and complex problem solving. Skilled in Six Sigma, Cloud Computing, Team/Project Management and Automation.</p>
-                <h1 className='resume name'>Resume</h1>
+                <h2 className='title'>"From I.T. to Software Developer"</h2>
+                {/* <p className='introduction'> - More than 2 years of experience on full stack development</p> */}
+                <h1 className='resume'>Resume</h1>
                 <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"
                     target='_black'
                     rel='noreferrer'>
