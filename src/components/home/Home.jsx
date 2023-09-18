@@ -196,7 +196,7 @@ const Home = () => {
         <section className='sectionHome'>
             <div className='left'>
                 <h1 className='name'>Bernard Calma</h1>
-                <h2 className='title'>"From I.T. to Software Developer"</h2>
+                <h2 className='title'>"From I.T. to Software Engineer"</h2>
                 {/* <p className='introduction'> - More than 2 years of experience on full stack development</p> */}
                 <h1 className='resume'>Resume</h1>
                 <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"
