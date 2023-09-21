@@ -109,7 +109,13 @@ a.portfolioCode {
 /* Footer */
 
 @media screen and (max-width: 900px) {
+    main {
+        padding-top: 35px;
+    }
+    
     header {
+        position: fixed;
+        z-index: 1;
         width: 100%;
     }
 
