@@ -47,11 +47,7 @@ header {
         border-top: none;
         font-size: 1.2em;
         font-variant: small-caps;
-    }
-
-    .navBar > li:hover {
         cursor: pointer;
-        
     }
 
     .navBar > li.selected {
@@ -96,9 +92,6 @@ footer {
 .socialMedia > a > i, .socialMedia > span > i {
     color: yellow;
     font-size: 25px;
-}
-
-.socialMedia > a > i:hover {
     cursor: pointer;
 }
 
