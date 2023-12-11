@@ -1,3 +1,8 @@
+html {
+  background-color: rgb(0, 0, 0);
+  color: #f8fc06;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -9,15 +14,17 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 900px) {
   html {
     margin: 0;
   }
-
+  body {
+    overflow: scroll;
+  }
   .App {
     overflow: hidden;
     min-height: 90vh;
     height: 100%;
     box-shadow: none;
   }
-}
+}/*# sourceMappingURL=App.css.map */
