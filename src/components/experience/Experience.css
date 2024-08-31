@@ -1,0 +1,109 @@
+/* Common */
+.experience.right, .experience.left, .experienceCategory, .experienceCategory > .title.selected {
+  border: gray 1px solid;
+}
+
+/* Common */
+.sectionExperience {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionExperience .experience.top {
+  text-align: center;
+  width: 100%;
+}
+.sectionExperience .experience.top .experienceCategory {
+  display: flex;
+  flex: row;
+  justify-content: center;
+}
+.sectionExperience .experience.top .experienceCategory h2 {
+  padding: 0 10px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.sectionExperience .experience.bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.sectionExperience .experience.bottom .experience.right, .sectionExperience .experience.bottom .experience.left {
+  display: flex;
+  width: 50%;
+}
+.sectionExperience .experience.bottom .experience.left {
+  flex: 1;
+}
+.sectionExperience .experience.bottom .experience.left .list.schoolName.title .item.schoolName {
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.sectionExperience .experience.bottom .experience.left .list.schoolName.title .item.schoolName.selected {
+  list-style: "> ";
+}
+.sectionExperience .experience.bottom .experience.right {
+  flex: 5;
+  padding: 0 10px;
+}
+.sectionExperience .experience.bottom .experience.right .divWork, .sectionExperience .experience.bottom .experience.right .divSchool {
+  overflow: scroll;
+}
+.sectionExperience .experience.bottom .experience.right .divWork::-webkit-scrollbar, .sectionExperience .experience.bottom .experience.right .divSchool::-webkit-scrollbar {
+  display: none;
+}
+.sectionExperience .experience.bottom .experience.right .divSchool .schoolInfo ul .courseDescription {
+  white-space: break-spaces;
+}
+.sectionExperience .experience.bottom .experience.right .divSchool .companyLogo {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .sectionExperience .experience.top .experienceCategory .title {
+    width: 50%;
+    font-size: 1.25em;
+  }
+  .sectionExperience .experience.bottom {
+    flex-direction: column;
+    font-size: 0.75em;
+  }
+  .sectionExperience .experience.bottom .experience.left, .sectionExperience .experience.bottom .experience.right {
+    width: 100%;
+    padding: 0;
+  }
+  .sectionExperience .experience.bottom .experience.left .list {
+    padding-left: 1em;
+    margin: 0;
+  }
+  .sectionExperience .experience.bottom .experience.right {
+    overflow: scroll;
+  }
+  .sectionExperience .experience.bottom .experience.right .divSchool, .sectionExperience .experience.bottom .experience.right .divWork {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .sectionExperience .experience.bottom .experience.right .divSchool img, .sectionExperience .experience.bottom .experience.right .divWork img {
+    display: none;
+  }
+  .sectionExperience .experience.bottom .experience.right .divSchool .schoolInfo ul, .sectionExperience .experience.bottom .experience.right .divSchool .containerPosition ul, .sectionExperience .experience.bottom .experience.right .divWork .schoolInfo ul, .sectionExperience .experience.bottom .experience.right .divWork .containerPosition ul {
+    padding: 0 10px 0 20px;
+    list-style: "-";
+  }
+  .sectionExperience .experience.bottom .experience.right .divWork .workInfo .containerPosition ul .jobDescription {
+    padding: 0;
+  }
+}/*# sourceMappingURL=Experience.css.map */

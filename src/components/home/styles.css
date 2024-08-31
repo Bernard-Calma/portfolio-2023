@@ -81,6 +81,9 @@ h2 {
 }
 
 @media screen and (max-width: 900px) {
+    .main {
+        padding: 0;
+    }
     .sectionHome {
         flex-direction: column;
     }

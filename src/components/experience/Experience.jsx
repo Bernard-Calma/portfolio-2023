@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./styles.css"
+import "./Experience.css"
 import School from "./School"
 import Work from "./Work"
 

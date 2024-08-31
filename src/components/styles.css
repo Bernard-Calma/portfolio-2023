@@ -107,9 +107,9 @@ a.portfolioCode {
     }
     
     header {
-        position: fixed;
+        position: relative;
         z-index: 1;
-        width: 100%;
+        width: 99%;
     }
 
     .navBar > li:first-child {

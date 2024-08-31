@@ -3,15 +3,20 @@ html {
   background-color: rgb(15, 15, 15);
   color: #f8fc06;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html #root {
+html body {
+  width: 100%;
+}
+html body #root {
   display: flex;
 }
-html #root .App {
+html body #root .App {
   height: 90vh;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,7 @@ const School = (props) => {
                 <ul>
                     {props.school.descriptions.map((description, index) => 
                         <li 
-                            className = "jobDescription description" 
+                            className = "courseDescription description" 
                             key={index}
                         >
                             {description}
