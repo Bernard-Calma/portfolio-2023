@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import "./styles.css"
+import "./Projects.css"
 import ProjectDetails from "./ProjectDetails"
 import ProjectImage from "./ProjectImage"
 
