@@ -66,6 +66,7 @@ const Project = () => {
     let [skillsCategories, setSkillsCategories] = useState([])
     let [filteredCategories, setFilteredCategories] = useState([])
     let [filteredProjects, setFilterProjects] = useState([])
+    let [showFilters, setShowFilters] = useState(false);
     
 
     const handleChangeView = (e) => {
@@ -129,21 +130,31 @@ const Project = () => {
 
             <div className="project bottom">
                 <div className="project left">
-                    <div className="divFilters">
-                        <h4 className="filters">Filters</h4>
-                        {skillsCategories.map((skill, index) => 
-                            <li className="option" key={index}>
-                                <input 
-                                    type="checkbox"
-                                    value={skill}
-                                    onChange={handleFilterProjects}
-                                />
-                                {skill}
-                            </li>    
-                        )}
-                    </div>
+                    <h4 className="name">
+                        List
+                        <span> 
+                            Languages 
+                            <i onClick={() => setShowFilters(!showFilters)}>
+                                {
+                                showFilters ? '▲' : '▼'
+                                }
+                            </i> 
+                            { showFilters && <div className="divFilters">
+                                {skillsCategories.map((skill, index) => 
+                                    <li className="option" key={index}>
+                                        <input 
+                                            type="checkbox"
+                                            value={skill}
+                                            onChange={handleFilterProjects}
+                                        />
+                                        {skill}
+                                    </li>    
+                                )}
+                            </div>
+                            }
+                        </span>   
+                    </h4>
                     <ul>
-                        <h4 className="name">List</h4>
                         {filteredProjects.map((project, index) => 
                             <li
                                 key = {index}

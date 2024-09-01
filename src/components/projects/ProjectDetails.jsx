@@ -2,7 +2,7 @@ import { ToolTip } from "../common";
 
 const ProjectDetails = (props) => {
     return(
-        <div>
+        <>
             <h1 className="name">{props.project.name}</h1>
             <p className="description">- {props.project.summary}</p>
             <div className="technologies">
@@ -37,7 +37,7 @@ const ProjectDetails = (props) => {
                     <i className="fa-brands fa-github"/>
                 </a>
             </div>
-        </div>
+        </>
     ) 
 }
 

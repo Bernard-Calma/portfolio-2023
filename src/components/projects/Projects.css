@@ -29,33 +29,61 @@ div.project.description::-webkit-scrollbar,
 }
 .sectionProject .project.bottom .project.left {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
   overflow: scroll;
+  font-size: 1em;
 }
-.sectionProject .project.bottom .project.left .divFilters, .sectionProject .project.bottom .project.left ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.sectionProject .project.bottom .project.left .divFilters h4, .sectionProject .project.bottom .project.left ul h4 {
+.sectionProject .project.bottom .project.left h4 {
+  padding: 0;
   width: 100%;
   text-align: center;
 }
-.sectionProject .project.bottom .project.left .divFilters .option, .sectionProject .project.bottom .project.left .divFilters li, .sectionProject .project.bottom .project.left ul .option, .sectionProject .project.bottom .project.left ul li {
+.sectionProject .project.bottom .project.left h4 span {
+  position: relative;
+  margin-left: 0.5em;
+  color: white;
+  border: white 1px solid;
+  border-radius: 0.25em;
+}
+.sectionProject .project.bottom .project.left h4 span i {
+  cursor: pointer;
+}
+.sectionProject .project.bottom .project.left h4 span .divFilters {
+  position: absolute;
+  right: 0;
+  background-color: rgb(46, 46, 46);
+  border: rgb(145, 145, 145) 1.5px solid;
+  border-radius: 0.25em;
+  color: yellow;
+  text-align: start;
+  font-size: 0.75em;
+  font-weight: 200;
+  list-style: none;
+}
+.sectionProject .project.bottom .project.left h4 span .divFilters .option {
+  padding-right: 0.25em;
+}
+.sectionProject .project.bottom .project.left ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sectionProject .project.bottom .project.left ul li {
   margin: 5px 0;
   font-size: 0.75em;
-  width: 8em;
   cursor: pointer;
   list-style: none;
 }
-.sectionProject .project.bottom .project.left .divFilters .selected, .sectionProject .project.bottom .project.left ul .selected {
+.sectionProject .project.bottom .project.left ul .selected {
   font-size: 1em;
   list-style: "> ";
 }
 .sectionProject .project.bottom .project.right {
   display: flex;
-  flex: 5;
+  flex: 3.5;
   overflow: scroll;
 }
 .sectionProject .project.bottom .project.right div.project.description {
@@ -63,30 +91,38 @@ div.project.description::-webkit-scrollbar,
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  padding: 0;
-  padding: 10px;
+  padding-left: 0.25em;
   overflow: scroll;
 }
-.sectionProject .project.bottom .project.right div.project.description div .name {
+.sectionProject .project.bottom .project.right div.project.description .name {
   color: yellow;
 }
-.sectionProject .project.bottom .project.right div.project.description div .description {
+.sectionProject .project.bottom .project.right div.project.description p.description {
   padding: 0;
-  flex: 2;
+  font-size: 1rem;
+}
+.sectionProject .project.bottom .project.right div.project.description .technologies ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sectionProject .project.bottom .project.right div.project.description .technologies ul .description {
+  margin: 10px;
+  padding: 0;
   font-size: 0.75em;
 }
-.sectionProject .project.bottom .project.right div.project.description div .technologies ul .description {
-  margin: 10px;
-  font-size: 1em;
-}
-.sectionProject .project.bottom .project.right div.project.description div .project.links {
+.sectionProject .project.bottom .project.right div.project.description .project.links {
   display: flex;
+  flex: 1;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.sectionProject .project.bottom .project.right div.project.description .project.links a {
   position: relative;
 }
-.sectionProject .project.bottom .project.right div.project.description div .project.links a {
-  position: relative;
-}
-.sectionProject .project.bottom .project.right div.project.description div .project.links a i {
+.sectionProject .project.bottom .project.right div.project.description .project.links a i {
   color: rgb(0, 255, 255);
   font-size: 40px;
   margin: 0 10px 20px;

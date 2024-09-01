@@ -27,21 +27,52 @@ div.project.description::-webkit-scrollbar,
         overflow: scroll;
         .project.left {
             display: flex;
-            flex-direction: column;
             flex: 1;
+            flex-direction: column;
             overflow: scroll;
-            .divFilters, ul {
+            font-size: 1em;
+            h4 {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                span {
+                    position: relative;
+                    margin-left: 0.5em;
+                    color: white;
+                    border: white 1px solid;
+                    border-radius: 0.25em;
+
+                    i {
+                        cursor: pointer;
+                    }
+
+                    .divFilters {
+                        position: absolute;
+                        right: 0;
+                        background-color: rgb(46, 46, 46);
+                        border: rgb(145, 145, 145) 1.5px solid;
+                        border-radius: 0.25em;
+                        color: yellow;
+                        text-align: start;
+                        font-size: 0.75em;
+                        font-weight: 200;
+                        list-style: none;
+
+                        .option {
+                            padding-right: 0.25em;
+                        }
+                    }
+                }
+            }
+            ul {
+                margin: 0;
                 display: flex;
+                flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                h4 {
-                    width: 100%;
-                    text-align: center;
-                }
-                .option, li {
+                li {
                     margin: 5px 0;
                     font-size: 0.75em;
-                    width: 8em;
                     cursor: pointer;
                     list-style: none;
                 }
@@ -53,42 +84,45 @@ div.project.description::-webkit-scrollbar,
         }
         .project.right {
             display: flex;
-            flex: 5;
+            flex: 3.5;
             overflow: scroll;
             div.project.description {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 flex: 1;
-                padding: 0;
-                padding: 10px;
+                padding-left: 0.25em;
                 overflow: scroll;
-                div {
-                    .name { color: yellow }
-                    .description {
-                        padding: 0;
-                        flex: 2;
-                        font-size: 0.75em;
-                    }
-                    .technologies {
-                        ul {
-                            .description {
-                                margin: 10px;
-                                font-size: 1em;
-                            }
+                .name { color: yellow }
+                p.description {
+                    padding: 0;
+                    font-size: 1rem;
+                }
+                .technologies {
+                    ul {
+                        margin: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .description {
+                            margin: 10px;
+                            padding: 0;
+                            font-size: 0.75em;
                         }
                     }
-
-                    .project.links {
-                        display: flex;
+                }
+                .project.links {
+                    display: flex;
+                    flex: 1;
+                    position: relative;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    a { 
                         position: relative;
-                        a { 
-                            position: relative;
-                            i {
-                                color: rgb(0, 255, 255);
-                                font-size: 40px;
-                                margin: 0 10px 20px;
-                            }
+                        i {
+                            color: rgb(0, 255, 255);
+                            font-size: 40px;
+                            margin: 0 10px 20px;
                         }
                     }
                 }
