@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap');
+
+.sectionHome {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: solid gray 1px;
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+    .left {
+        a{
+            margin: 0 auto;
+            color: rgb(1, 224, 224);
+        }
+        .name {
+            font-size: 4em;
+            margin: 0;
+        }
+        .resume {
+            font-size: 2em;
+        }
+        .title {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(1, 224, 224);
+        }
+    }
+
+    .right {
+        .skillsSubList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1;
+            height: 20%;
+            .skillIconContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                position: relative;
+                flex: 1;
+                .skillIcon {
+                    width: 2em;
+                    height: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sectionHome {
+        flex-direction: column;
+
+        .left, .right {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .left {
+            .name {
+                font-size: 2em;
+            }
+            .resume, .title {
+                font-size: 0.75em;
+            }
+        }
+        .right {
+            .skillsSubList {
+                width: 100%;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                overflow: hidden;
+                .skillIconContainer {
+                        width: 0.5em;
+                        padding: 0;
+                }
+            }
+        }
+    }
+}
