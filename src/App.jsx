@@ -6,14 +6,14 @@ import { Home } from './components/Views';
 
 const App = () => {
   const [view, setView] = useState("Home")
-  return <div className="App">
+  return <div id="App">
     <Header 
       setMainView = {setView}
       view = {setView}
     />
     {
-      view ? "Home" :
-      <Home />
+      view == "Home" ? <Home />
+      : <></>
     }
     <Footer setMainView = {setView} />
   </div>

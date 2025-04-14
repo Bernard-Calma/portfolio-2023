@@ -3,15 +3,26 @@
 html {
     margin: 30px;
     background-color: rgb(1 12 21);
-    .App {
-        height: 100%;
-        width: 100%;
-        background-color: rgb(1 22 39);
-        border: 1px solid #1e2d3d;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 24px;
+
+    body {
+      margin: 0;
+    }
+
+    #App, main {
+      display: flex;
+    }
+
+    #App {
+      height: 90vh;
+      background-color: rgb(1 22 39);
+      border: 1px solid #1e2d3d;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 24px;
+
+      main {
+        flex: 1;
+      }
     }
 }
   

@@ -3,15 +3,22 @@ html {
   margin: 30px;
   background-color: rgb(1, 12, 21);
 }
-html .App {
-  height: 100%;
-  width: 100%;
+html body {
+  margin: 0;
+}
+html #App, html main {
+  display: flex;
+}
+html #App {
+  height: 90vh;
   background-color: rgb(1, 22, 39);
   border: 1px solid #1e2d3d;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 24px;
+}
+html #App main {
+  flex: 1;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,5 +1,7 @@
-import { useState } from 'react';
 import './Home.css'
+
+import { useState } from 'react';
+
 import SkillIcon from './SkillIcon';
 
 const Home = () => {
@@ -193,10 +195,10 @@ const Home = () => {
     ])
 
     return (
-        <section className='sectionHome'>
+        <main id='home'>
             <div className='left'>
                 <h1 className='name'>Bernard Calma</h1>
-                <h2 className='title'>"From I.T. to Software Engineer"</h2>
+                <h2 className='title'> Full Stack Developer</h2>
                 {/* <p className='introduction'> - More than 2 years of experience on full stack development</p> */}
                 <h1 className='resume'>Resume</h1>
                 <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"
@@ -204,9 +206,11 @@ const Home = () => {
                     rel='noreferrer'>
                     <i className="fa-solid fa-file" />
                 </a>
+
+                <p>const githubLink = "https://github.com/nard-calma</p>
             </div>
 
-            <div className='right skills'>
+            {/* <div className='right skills'>
                 <h2>Languages</h2>
                 <div className="skillsSubList">
                     {skillsList.map(skill => skill.category === "Programming Language"
@@ -249,8 +253,8 @@ const Home = () => {
                         : ''
                     )}
                 </div>
-            </div>
-        </section>
+            </div> */}
+        </main>
     )
 }
 
