@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap");
+.sectionHome {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.sectionHome > .left, .sectionHome > .right {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid gray 1px;
+}
+
+.sectionHome > .left > a {
+  margin: 0 auto;
+  color: rgb(1, 224, 224);
+}
+
+.sectionHome .left {
+  display: flex;
+}
+
+.sectionHome .name {
+  font-size: 4em;
+}
+
+.sectionHome .resume {
+  font-size: 2em;
+}
+
+.name, .filters, .resume {
+  font-family: "Fredoka", sans-serif;
+  margin: 0;
+}
+
+.title, .introduction {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  color: rgb(1, 224, 224);
+}
+
+.introduction, .description {
+  font-family: "Courier New", Courier, monospace;
+  text-align: start;
+  padding-left: 20px;
+  color: white;
+}
+
+.skillsSubList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 20%;
+}
+
+.skillIconContainer {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  flex: 1;
+}
+
+.skillIcon {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .sectionHome {
+    flex-direction: column;
+  }
+  .sectionHome .right {
+    flex: 1;
+  }
+  .sectionHome .left, .sectionHome .right {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .sectionHome .name {
+    font-size: 2em;
+  }
+  .sectionHome .resume {
+    font-size: 0.5em;
+  }
+  .sectionHome .title {
+    font-size: 0.7em;
+  }
+}/*# sourceMappingURL=Home.css.map */

@@ -2,22 +2,20 @@ import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Main from './components/Main';
+import { Home } from './components/Views';
 
 const App = () => {
-  const [mainView, setMainView] = useState("Home")
+  const [view, setView] = useState("Home")
   return <div className="App">
     <Header 
-      setMainView = {setMainView}
-      view = {mainView}
+      setMainView = {setView}
+      view = {setView}
     />
-    
-    <Main 
-      setMainView = {setMainView}
-      mainView = {mainView}
-    />
-
-    <Footer setMainView = {setMainView} />
+    {
+      view ? "Home" :
+      <Home />
+    }
+    <Footer setMainView = {setView} />
   </div>
 }
 

@@ -6,20 +6,6 @@ header, footer {
 }
 /* Commom */
 
-/* Main */
-main {
-    display: flex;
-    flex: 1;
-    border: solid gray;
-    border-top: 0;
-    overflow: hidden;
-}
-
-main::-webkit-scrollbar {
-    display: none;
-}
-/* Main */
-
 /* Header */
 header {
     position: relative;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles.css'
+import './Home.css'
 import SkillIcon from './SkillIcon';
 
 const Home = () => {
