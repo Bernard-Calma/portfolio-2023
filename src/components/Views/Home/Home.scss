@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import "../../../Variables/Variables.scss";
 
 #home {
     flex-direction: row;
 
     .left, .right {
         display: flex;
-        flex: 1;
+        flex: 1;  
         flex-direction: column;
         
         #name {
             padding-bottom: 1rem;
             padding-top: 1rem;
             font-size: 58px;
-            font-family: "Fira Code";
+            font-family: $FiraCode-Regular;
             font-weight: 100;
             color: #e5e9f0;
-            line-height: 1;
+            line-height: 1; 
         }
 
         #title {
