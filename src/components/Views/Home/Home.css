@@ -30,6 +30,22 @@
   line-height: 1;
   color: #4d5bce;
 }
+#home .left .gitHubConst, #home .right .gitHubConst {
+  color: white;
+  font-size: 18px;
+  font-family: "Fira Code";
+}
+#home .left .gitHubConst .variableType, #home .right .gitHubConst .variableType {
+  color: #4d5bce;
+}
+#home .left .gitHubConst .variableName, #home .right .gitHubConst .variableName {
+  color: #43d9ad;
+}
+#home .left .gitHubConst a, #home .right .gitHubConst a {
+  color: #e99287;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 h2 {
   font-size: 1.5rem;

@@ -207,7 +207,12 @@ const Home = () => {
                     <i className="fa-solid fa-file" />
                 </a> */}
 
-                <p>const githubLink = "https://github.com/nard-calma</p>
+                <p className='gitHubConst'>
+                    <span className='variableType'>const </span> 
+                    <span className='variableName'>githubLink</span> 
+                    = 
+                    <a>"https://github.com/nard-calma</a>
+                </p>
             </div>
 
             <div className='right skills'>
