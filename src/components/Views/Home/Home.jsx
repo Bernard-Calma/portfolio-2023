@@ -197,20 +197,20 @@ const Home = () => {
     return (
         <main id='home'>
             <div className='left'>
-                <h1 className='name'>Bernard Calma</h1>
-                <h2 className='title'> Full Stack Developer</h2>
+                <h1 id='name'>Bernard Calma</h1>
+                <h2 id='title'> {"> Full Stack Developer"}</h2>
                 {/* <p className='introduction'> - More than 2 years of experience on full stack development</p> */}
-                <h1 className='resume'>Resume</h1>
+                {/* <h1 className='resume'>Resume</h1>
                 <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"
                     target='_black'
                     rel='noreferrer'>
                     <i className="fa-solid fa-file" />
-                </a>
+                </a> */}
 
                 <p>const githubLink = "https://github.com/nard-calma</p>
             </div>
 
-            {/* <div className='right skills'>
+            <div className='right skills'>
                 <h2>Languages</h2>
                 <div className="skillsSubList">
                     {skillsList.map(skill => skill.category === "Programming Language"
@@ -253,7 +253,7 @@ const Home = () => {
                         : ''
                     )}
                 </div>
-            </div> */}
+            </div>
         </main>
     )
 }
