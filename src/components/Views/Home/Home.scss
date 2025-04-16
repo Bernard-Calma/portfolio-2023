@@ -3,15 +3,39 @@
 
 #home {
     flex-direction: row;
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 
     .left, .right {
         display: flex;
         flex: 1;  
         flex-direction: column;
-        
+        width: 100%;
+
+        .blurry-gradient-blue, .blurry-gradient-green {
+            filter: blur(70px);
+            height: 300px;
+            opacity: .5;
+            width: 300px;
+        }
+    }
+
+    .left {
+        .blurry-gradient-green {
+            background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+            border-radius: 0 50% 0 50%;
+            position: absolute;
+            right: 30%;
+            top: 20%;
+        }
+
         #name {
             padding-bottom: 1rem;
             padding-top: 1rem;
+            margin-bottom: 0;
             font-size: 58px;
             font-family: $FiraCode-Regular;
             font-weight: 100;
@@ -20,8 +44,9 @@
         }
 
         #title {
+            margin-top: 0;
             font-size: 32px;
-            font-family: "Fira Code";
+            font-family: $FiraCode-Regular;
             line-height: 1;
             color: #4d5bce;
         }
@@ -29,7 +54,7 @@
         .gitHubConst {
             color: white;
             font-size: 18px;
-            font-family: "Fira Code";
+            font-family: $FiraCode-Regular;
 
             .variableType {
                 color: #4d5bce
@@ -40,86 +65,35 @@
             }
 
             a {
+                position: relative;
                 color: #e99287;
                 text-decoration: underline;
                 text-underline-offset: 4px;
             }
         }
     }
+
+    .right {
+        .blurry-gradient-blue {
+            background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+            border-radius: 0 0 50% 50%;
+            bottom: 25%;
+            position: fixed;
+            right: 5%;
+            rotate: 10deg;
+        }
+    }
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.sectionHome > .left, .sectionHome > .right {
-    flex: 1;
+@media screen and (max-width: 1320px) {
+    #home {
+    display: flex;
+    flex: 1 1 auto;
     height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: solid gray 1px;
-}
-
-.sectionHome > .left > a{
-    margin: 0 auto;
-    color: rgb(1, 224, 224);
-}
-
-.sectionHome .left {
-    display: flex;
-}
-
-.sectionHome .name {
-    font-size: 4em;
-}
-
-
-.sectionHome .resume {
-    font-size: 2em;
-}
-
-.name, .filters, .resume {
-    font-family: 'Fredoka', sans-serif;
-    margin: 0;
-}
-
-.title, .introduction {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    color: rgb(1, 224, 224);
-}
-
-.introduction, .description {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: start;
-    padding-left: 20px;
-    color: white;
-}
-
-.skillsSubList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1;
-    height: 20%;
-}
-
-.skillIconContainer {
-    display: inline-block;
-    margin: 10px;
-    position: relative;
-    flex: 1;
-}
-
-.skillIcon {
+    overflow: hidden;
+    padding-left: 275px;
     width: 100%;
-    height: 100%;
-    max-width: 100px;
+    }
 }
 
 @media screen and (max-width: 900px) {

@@ -206,17 +206,19 @@ const Home = () => {
                     rel='noreferrer'>
                     <i className="fa-solid fa-file" />
                 </a> */}
+                <div className='blurry-gradient-green'/>
 
                 <p className='gitHubConst'>
                     <span className='variableType'>const </span> 
-                    <span className='variableName'>githubLink</span> 
-                    = 
-                    <a>"https://github.com/nard-calma</a>
+                    <span className='variableName'>githubLink </span> 
+                    {"= "}
+                    <a href='https://github.com/Bernard-Calma' target='_blank' rel='noreferrer'>"https://github.com/nard-calma"</a>
                 </p>
             </div>
 
             <div className='right skills'>
-                <h2>Languages</h2>
+                <div className='blurry-gradient-blue'/>
+                {/* <h2>Languages</h2>
                 <div className="skillsSubList">
                     {skillsList.map(skill => skill.category === "Programming Language"
                         ? <SkillIcon 
@@ -257,7 +259,7 @@ const Home = () => {
                         /> 
                         : ''
                     )}
-                </div>
+                </div> */}
             </div>
         </main>
     )

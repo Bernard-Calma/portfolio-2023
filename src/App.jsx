@@ -12,7 +12,7 @@ const App = () => {
       view = {setView}
     />
     {
-      view == "Home" ? <Home />
+      view === "Home" ? <Home />
       : <></>
     }
     <Footer setMainView = {setView} />
