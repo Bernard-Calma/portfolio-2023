@@ -6,16 +6,18 @@ html {
 html body {
   margin: 0;
 }
-html #App, html main {
+html #App, html main, html header, html footer {
   display: flex;
 }
 html #App {
   height: 90vh;
   background-color: rgb(1, 22, 39);
-  border: 1px solid #1e2d3d;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 13px;
+  border: 1px solid #1e2d3d;
+  border-radius: 7px;
+  overflow: hidden;
 }
 html #App main {
   flex: 1;

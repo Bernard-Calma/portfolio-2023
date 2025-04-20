@@ -1,0 +1,55 @@
+/* Tool Tip */
+.toolTipContainer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    opacity: 0;
+}
+
+.toolTipContainer:hover {
+    opacity: 100;
+}
+
+.toolTipContainer > p {
+    position: absolute;
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    border: 0.5px solid gray;
+    font-size: 1rem;
+}
+
+
+/* Link */
+.navLink {
+    font-family: monospace;
+    color: rgb(96 123 150);
+    padding: 0 1.5rem;
+    border-right: 1px solid #1e2d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    &.name {
+        padding-right: 15%;
+    }
+
+    &.contact-me {
+        border-left: 1px solid #1e2d3d;
+    }
+
+    &.active {
+        color: white;
+        border-bottom: 2px solid #fea55f;
+    }
+
+    &:hover {
+        background-color: #1e2d3d74;
+        color: #fff;
+        cursor: pointer;
+    }
+}

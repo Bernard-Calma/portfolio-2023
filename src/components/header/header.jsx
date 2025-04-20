@@ -1,16 +1,19 @@
 import { Link } from "../common";
 
+import "./header.css"
+
 const Header = (props) => {
     const handleChangeView = (view) => {
         props.setMainView(view)
     }
     return <header>
-        <div className="navBar">
-            <Link name={"name"} label="Bernard Calma"/>
+        <Link name={"name"} label="bernard_calma"/>
+        <nav className="navBar">
             <Link name={"home"} label="_home" active={true}/>
             <Link name={"about-me"} label="_about-me"/>
             <Link name={"projects"} label="_projects"/>
-        </div>
+        </nav>
+        <Link name={"contact-me"} label="_contact-me"/>
     </header>
 };
 
