@@ -2,34 +2,32 @@ import "./AboutMe.css"
 
 const AboutMe = () => {
     return(
-        <main class="about-me">
-            <div class="page-menu">
-            <div class="sections">
-                <div class="icon active">
-                <p>Pr</p>
-                <p>Pe</p>
-                <p>Ho</p>
-                </div>
+        <main className="about-me">
+            <div className="page-menu">
+            <div className="sections">
+                <img className="icon" src="/images/icons/info-professional.svg" alt="icon"/>
+                <img className="icon" src="/images/icons/info-personal.svg" alt="icon"/>
+                <img className="icon" src="/images/icons/info-hobbies.svg" alt="icon"/>
             </div>
-            <div class="section-content">
-                <p class="section-title"> ⮟ professional-info</p>
-                <div class="section-sub-contents">
-                <div class="sub-content">
-                    <p> experience</p>
-                    <p> hard-skills</p>
-                    <p> soft-skills</p>
+            <div className="section-content">
+                <p className="section-title"> <img className="icon" src="/images/icons/arrow.svg" alt="icon"/> professional-info</p>
+                <div className="section-sub-contents">
+                <div className="sub-content">
+                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> experience</p>
+                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> hard-skills</p>
+                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> soft-skills</p>
                 </div>
                 </div>
-                <p class="section-title"> ⮟ contacts</p>
-                <div class="contacts">
-                <p>✉ nard.calma@gmail.com</p>
-                <p>✆ +1(123)-456-789</p>
+                <p className="section-title"> <img className="icon" src="/images/icons/arrow.svg" alt="icon"/> contacts</p>
+                <div className="contacts">
+                <p><img src="/images/icons/email.svg" alt="icon"/> nard.calma@gmail.com</p>
+                <p><img src="/images/icons/phone.svg" alt="icon"/> +1(123)-456-789</p>
                 </div>
             </div>
             </div>
-            <div class="page-view">
-            <p class="section-title"> professional-info</p>
-            <div class="section-view">
+            <div className="page-view">
+            <p className="section-title"> professional-info</p>
+            <div className="section-view">
                 <p>1 /** </p>
                 <p>2 *</p>         
                 <p>3 *</p>
