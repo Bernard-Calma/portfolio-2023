@@ -1,6 +1,6 @@
 import { Link } from "../common";
 
-import "./header.css"
+import "./Header.css"
 
 const Header = (props) => {
     const handleChangeView = (view) => {
