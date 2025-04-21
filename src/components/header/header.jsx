@@ -14,6 +14,13 @@ const Header = (props) => {
             <Link name={"projects"} label="_projects"/>
         </nav>
         <Link name={"contact-me"} label="_contact-me"/>
+        {/* <span onClick={(e) => {
+                e.preventDefault()
+                props.setMainView("Contact")
+            }}
+        >
+            <i className="fa-solid fa-envelope"/>
+        </span> */}
     </header>
 };
 

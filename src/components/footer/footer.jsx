@@ -1,31 +1,24 @@
+import { Link } from "../common";
+import "./footer.css"
+
 const Footer = (props) => {
     return (
         <footer>
-            <p className="emailAddress">nard.calma@gmail.com</p>
-            <div className="socialMedia">
-                <span onClick={(e) => {
-                        e.preventDefault()
-                        props.setMainView("Contact")
-                    }}
-                >
-                    <i className="fa-solid fa-envelope"/>
-                </span>
-
-                <a 
-                    href="https://github.com/Bernard-Calma"
-                    target="_black"
-                    rel="noreferrer"
-                >
-                    <i className="fa-brands fa-github"/>
-                </a>
-
-                <a 
+            <p>find me in: </p>
+            <div className="social-media">
+                <Link name={"linkedin"} 
+                    label={<i className="fa-brands fa-linkedin"/>}    
+                />
+                <Link name={"twitter"} 
+                    label={<i className="fa-brands fa-twitter"/>}    
+                />
+                {/* <a 
                     href="https://www.linkedin.com/in/bernard-calma/"
                     target="_black"
                     rel="noreferrer"
                 >
                     <i className="fa-brands fa-linkedin"/>
-                </a>
+                </a> */}
 
                 {/* <a 
                     className="twitter"
@@ -43,10 +36,20 @@ const Footer = (props) => {
                     target="_black"
                     rel="noreferrer"
                 >
-                    <i className="fa-solid fa-code"/>
+                    <i className="fa-brands fa-github"/>
                 </a>
-                
-            </div>    
+            </div>  
+            {/* <a 
+                    href="https://github.com/Bernard-Calma"
+                    target="_black"
+                    rel="noreferrer"
+                >
+                @Bernard-Calma
+                <i className="fa-brands fa-github"/>
+            </a>   */}
+            <Link  name={"github"} 
+                label= "@Bernard-Calma"
+            />
         </footer>
     );
 };

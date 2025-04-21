@@ -2,6 +2,9 @@
 html {
   margin: 30px;
   background-color: rgb(1, 12, 21);
+  color: rgb(96, 123, 150);
+  font-family: monospace;
+  font-size: 13px;
 }
 html body {
   margin: 0;
@@ -9,12 +12,16 @@ html body {
 html #App, html main, html header, html footer {
   display: flex;
 }
+html header, html footer {
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+}
 html #App {
   height: 90vh;
   background-color: rgb(1, 22, 39);
   flex-direction: column;
   justify-content: space-between;
-  font-size: 13px;
   border: 1px solid #1e2d3d;
   border-radius: 7px;
   overflow: hidden;

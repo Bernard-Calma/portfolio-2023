@@ -24,8 +24,6 @@
 
 /* Link */
 .navLink {
-  font-family: monospace;
-  color: rgb(96, 123, 150);
   padding: 0 1.5rem;
   border-right: 1px solid #1e2d3d;
   display: flex;
@@ -36,7 +34,7 @@
 .navLink.name {
   padding-right: 15%;
 }
-.navLink.contact-me {
+.navLink.contact-me, .navLink.github {
   border-left: 1px solid #1e2d3d;
 }
 .navLink.active {
