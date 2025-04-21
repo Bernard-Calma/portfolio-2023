@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  color: rgb(96, 123, 150);
+}
+main .page-menu {
+  display: flex;
+}
+main .page-menu > div {
+  border-right: 1px solid #1e2d3d;
+}
+main .page-menu .sections {
+  height: 100%;
+  width: 1.5rem;
+  padding: 0 0.5rem;
+}
+main .page-menu .sections .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  margin: 1.5rem 0;
+}
+main .page-menu .sections .icon p {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+main .page-menu .section-content .section-title {
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid #1e2d3d;
+  color: white;
+}
+main .page-menu .section-content .section-sub-contents, main .page-menu .section-content .contacts {
+  padding: 0 1.5rem;
+}
+main .page-view .section-view p {
+  margin: 0.25m;
+}/*# sourceMappingURL=AboutMe.css.map */
