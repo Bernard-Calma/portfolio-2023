@@ -9,7 +9,7 @@ const App = () => {
   return <div id="App">
     <Header 
       setMainView = {setView}
-      view = {setView}
+      view = {view}
     />
     {
       view === "Home" ? <Home />
