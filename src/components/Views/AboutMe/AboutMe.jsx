@@ -1,4 +1,5 @@
 import "./AboutMe.css"
+import { MenuOption } from "./components";
 
 const AboutMe = () => {
     return(
@@ -10,18 +11,41 @@ const AboutMe = () => {
                 <img className="icon" src="/images/icons/info-hobbies.svg" alt="icon"/>
             </div>
             <div className="section-content">
-                <p className="section-title"> <img className="icon" src="/images/icons/arrow.svg" alt="icon"/> professional-info</p>
+                <MenuOption 
+                    className="section-title"
+                    icon="/images/icons/arrow.svg"
+                    label="experience"
+                />
                 <div className="section-sub-contents">
                 <div className="sub-content">
-                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> experience</p>
-                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> hard-skills</p>
-                    <p> <img className="icon" src="/images/icons/caret.svg" alt="icon"/> soft-skills</p>
+                    <MenuOption 
+                        icon="/images/icons/caret.svg"
+                        label="experience"
+                    />
+                    <MenuOption 
+                        icon="/images/icons/caret.svg"
+                        label="hard-skills"
+                    />
+                    <MenuOption 
+                        icon="/images/icons/caret.svg"
+                        label="soft-skills"
+                    />
                 </div>
                 </div>
-                <p className="section-title"> <img className="icon" src="/images/icons/arrow.svg" alt="icon"/> contacts</p>
+                <MenuOption 
+                    className="section-title"
+                    icon="/images/icons/arrow.svg"
+                    label="contacts"
+                />
                 <div className="contacts">
-                <p><img src="/images/icons/email.svg" alt="icon"/> nard.calma@gmail.com</p>
-                <p><img src="/images/icons/phone.svg" alt="icon"/> +1(123)-456-789</p>
+                    <MenuOption
+                        icon="/images/icons/email.svg"
+                        label=" nard.calma@gmail.com"
+                    />
+                    <MenuOption
+                        icon="/images/icons/phone.svg"
+                        label=" +1(123)-456-789"
+                    />
                 </div>
             </div>
             </div>
