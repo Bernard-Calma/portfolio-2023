@@ -2,196 +2,90 @@ import './Home.css'
 
 import { useState } from 'react';
 
-import SkillIcon from './SkillIcon';
+import {SkillIcon} from './components';
 
 const Home = () => {
     const [skillsList] = useState([
         {
             id: 0,
             skill: "React",
-            imageLink: "https://img.icons8.com/color/256/react-native.png",
-            category: "Front-End"
+            imageLink: "https://img.icons8.com/color/256/react-native.png"
         },
         {
             id: 1,
             skill: "Redux",
-            imageLink: "https://img.icons8.com/color/256/redux.png",
-            category: "Tools"
+            imageLink: "https://img.icons8.com/color/256/redux.png"
         },
         {
             id: 2,
             skill: "React Router",
-            imageLink: "images/skills/reactRouter.png",
-            category: "Tools"
+            imageLink: "images/skills/reactRouter.png"
         }, 
         {
             id: 3,
             skill: "React Native",
-            imageLink: "images/skills/reactNative.png",
-            category: "Front-End"
-        },
-        {
-            id: 4,
-            skill: "NodeJS",
-            imageLink: "https://img.icons8.com/color/256/nodejs.png",
-            category: "Back-End"
+            imageLink: "images/skills/reactNative.png"
         },
         {
             id: 5,
             skill: "JavaScript",
-            imageLink: "https://img.icons8.com/color/256/javascript.png",
-            category: "Programming Language",
-        },
-        {
-            id: 6,
-            skill: "jQuery",
-            imageLink: "images/skills/jquery.png",
-            category: "Tools"
+            imageLink: "https://img.icons8.com/color/256/javascript.png"
         },
         {
             id: 7,
             skill: "Python",
-            imageLink: "https://img.icons8.com/color/256/python.png",
-            category: "Programming Language"
+            imageLink: "https://img.icons8.com/color/256/python.png"
         },
         {
             id: 8,
             skill: "Github",
-            imageLink: "https://img.icons8.com/color/256/github.png",
-            category: "Tools"
+            imageLink: "https://img.icons8.com/color/256/github.png"
         },
         {
             id: 9,
             skill: "Flask",
-            imageLink: "images/skills/flask.png",
-            category: "Back-End"
+            imageLink: "images/skills/flask.png"
         },
         {
             id: 10,
             skill: "Django",
-            imageLink: "images/skills/django.png",
-            category: "Back-End"
-        },
-        {
-            id: 11,
-            skill: "Java",
-            imageLink: "https://img.icons8.com/color/256/java-coffee-cup-logo.png",
-            category: "Programming Language"
-        },
-        {
-            id: 12,
-            skill: "Lua",
-            imageLink: "https://img.icons8.com/nolan/256/lua-language.png",
-            category: "Programming Language"
+            imageLink: "images/skills/django.png"
         },
         {
             id: 13,
             skill: "SQL",
-            imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png",
-            category: "Back-End"
+            imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
         },
         {
             id: 14,
             skill: "NoSQL",
-            imageLink: "images/skills/nosql.png",
-            category: "Back-End"
+            imageLink: "images/skills/nosql.png"
         },
         {
             id: 15,
             skill: "PostgreSQL",
-            imageLink: "https://img.icons8.com/color/256/postgreesql.png",
-            category: "Back-End"
+            imageLink: "https://img.icons8.com/color/256/postgreesql.png"
         },
         {
             id: 16,
             skill: "MongoDB",
-            imageLink: "https://img.icons8.com/color/256/mongodb.png",
-            category: "Back-End"
-        },
-        {
-            id: 17,
-            skill: "Access",
-            imageLink: "https://img.icons8.com/color/256/microsoft-access-2019.png",
-            category: "Back-End"
-        },
-        {
-            id: 18,
-            skill: "ExpressJS",
-            imageLink: "images/skills/express.png",
-            category: "Back-End"
-        },
-        {
-            id: 19,
-            skill: "Bootstrap",
-            imageLink: "https://img.icons8.com/color/256/bootstrap.png",
-            category: "Front-End"
-        },
-        {
-            id: 20,
-            skill: "Tailwind CSS",
-            imageLink: "https://img.icons8.com/color/256/tailwindcss.png",
-            category: "Front-End"
-        },
-        {
-            id: 21,
-            skill: "Fusion360",
-            imageLink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/464bfb9c-9a76-465b-b539-f36ab9f06047/ddhhv4r-ef877702-5764-4670-bb52-eb514ecd60ed.png/v1/fill/w_512,h_512,strp/fusion_360_honeycomb_icon_by_freddiderfred_ddhhv4r-fdivlview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvNDY0YmZiOWMtOWE3Ni00NjViLWI1MzktZjM2YWI5ZjA2MDQ3XC9kZGhodjRyLWVmODc3NzAyLTU3NjQtNDY3MC1iYjUyLWViNTE0ZWNkNjBlZC5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5ID_baqEggkjJcu_NIXYHP5bpVtj7J8DJCQ4OYOZVz4",
-            category: "Tools"
-        },
-        {
-            id: 22,
-            skill: "Arduino",
-            imageLink: "https://img.icons8.com/color/256/arduino.png",
-            category: "Front End"
-        },
-        {
-            id: 23,
-            skill: "C#",
-            imageLink: "https://img.icons8.com/color/256/c-sharp-logo-2.png",
-            category: "Programming Language"
-        },
-        {
-            id: 24,
-            skill: "C++",
-            imageLink: "https://img.icons8.com/color/256/c-plus-plus-logo.png",
-            category: "Programming Language"
-        },
-        {
-            id: 25,
-            skill: "Visual Basic",
-            imageLink: "https://upload.wikimedia.org/wikipedia/en/e/e4/Visual_Basic_6.0_logo.png",
-            category: "Programming Language"
+            imageLink: "https://img.icons8.com/color/256/mongodb.png"
         },
         {
             id: 26,
             skill: "HTML",
-            imageLink: "https://img.icons8.com/color/256/html-5.png",
-            category: "Front-End"
+            imageLink: "https://img.icons8.com/color/256/html-5.png"
         },
         {
             id: 27,
             skill: "CSS",
-            imageLink: "https://img.icons8.com/color/256/css3.png",
-            category: "Front-End"
+            imageLink: "https://img.icons8.com/color/256/css3.png"
         },
         {
-            id: 28,
-            skill: "JSON",
-            imageLink: "images/skills/json.png",
-            category: "Tools"
+            id: 4,
+            skill: "NodeJS",
+            imageLink: "https://img.icons8.com/color/256/nodejs.png"
         },
-        {
-            id: 29,
-            skill: "MySQL",
-            imageLink: "images/skills/mysql.png",
-            category: "Back-End"
-        },
-        {
-            id: 30,
-            skill: "EJS",
-            imageLink: "images/skills/ejs.png",
-            category: "Tools"
-        }
     ])
 
     return (
@@ -218,48 +112,14 @@ const Home = () => {
 
             <div className='right skills'>
                 <div className='blurry-gradient-blue'/>
-                {/* <h2>Languages</h2>
+                <h2>Tech</h2>
                 <div className="skillsSubList">
-                    {skillsList.map(skill => skill.category === "Programming Language"
-                        ? <SkillIcon 
+                    {skillsList.map(skill => <SkillIcon 
                         key = {skill.id}
                         skill = {skill}
-                        />       
-                        : ''
+                        />     
                     )}
                 </div>
-                <h2>Front-End</h2>
-                <div className="skillsSubList">
-                    {skillsList.map(skill => skill.category === "Front-End"
-                        ? <SkillIcon 
-                        key = {skill.id}
-                        skill = {skill}
-                        /> 
-                        : ''
-                    )}
-                </div>
-
-                <h2>Back-End</h2>
-                <div className="skillsSubList">
-                    {skillsList.map(skill => skill.category === "Back-End"
-                        ? <SkillIcon 
-                        key = {skill.id}
-                        skill = {skill}
-                        /> 
-                        : ''
-                    )}
-                </div>
-
-                <h2>Tools</h2>
-                <div className="skillsSubList">
-                    {skillsList.map(skill => skill.category === "Tools"
-                        ? <SkillIcon 
-                            key = {skill.id}
-                            skill = {skill}
-                        /> 
-                        : ''
-                    )}
-                </div> */}
             </div>
         </main>
     )

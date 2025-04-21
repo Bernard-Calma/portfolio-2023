@@ -10,16 +10,18 @@
 #home {
   flex-direction: row;
   display: flex;
+  align-items: center;
   flex: 1 1 auto;
+  gap: 25rem;
   height: 100%;
   overflow: hidden;
-  width: 100%;
+  padding-left: 275px;
+  font-family: "FiraCode-Regular", monospace, monospace;
+  font-weight: 100;
 }
 #home .left, #home .right {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  width: 100%;
 }
 #home .left .blurry-gradient-blue, #home .left .blurry-gradient-green, #home .right .blurry-gradient-blue, #home .right .blurry-gradient-green {
   filter: blur(70px);
@@ -37,10 +39,8 @@
 #home .left #name {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 58px;
-  font-family: "FiraCode-Regular", monospace;
-  font-weight: 100;
   color: #e5e9f0;
   line-height: 1;
 }
@@ -68,6 +68,16 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+#home .right {
+  align-items: center;
+  background: linear-gradient(160deg, #227a60, rgba(76, 0, 255, 0));
+  color: white;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  width: 468px;
+}
 #home .right .blurry-gradient-blue {
   background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
   border-radius: 0 0 50% 50%;
@@ -75,6 +85,30 @@
   position: fixed;
   right: 5%;
   rotate: 10deg;
+}
+#home .right .skillsSubList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  row-gap: 1.5rem;
+}
+#home .right .skillsSubList .skillIconContainer {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  position: relative;
+  height: 54px;
+  width: 54px;
+}
+#home .right .skillsSubList .skillIconContainer .skillIcon, #home .right .skillsSubList .skillIconContainer .toolTipContainer {
+  height: inherit;
+  width: inherit;
+}
+#home .right .skillsSubList .skillIconContainer .toolTipContainer {
+  position: absolute;
 }
 
 @media screen and (max-width: 1320px) {
