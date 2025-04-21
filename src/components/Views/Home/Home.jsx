@@ -90,6 +90,8 @@ const Home = () => {
 
     return (
         <main id='home'>
+            <div className='blurry-gradient-green'/>
+            <div className='blurry-gradient-blue'/>
             <div className='left'>
                 <h1 id='name'>Bernard Calma</h1>
                 <h2 id='title'> {"> Full Stack Developer"}</h2>
@@ -100,8 +102,6 @@ const Home = () => {
                     rel='noreferrer'>
                     <i className="fa-solid fa-file" />
                 </a> */}
-                <div className='blurry-gradient-green'/>
-
                 <p className='gitHubConst'>
                     <span className='variableType'>const </span> 
                     <span className='variableName'>githubLink </span> 
@@ -111,7 +111,6 @@ const Home = () => {
             </div>
 
             <div className='right skills'>
-                <div className='blurry-gradient-blue'/>
                 <h2>Tech</h2>
                 <div className="skillsSubList">
                     {skillsList.map(skill => <SkillIcon 

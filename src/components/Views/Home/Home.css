@@ -19,22 +19,30 @@
   font-family: "FiraCode-Regular", monospace, monospace;
   font-weight: 100;
 }
-#home .left, #home .right {
-  display: flex;
-  flex-direction: column;
-}
-#home .left .blurry-gradient-blue, #home .left .blurry-gradient-green, #home .right .blurry-gradient-blue, #home .right .blurry-gradient-green {
+#home .blurry-gradient-blue, #home .blurry-gradient-green {
   filter: blur(70px);
   height: 300px;
   opacity: 0.5;
   width: 300px;
 }
-#home .left .blurry-gradient-green {
+#home .blurry-gradient-blue {
+  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+  border-radius: 0 0 50% 50%;
+  bottom: 25%;
+  position: fixed;
+  right: 5%;
+  rotate: 10deg;
+}
+#home .blurry-gradient-green {
   background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
   border-radius: 0 50% 0 50%;
   position: absolute;
   right: 30%;
   top: 20%;
+}
+#home .left, #home .right {
+  display: flex;
+  flex-direction: column;
 }
 #home .left #name {
   padding-bottom: 1rem;
@@ -78,14 +86,6 @@
   position: relative;
   width: 468px;
 }
-#home .right .blurry-gradient-blue {
-  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
-  border-radius: 0 0 50% 50%;
-  bottom: 25%;
-  position: fixed;
-  right: 5%;
-  rotate: 10deg;
-}
 #home .right .skillsSubList {
   display: flex;
   flex-direction: row;
@@ -111,14 +111,25 @@
   position: absolute;
 }
 
-@media screen and (max-width: 1320px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
+  #home {
+    justify-content: center;
+    gap: 0;
+  }
+  .right {
+    height: 370px;
+    width: 420px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
   #home {
     display: flex;
-    flex: 1 1 auto;
-    height: 100%;
-    overflow: hidden;
-    padding-left: 275px;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.75rem;
+  }
+  #home .right {
+    display: none;
   }
 }
 @media screen and (max-width: 900px) {

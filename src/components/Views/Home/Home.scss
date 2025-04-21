@@ -13,27 +13,35 @@
     font-family: $FiraCode-Regular, monospace;
     font-weight: 100;
 
+    .blurry-gradient-blue, .blurry-gradient-green {
+        filter: blur(70px);
+        height: 300px;
+        opacity: .5;
+        width: 300px;
+    }
+
+    .blurry-gradient-blue {
+        background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+        border-radius: 0 0 50% 50%;
+        bottom: 25%;
+        position: fixed;
+        right: 5%;
+        rotate: 10deg;
+    }
+    .blurry-gradient-green {
+        background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+        border-radius: 0 50% 0 50%;
+        position: absolute;
+        right: 30%;
+        top: 20%;
+    }
+
     .left, .right {
         display: flex;
         flex-direction: column;
-
-        .blurry-gradient-blue, .blurry-gradient-green {
-            filter: blur(70px);
-            height: 300px;
-            opacity: .5;
-            width: 300px;
-        }
     }
 
     .left {
-        .blurry-gradient-green {
-            background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
-            border-radius: 0 50% 0 50%;
-            position: absolute;
-            right: 30%;
-            top: 20%;
-        }
-
         #name {
             padding-bottom: 1rem;
             padding-top: 1rem;
@@ -83,14 +91,6 @@
         position: relative;
         width: 468px;
 
-        .blurry-gradient-blue {
-            background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
-            border-radius: 0 0 50% 50%;
-            bottom: 25%;
-            position: fixed;
-            right: 5%;
-            rotate: 10deg;
-        }
         .skillsSubList {
             display: flex;
             flex-direction: row;
@@ -120,15 +120,30 @@
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
     #home {
-    display: flex;
-    flex: 1 1 auto;
-    height: 100%;
-    overflow: hidden;
-    padding-left: 275px;
-    width: 100%;
+        justify-content: center;
+        gap: 0;
     }
+    .right {
+        height: 370px;
+        width: 420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1.75rem;
+        
+        .right {
+            display: none;
+        }
+    }
+
+  
 }
 
 @media screen and (max-width: 900px) {
