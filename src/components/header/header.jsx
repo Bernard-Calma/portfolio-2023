@@ -9,13 +9,21 @@ const Header = ({setMainView, view, pageMenuRef}) => {
         setMainView(view)
     }
 
-    useEffect(() => {
+    const syncWidth = () => {
         // If the pageMenuRef and navLinkRef are available, set the width of navLink
         if (pageMenuRef?.current && navLinkName?.current) {
           const pageMenuWidth = pageMenuRef.current.offsetWidth;
           navLinkName.current.style.width = `${pageMenuWidth}px`; // Set navLink width to match page-menu
         }
-      }, [pageMenuRef]); // This effect runs whenever the pageMenuRef changes
+      }
+    // useEffect to synchronize the width of navLink with pageMenuRef
+    useEffect(() => {
+        syncWidth(); // initial sync
+        window.addEventListener("resize", syncWidth); // update on window resize
+    
+        // cleanup
+        return () => window.removeEventListener("resize", syncWidth);
+    }, [pageMenuRef]);
     return <header>
         <Link name={"name"} label="bernard_calma" ref={navLinkName}/>
         <nav className="navBar">

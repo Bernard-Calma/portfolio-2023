@@ -2,6 +2,7 @@ import "./AboutMe.css"
 import { MenuOption } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
+    
     return(
         <main className="about-me">
             <div className="page-menu" ref={pageMenuRef}>
