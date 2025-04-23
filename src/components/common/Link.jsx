@@ -1,15 +1,18 @@
-import "./styles.css"
+import React, { forwardRef } from "react";
 
-const Link = ({name, label, href, onClick, active = false}) => {
-    return(
-        <a 
-            className={`navLink ${name} ${active ? "active" : ""}`}
-            href={href} 
-            target="_blank"
-            rel="noreferrer"
-            onClick={onClick}
-        >{label}</a>
-    )
-}
+const Link = forwardRef(({ name, label, href, onClick, active = false }, ref) => {
+  return (
+    <a
+      ref={ref}
+      className={`navLink ${name} ${active ? "active" : ""}`}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      onClick={onClick}
+    >
+      {label}
+    </a>
+  );
+});
 
 export default Link;

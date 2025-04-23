@@ -1,5 +1,5 @@
 main {
-    display: flex;
+  justify-content: space-between;
     flex: 1 1 auto;
     height: 100%;
     overflow: hidden;
@@ -55,15 +55,32 @@ main {
   }
   
   .page-view {
+    flex: 1;
     border:  1px solid #1e2d3d;
     border-width: 0 1px 1px 0;
 
     .page-title {
       margin: 0;
-      padding: 0.5rem;
-      border:  1px solid #1e2d3d;
-      border-width: 0 0 1px 0;
+      padding: 0.5rem 1.5rem;
+      border-right: 1px solid #1e2d3d;
+      width: fit-content;
     };
+    .section-view {
+      height: 100%;
+      padding: 0 1.5rem;
+      border-top: 1px solid #1e2d3d;
+      p {
+        margin: 0.25m;
+      }
+    }
+  }
+
+  .page-subview {
+    flex: 1;
+    border:  1px solid #1e2d3d;
+    border-width: 0 1px 1px 0;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    
     .section-view {
       p {
         margin: 0.25m;

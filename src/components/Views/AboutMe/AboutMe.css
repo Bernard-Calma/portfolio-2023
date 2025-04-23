@@ -1,5 +1,5 @@
 main {
-  display: flex;
+  justify-content: space-between;
   flex: 1 1 auto;
   height: 100%;
   overflow: hidden;
@@ -44,15 +44,31 @@ main .page-menu .section-content .section-sub-contents, main .page-menu .section
   padding: 0 1.5rem;
 }
 main .page-view {
+  flex: 1;
   border: 1px solid #1e2d3d;
   border-width: 0 1px 1px 0;
 }
 main .page-view .page-title {
   margin: 0;
-  padding: 0.5rem;
-  border: 1px solid #1e2d3d;
-  border-width: 0 0 1px 0;
+  padding: 0.5rem 1.5rem;
+  border-right: 1px solid #1e2d3d;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .page-view .section-view {
+  height: 100%;
+  padding: 0 1.5rem;
+  border-top: 1px solid #1e2d3d;
 }
 main .page-view .section-view p {
+  margin: 0.25m;
+}
+main .page-subview {
+  flex: 1;
+  border: 1px solid #1e2d3d;
+  border-width: 0 1px 1px 0;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+main .page-subview .section-view p {
   margin: 0.25m;
 }/*# sourceMappingURL=AboutMe.css.map */

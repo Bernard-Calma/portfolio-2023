@@ -32,6 +32,11 @@
   height: 100%;
 }
 .navLink.name {
+  padding: 10px 15px; /* Adjust padding */
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Make it a block-level element to take full width */
+  box-sizing: border-box; /* Make sure padding is included in the width */
   padding-right: 15%;
 }
 .navLink.contact-me, .navLink.github {

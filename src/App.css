@@ -6,18 +6,23 @@ html {
   font-family: monospace;
   font-size: 13px;
 }
-html body {
+
+body {
   margin: 0;
 }
-html #App, html main, html header, html footer {
+
+#App, main, header, footer {
   display: flex;
+  width: 100%;
 }
-html header, html footer {
+
+header, footer {
   height: 45px;
   justify-content: space-between;
   align-items: center;
 }
-html #App {
+
+#App {
   height: 90vh;
   background-color: rgb(1, 22, 39);
   flex-direction: column;
@@ -26,7 +31,7 @@ html #App {
   border-radius: 7px;
   overflow: hidden;
 }
-html #App main {
+#App main {
   flex: 1;
 }
 
@@ -37,10 +42,16 @@ html #App main {
   body {
     overflow: scroll;
   }
-  .App {
+  #App {
     overflow: hidden;
     min-height: 90vh;
     height: 100%;
     box-shadow: none;
+  }
+  header, footer {
+    padding: 0 10px; /* Smaller padding on smaller screens */
+  }
+  main {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }/*# sourceMappingURL=App.css.map */
