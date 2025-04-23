@@ -14,7 +14,7 @@ const AboutMe = () => {
                 <MenuOption 
                     className="section-title"
                     icon="/images/icons/arrow.svg"
-                    label="experience"
+                    label="professional-info"
                 />
                 <div className="section-sub-contents">
                 <div className="sub-content">
@@ -50,7 +50,7 @@ const AboutMe = () => {
             </div>
             </div>
             <div className="page-view">
-            <p className="section-title"> professional-info</p>
+            <p className="page-title"> professional-info</p>
             <div className="section-view">
                 <p>1 /** </p>
                 <p>2 *</p>         

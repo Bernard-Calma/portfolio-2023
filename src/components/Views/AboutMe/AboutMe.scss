@@ -36,7 +36,16 @@ main {
         margin: 0;
         padding: 0.5rem;
         border:  1px solid #1e2d3d;
+        border-width: 0 0 1px 0;
         color: white;
+
+        &:nth-child(3) {
+          border-width: 1px 0;
+        };
+
+        p {
+          margin: 0;
+        };
       }
       
       .section-sub-contents, .contacts {
@@ -46,6 +55,15 @@ main {
   }
   
   .page-view {
+    border:  1px solid #1e2d3d;
+    border-width: 0 1px 1px 0;
+
+    .page-title {
+      margin: 0;
+      padding: 0.5rem;
+      border:  1px solid #1e2d3d;
+      border-width: 0 0 1px 0;
+    };
     .section-view {
       p {
         margin: 0.25m;
