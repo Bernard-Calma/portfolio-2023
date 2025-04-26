@@ -45,11 +45,26 @@ main {
 
         p {
           margin: 0;
+
+          .icon {
+            transform: rotate(90deg);
+          }
         };
       }
       
       .section-sub-contents, .contacts {
-        padding: 0 1.5rem
+        padding: 0 1.5rem;
+
+        .sub-content .menu-option_text {
+          cursor: pointer;
+
+          &.open {
+            color: white;
+            .icon {
+              transform: rotate(90deg);
+            }
+          }
+        }
       }
     }
   }

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./AboutMe.css"
 import { MenuOption } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
+    const [subContent, setSubContent] = useState("bio")
     
     return(
         <main className="about-me">
@@ -21,15 +23,27 @@ const AboutMe = ({pageMenuRef}) => {
                     <div className="sub-content">
                         <MenuOption 
                             icon="/images/icons/caret.svg"
+                            label="bio"
+                            open={subContent === "bio"}
+                            onClick={() => setSubContent("bio")}
+                        />
+                        <MenuOption 
+                            icon="/images/icons/caret.svg"
                             label="experience"
+                            open={subContent === "experience"}
+                            onClick={() => setSubContent("experience")}
                         />
                         <MenuOption 
                             icon="/images/icons/caret.svg"
                             label="hard-skills"
+                            open={subContent === "hard-skills"}
+                            onClick={() => setSubContent("hard-skills")}
                         />
                         <MenuOption 
                             icon="/images/icons/caret.svg"
                             label="soft-skills"
+                            open={subContent === "soft-skills"}
+                            onClick={() => setSubContent("soft-skills")}
                         />
                     </div>
                     </div>
