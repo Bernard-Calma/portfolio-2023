@@ -19,6 +19,11 @@ const Footer = () => {
                     label={<i className="fa-brands fa-github"/>}
                     href={"https://github.com/Bernard-Calma"}
                 />
+                <Link 
+                    name={"facebook"}
+                    label={<i className="fa-brands fa-facebook"/>}
+                    href={"https://facebook.com/bc.bernard.calma"}
+                />
             </div>  
             <Link  name={"github"} 
                 label= "@Bernard-Calma"
