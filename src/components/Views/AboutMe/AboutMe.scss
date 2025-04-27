@@ -76,9 +76,13 @@ main {
 
     .page-title {
       margin: 0;
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem;
       border-right: 1px solid #1e2d3d;
       width: fit-content;
+
+      span {
+        padding: 0.5rem;
+      }
     };
     .section-view {
       height: 100%;
@@ -86,6 +90,29 @@ main {
       border-top: 1px solid #1e2d3d;
       p {
         margin: 0.25m;
+      }  
+
+      .bio {
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-family: 'Fira Code', monospace;
+        }
+
+        .cursor {
+          display: inline-block;
+          width: 1ch;
+          animation: blink 0.2s step-end infinite;
+          color: white;
+
+          @keyframes blink {
+            50% {
+              opacity: 0;
+            }
+          }
+        }
+
+
       }
     }
   }

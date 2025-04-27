@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./AboutMe.css"
-import { MenuOption } from "./components";
+import { Bio, MenuOption } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
     const [subContent, setSubContent] = useState("bio")
@@ -65,17 +65,9 @@ const AboutMe = ({pageMenuRef}) => {
                 </div>
             </div>
             <div className="page-view" >
-            <p className="page-title"> professional-info</p>
+            <p className="page-title"> professional-info <span>X</span></p>
             <div className="section-view">
-                <p>1 /** </p>
-                <p>2 *</p>         
-                <p>3 *</p>
-                <p>4 *</p>
-                <p>5 *</p>
-                <p>6 *</p>
-                <p>7 *</p>
-                <p>8 *</p>
-                <p>9 *</p>
+                <Bio />
             </div>
             </div>
             <div className="page-subview">

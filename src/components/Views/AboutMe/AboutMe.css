@@ -62,10 +62,13 @@ main .page-view {
 }
 main .page-view .page-title {
   margin: 0;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   border-right: 1px solid #1e2d3d;
   width: -moz-fit-content;
   width: fit-content;
+}
+main .page-view .page-title span {
+  padding: 0.5rem;
 }
 main .page-view .section-view {
   height: 100%;
@@ -74,6 +77,22 @@ main .page-view .section-view {
 }
 main .page-view .section-view p {
   margin: 0.25m;
+}
+main .page-view .section-view .bio p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Fira Code", monospace;
+}
+main .page-view .section-view .bio .cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.2s step-end infinite;
+  color: white;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 main .page-subview {
   flex: 1;
