@@ -81,32 +81,52 @@
   color: white;
   position: relative;
 }
-#home .right .skillsSubList {
-  border: 1px solid #000;
+#home .right .skills-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background: linear-gradient(160deg, #227a60, rgba(76, 0, 255, 0));
-  padding: 30px;
+  animation: 0.2s ease-out 0s 1 slideInFromBottom;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#home .right .skills-container h2 {
+  font-family: monospace;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#home .right .skills-container .skillsSubList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 50%;
-  row-gap: 1.5rem;
+  width: 100%;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
 }
-#home .right .skillsSubList .skillIconContainer {
+#home .right .skills-container .skillsSubList .skillIconContainer {
   display: flex;
   justify-content: center;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   box-sizing: border-box;
   position: relative;
   height: 54px;
   width: 54px;
 }
-#home .right .skillsSubList .skillIconContainer .skillIcon, #home .right .skillsSubList .skillIconContainer .toolTipContainer {
+#home .right .skills-container .skillsSubList .skillIconContainer .skillIcon, #home .right .skills-container .skillsSubList .skillIconContainer .toolTipContainer {
   height: inherit;
   width: inherit;
 }
-#home .right .skillsSubList .skillIconContainer .toolTipContainer {
+#home .right .skills-container .skillsSubList .skillIconContainer .toolTipContainer {
   position: absolute;
 }
 
