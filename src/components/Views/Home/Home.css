@@ -11,8 +11,8 @@
   flex-direction: row;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex: 1 1 auto;
-  gap: 25rem;
   height: 100%;
   overflow: hidden;
   padding-left: 275px;
@@ -78,20 +78,19 @@
 }
 #home .right {
   align-items: center;
-  background: linear-gradient(160deg, #227a60, rgba(76, 0, 255, 0));
   color: white;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 30px;
   position: relative;
-  width: 468px;
 }
 #home .right .skillsSubList {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: linear-gradient(160deg, #227a60, rgba(76, 0, 255, 0));
+  padding: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
   row-gap: 1.5rem;
 }
 #home .right .skillsSubList .skillIconContainer {
