@@ -55,6 +55,17 @@ main .page-menu .section-content .section-sub-contents .sub-content .menu-option
 main .page-menu .section-content .section-sub-contents .sub-content .menu-option_text.open .icon, main .page-menu .section-content .contacts .sub-content .menu-option_text.open .icon {
   transform: rotate(90deg);
 }
+main .page-menu .section-content .menu-option_text {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Code", monospace;
+  cursor: pointer;
+}
+main .page-menu .section-content .menu-option_text:hover {
+  color: white;
+  background-color: rgba(30, 45, 61, 0.4549019608);
+  border-radius: 5px;
+}
 main .page-view {
   flex: 1;
   border: 1px solid #1e2d3d;

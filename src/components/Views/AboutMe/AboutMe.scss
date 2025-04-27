@@ -66,6 +66,19 @@ main {
           }
         }
       }
+
+      .menu-option_text {
+        display: flex;
+        align-items: center;
+        font-family: 'Fira Code', monospace;
+        cursor: pointer;
+
+        &:hover {
+          color: white;
+          background-color: #1e2d3d74;
+          border-radius: 5px;
+        }
+      }
     }
   }
   

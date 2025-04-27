@@ -42,7 +42,7 @@ If you're looking for a developer who combines solid technical expertise with a 
 
   // Build the full block
   const contentLines = formatBio(bio).map(line => `*${line ? " " + line : ""}`);
-  const lines = ["/**", "* About Me", ...contentLines, "*/"];
+  const lines = ["/**", "* About Me", ...contentLines, "**/"];
   const totalLines = lines.length;
   const numberWidth = totalLines.toString().length;
 
