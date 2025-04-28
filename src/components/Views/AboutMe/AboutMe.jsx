@@ -71,10 +71,50 @@ const AboutMe = ({pageMenuRef}) => {
             </div>
             </div>
             <div className="page-subview">
+                <h2>// Code snippet</h2>
+                <div className="code-snippet">
+                    <div className="code-snippet-header">
+                        <img className="icon" src="/images/bc-logo.jpg" alt="icon"/>
+                        <p className="git-username">@bernard-calma</p>
+                    </div>
+                    <div className="code-snippet-body">
+                        <p>{`useEffect(() => {`} </p> 
+                        <p>{`   if (lineIndex >= lines.length) return;`} </p> 
+                        <p>{`   const line = lines[lineIndex];`}</p>
+                        <p>{`   // Set the interval to type characters at a fixed speed`} </p> 
+                        <p>{`   const interval = setInterval(() => {`} </p> 
+                        <p>{`    if (charIndex < line.length) {`}</p>
+                        <p>{`      const nextChar = line.slice(0, charIndex + 1);{`} </p> 
+                        <p>{`      setCurrentLine(nextChar);`} </p> 
+                        <p>{`      setCharIndex(prev => prev + 1);`}</p>
+                        <p>{`    } else {`} </p> 
+                        <p>{`       // When the line is done, add it to displayed lines`} </p> 
+                        <p>{`       setDisplayedLines(prev => [...prev, line]);`}</p>
+                        <p>{`       setLineIndex(prev => prev + 1);`} </p> 
+                        <p>{`       setCharIndex(0);;`} </p> 
+                        <p>{`       setCurrentLine('');`}</p>
+                        <p>{`       clearInterval(interval); // clear the interval after the line is typed`} </p> 
+                        <p>{`    }`} </p> 
+                        <p>{`    }, 50); // Adjust the 100ms to control typing speed (slower or faster)`}</p>
+                        <p>{``} </p> 
+                        <p>{`   return () => clearInterval(interval); // Cleanup the interval on component unmount`} </p> 
+                        <p>{`}, [charIndex, lineIndex, lines]);`}</p>
+                    </div>
 
+                </div>
             </div>
       </main>
     )
 }
 
 export default AboutMe;
+
+//         setLineIndex(prev => prev + 1);
+//         setCharIndex(0);
+//         setCurrentLine('');
+//         clearInterval(interval); // clear the interval after the line is typed
+//       }
+//     }, 50); // Adjust the 100ms to control typing speed (slower or faster)
+
+//     return () => clearInterval(interval); // Cleanup the interval on component unmount
+//   }, [charIndex, lineIndex, lines]);

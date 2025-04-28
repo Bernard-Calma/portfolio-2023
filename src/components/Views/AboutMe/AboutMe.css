@@ -106,10 +106,45 @@ main .page-view .section-view .bio .cursor {
   }
 }
 main .page-subview {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   border: 1px solid #1e2d3d;
   border-width: 0 1px 1px 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+main .page-subview .code-snippet {
+  margin: auto;
+}
+main .page-subview .code-snippet .code-snippet-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .page-subview .code-snippet .code-snippet-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+main .page-subview .code-snippet .code-snippet-header .git-username {
+  color: #4d5bce;
+}
+main .page-subview .code-snippet .code-snippet-body {
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  color: #607b96;
+  background-color: #011221;
+  background-clip: border-box;
+  border: 1px solid #1e2d3d;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+main .page-subview .code-snippet .code-snippet-body p {
+  margin: 0;
+  font-size: 0.75em;
 }
 main .page-subview .section-view p {
   margin: 0.25m;
