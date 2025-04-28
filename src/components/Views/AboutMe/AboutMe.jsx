@@ -30,9 +30,9 @@ const AboutMe = ({pageMenuRef}) => {
                         />
                         <MenuOption 
                             icon="/images/icons/caret.svg"
-                            label={<Markdown label="technicial-skills" />}
-                            open={subContent === "technicial-skills"}
-                            onClick={() => setSubContent("hard-skills")}
+                            label={<Markdown label="technical-skills" />}
+                            open={subContent === "technical-skills"}
+                            onClick={() => setSubContent("technical-skills")}
                         />
                         <MenuOption 
                             icon="/images/icons/caret.svg"

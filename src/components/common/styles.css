@@ -33,8 +33,8 @@
 }
 .navLink.name {
   text-decoration: none;
-  box-sizing: border-box; /* Make sure padding is included in the width */
-  width: 251.609px;
+  box-sizing: border-box;
+  width: 246.609px;
   justify-content: flex-start;
 }
 .navLink.contact-me, .navLink.github {

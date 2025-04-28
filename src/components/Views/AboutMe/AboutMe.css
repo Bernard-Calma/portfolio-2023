@@ -119,6 +119,11 @@ main .page-view .page-subview {
 main .page-view .page-subview .section-view {
   display: flex;
 }
+main .page-view .page-subview .section-view img {
+  width: 500px;
+  height: 500px;
+  margin: 0 0.5rem;
+}
 main .page-view .page-subview .code-snippet {
   margin: auto;
 }
@@ -154,4 +159,26 @@ main .page-view .page-subview .code-snippet .code-snippet-body p {
 }
 main .page-view .page-subview .section-view p {
   margin: 0.25m;
+}
+main .page-view.technical-skills table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  color: #607b96;
+  background-color: #011221;
+  background-clip: border-box;
+  border: 1px solid #1e2d3d;
+  border-radius: 5px;
+}
+main .page-view.technical-skills table th, main .page-view.technical-skills table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #1e2d3d;
+}
+main .page-view.technical-skills table th li, main .page-view.technical-skills table td li {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Code", monospace;
+  margin: 0.5rem 0;
 }/*# sourceMappingURL=AboutMe.css.map */
