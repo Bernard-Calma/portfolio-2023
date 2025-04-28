@@ -68,6 +68,7 @@ main .page-menu .section-content .menu-option_text:hover {
 }
 main .page-view {
   flex: 1;
+  display: flex;
   border: 1px solid #1e2d3d;
   border-width: 0 1px 1px 0;
 }
@@ -89,12 +90,16 @@ main .page-view .section-view {
 main .page-view .section-view p {
   margin: 0.25m;
 }
-main .page-view .section-view .bio p {
+main .page-view .page-mainview {
+  flex: 1;
+  border-right: 1px solid #1e2d3d;
+}
+main .page-view .page-mainview .bio p {
   margin: 0;
   font-size: 16px;
   font-family: "Fira Code", monospace;
 }
-main .page-view .section-view .bio .cursor {
+main .page-view .page-mainview .bio .cursor {
   display: inline-block;
   width: 1ch;
   animation: blink 0.2s step-end infinite;
@@ -105,32 +110,33 @@ main .page-view .section-view .bio .cursor {
     opacity: 0;
   }
 }
-main .page-subview {
+main .page-view .page-subview {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid #1e2d3d;
   border-width: 0 1px 1px 0;
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
-main .page-subview .code-snippet {
+main .page-view .page-subview .section-view {
+  display: flex;
+}
+main .page-view .page-subview .code-snippet {
   margin: auto;
 }
-main .page-subview .code-snippet .code-snippet-header {
+main .page-view .page-subview .code-snippet .code-snippet-header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-main .page-subview .code-snippet .code-snippet-header img {
+main .page-view .page-subview .code-snippet .code-snippet-header img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   margin: 0 0.5rem;
 }
-main .page-subview .code-snippet .code-snippet-header .git-username {
+main .page-view .page-subview .code-snippet .code-snippet-header .git-username {
   color: #4d5bce;
 }
-main .page-subview .code-snippet .code-snippet-body {
+main .page-view .page-subview .code-snippet .code-snippet-body {
   margin: 0.5rem 0;
   padding: 1.5rem;
   font-family: "Fira Code", monospace;
@@ -142,10 +148,10 @@ main .page-subview .code-snippet .code-snippet-body {
   border-radius: 5px;
   white-space: pre-wrap;
 }
-main .page-subview .code-snippet .code-snippet-body p {
+main .page-view .page-subview .code-snippet .code-snippet-body p {
   margin: 0;
   font-size: 0.75em;
 }
-main .page-subview .section-view p {
+main .page-view .page-subview .section-view p {
   margin: 0.25m;
 }/*# sourceMappingURL=AboutMe.css.map */

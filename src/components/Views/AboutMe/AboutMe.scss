@@ -84,6 +84,7 @@ main {
   
   .page-view {
     flex: 1;
+    display: flex;
     border:  1px solid #1e2d3d;
     border-width: 0 1px 1px 0;
 
@@ -97,6 +98,7 @@ main {
         padding: 0.5rem;
       }
     };
+
     .section-view {
       height: 100%;
       padding: 0 1.5rem;
@@ -104,6 +106,13 @@ main {
       p {
         margin: 0.25m;
       }  
+
+ 
+    }
+
+    .page-mainview {
+      flex: 1;
+      border-right: 1px solid #1e2d3d;
 
       .bio {
         p {
@@ -124,61 +133,61 @@ main {
             }
           }
         }
-
-
       }
     }
-  }
 
-  .page-subview {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    border:  1px solid #1e2d3d;
-    border-width: 0 1px 1px 0;
-    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    .page-subview {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      border-width: 0 1px 1px 0;
 
-    .code-snippet {
-      margin: auto;
-      .code-snippet-header {
+      .section-view {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        img {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          margin: 0 0.5rem;
-        }
-
-        .git-username {
-          color: #4d5bce;
-        }
       }
 
-      .code-snippet-body {
-        margin: 0.5rem 0;
-        padding: 1.5rem;
-        font-family: 'Fira Code', monospace;
-        font-size: 14px;
-        color: #607b96;
-        background-color: #011221;
-        background-clip: border-box;
-        border: 1px solid #1e2d3d;
-        border-radius: 5px;
-        white-space: pre-wrap;
-
+      .code-snippet {
+        margin: auto;
+        .code-snippet-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin: 0 0.5rem;
+          }
+  
+          .git-username {
+            color: #4d5bce;
+          }
+        }
+  
+        .code-snippet-body {
+          margin: 0.5rem 0;
+          padding: 1.5rem;
+          font-family: 'Fira Code', monospace;
+          font-size: 14px;
+          color: #607b96;
+          background-color: #011221;
+          background-clip: border-box;
+          border: 1px solid #1e2d3d;
+          border-radius: 5px;
+          white-space: pre-wrap;
+  
+          p {
+            margin: 0;
+            font-size: 0.75em;
+          }
+        }
+      }
+      
+      
+      .section-view {
         p {
-          margin: 0;
-          font-size: 0.75em;
+          margin: 0.25m;
         }
-      }
-    }
-    
-    
-    .section-view {
-      p {
-        margin: 0.25m;
       }
     }
   }
