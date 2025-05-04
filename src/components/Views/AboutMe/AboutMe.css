@@ -159,6 +159,32 @@ main .page-view .page-mainview .bio .cursor {
     opacity: 0;
   }
 }
+main .page-view .page-mainview.technical-skills table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Fira Code", monospace;
+  font-size: 12px;
+  color: #607b96;
+  background-color: #011221;
+  background-clip: border-box;
+  border: 1px solid #1e2d3d;
+  border-radius: 5px;
+}
+main .page-view .page-mainview.technical-skills table th, main .page-view .page-mainview.technical-skills table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #1e2d3d;
+}
+main .page-view .page-mainview.technical-skills table th li, main .page-view .page-mainview.technical-skills table td li {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Code", monospace;
+  margin: 0.5rem 0;
+}
+main .page-view .page-mainview.technical-skills .section-view {
+  flex-direction: column;
+  align-items: center;
+}
 main .page-view .page-subview {
   display: flex;
   flex-direction: column;
@@ -209,29 +235,19 @@ main .page-view .page-subview .code-snippet .code-snippet-body p {
 main .page-view .page-subview .section-view p {
   margin: 0.25m;
 }
-main .page-view.technical-skills table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: "Fira Code", monospace;
-  font-size: 14px;
-  color: #607b96;
-  background-color: #011221;
-  background-clip: border-box;
+main .page-view.professional-experience .page-mainview .section-view {
+  display: block;
+  overflow-y: auto;
+}
+main .page-view.professional-experience .page-mainview .section-view::-webkit-scrollbar {
+  width: 8px;
   border: 1px solid #1e2d3d;
+  border-width: 0 0 0 1px;
+}
+main .page-view.professional-experience .page-mainview .section-view::-webkit-scrollbar-thumb {
+  background-color: #2b3744;
   border-radius: 5px;
 }
-main .page-view.technical-skills table th, main .page-view.technical-skills table td {
-  padding: 0.5rem;
-  text-align: left;
-  border-bottom: 1px solid #1e2d3d;
-}
-main .page-view.technical-skills table th li, main .page-view.technical-skills table td li {
-  display: flex;
-  align-items: center;
-  font-family: "Fira Code", monospace;
-  margin: 0.5rem 0;
-}
-main .page-view.technical-skills .section-view {
-  flex-direction: column;
-  align-items: center;
+main .page-view.professional-experience .page-mainview .section-view::-webkit-scrollbar-thumb:hover {
+  background-color: #fff;
 }/*# sourceMappingURL=AboutMe.css.map */

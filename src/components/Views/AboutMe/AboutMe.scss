@@ -199,6 +199,37 @@ main {
           }
         }
       }
+      
+      &.technical-skills {
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: 'Fira Code', monospace;
+          font-size: 12px;
+          color: #607b96;
+          background-color: #011221;
+          background-clip: border-box;
+          border: 1px solid #1e2d3d;
+          border-radius: 5px;
+  
+          th, td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #1e2d3d;
+            li {
+              display: flex;
+              align-items: center;
+              font-family: 'Fira Code', monospace;
+              margin: 0.5rem 0;
+            }
+          }
+        }
+  
+        .section-view {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     }
 
     .page-subview {
@@ -261,37 +292,25 @@ main {
       }
     }
 
+    &.professional-experience .page-mainview {
+      .section-view {
+          display: block;
+          overflow-y: auto;
 
-    &.technical-skills {
-      
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        font-family: 'Fira Code', monospace;
-        font-size: 14px;
-        color: #607b96;
-        background-color: #011221;
-        background-clip: border-box;
-        border: 1px solid #1e2d3d;
-        border-radius: 5px;
-
-        th, td {
-          padding: 0.5rem;
-          text-align: left;
-          border-bottom: 1px solid #1e2d3d;
-          li {
-            display: flex;
-            align-items: center;
-            font-family: 'Fira Code', monospace;
-            margin: 0.5rem 0;
+          &::-webkit-scrollbar {
+            width: 8px;
+            border:  1px solid #1e2d3d;
+            border-width: 0 0 0 1px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: #2b3744;
+            border-radius: 5px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #fff;
           }
         }
-      }
-
-      .section-view {
-        flex-direction: column;
-        align-items: center;
-      }
     }
+
   }
 }
