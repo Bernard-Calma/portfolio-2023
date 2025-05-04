@@ -29,8 +29,8 @@ const EducationHistory = ({filters}) => {
     ]);
 
     return (
-        <div className="page-view work-history">
-            <div className="page-mainview">
+        <>
+            <div className="page-mainview education-history">
                 <p className="page-title">{`professional-experience > education-history ${filters.length === 1 ? `> ${filters[0]}` : ""}`}</p>
                 <table className="section-view">
                     <tbody>
@@ -54,7 +54,7 @@ const EducationHistory = ({filters}) => {
                 <div className="section-view">
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -98,6 +98,7 @@ const AboutMe = ({pageMenuRef}) => {
                     </div>
                 </div>
             </div>
+            <div className={`page-view ${content}`}>
                 {
                     content === "professional-info" ?
                     <ProfessionalInfo 
@@ -109,7 +110,7 @@ const AboutMe = ({pageMenuRef}) => {
                     /> :
                     <></>
                 }
-
+            </div>
       </main>
     )
 }

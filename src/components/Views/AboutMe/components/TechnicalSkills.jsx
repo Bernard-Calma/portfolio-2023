@@ -1,7 +1,7 @@
 const TechnicalSkills = () => {
     return (
-        <div className="page-view technical-skills">
-            <div className="page-mainview">
+        <>
+            <div className="page-mainview technical-skills">
                 <p className="page-title">{`professional-info > technicial-skills`}</p>
                 <table className="section-view">
                 <tr>
@@ -61,7 +61,7 @@ const TechnicalSkills = () => {
                     <img src="https://github-readme-streak-stats.herokuapp.com/?user=bernard-calma&theme=radical" alt="contributions"/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

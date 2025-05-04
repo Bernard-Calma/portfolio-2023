@@ -74,8 +74,8 @@ If you're looking for a developer who combines solid technical expertise with a 
   }, [charIndex, lineIndex, lines]);
 
   return (
-    <div className="page-view" >
-        <div className="page-mainview">
+    <>
+        <div className="page-mainview bio">
             <p className="page-title"> {`professional-info > bio`}</p>
             <div className="section-view">
             <div className="bio" style={{ fontFamily: "monospace", whiteSpace: "pre" }}>
@@ -128,7 +128,7 @@ If you're looking for a developer who combines solid technical expertise with a 
                 </div>
             </div>
         </div>
-    </div>
+    </>
   );
 };
 
