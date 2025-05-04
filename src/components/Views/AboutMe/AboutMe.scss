@@ -45,6 +45,13 @@ main {
 
         p {
           margin: 0;
+          cursor: pointer;
+
+          &:hover {
+            color: white;
+            background-color: #1e2d3d74;
+            border-radius: 5px;
+          }
 
           &.open {
             .icon {

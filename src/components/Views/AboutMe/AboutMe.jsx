@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./AboutMe.css"
-import { Markdown, MenuOption, ProfessionalInfo } from "./components";
+import { Markdown, MenuOption, ProfessionalInfo, SectionMenu } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
     const [content, setContent] = useState("professional-info")
@@ -10,29 +10,25 @@ const AboutMe = ({pageMenuRef}) => {
         <main className="about-me">
             <div className="page-menu" ref={pageMenuRef}>
                 <div className="section-content">
-                    <MenuOption 
-                        className="section-title"
-                        icon="/images/icons/arrow.svg"
+                    <SectionMenu 
                         label="professional-info"
-                        open={content === "professional-info"}
-                        onClick={() => setContent("professional-info")}
+                        openContent = {content} // pass the current content to the section menu
+                        openSubContent = {subContent} // pass the current subContent to the section menu
+                        onClick={() => setContent("professional-info")} // set the content to professional-info when clicked
+                        // pass the subContents to the section menu
+                        subContents = {
+                            [
+                                {
+                                    label: "bio",
+                                    onClick: () => setSubContent("bio") // set the subContent to bio when clicked
+                                },
+                                {
+                                    label: "technical-skills",
+                                    onClick: () => setSubContent("technical-skills") // set the subContent to technical-skills when clicked
+                                }
+                            ]
+                        }
                     />
-                    <div className="section-sub-contents">
-                    <div className="sub-content">
-                        <MenuOption 
-                            icon="/images/icons/caret.svg"
-                            label={<Markdown label="bio" />}
-                            open={subContent === "bio"}
-                            onClick={() => setSubContent("bio")}
-                        />
-                        <MenuOption 
-                            icon="/images/icons/caret.svg"
-                            label={<Markdown label="technical-skills" />}
-                            open={subContent === "technical-skills"}
-                            onClick={() => setSubContent("technical-skills")}
-                        />
-                    </div>
-                    </div>
                     <MenuOption 
                         className="section-title"
                         icon="/images/icons/arrow.svg"

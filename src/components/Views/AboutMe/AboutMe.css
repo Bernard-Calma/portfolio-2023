@@ -39,6 +39,12 @@ main .page-menu .section-content .section-title:nth-child(3) {
 }
 main .page-menu .section-content .section-title p {
   margin: 0;
+  cursor: pointer;
+}
+main .page-menu .section-content .section-title p:hover {
+  color: white;
+  background-color: rgba(30, 45, 61, 0.4549019608);
+  border-radius: 5px;
 }
 main .page-menu .section-content .section-title p.open .icon {
   transform: rotate(90deg);
