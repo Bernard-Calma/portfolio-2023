@@ -32,6 +32,14 @@ main {
     }
     
     .section-content {
+      .section-menu .section-sub-contents {
+        display: none;
+      }
+
+      .section-menu.open .section-sub-contents {
+        display: flex;
+      }
+
       .section-title {
         margin: 0;
         padding: 0.5rem;

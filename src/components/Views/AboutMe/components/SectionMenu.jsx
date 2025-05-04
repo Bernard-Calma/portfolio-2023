@@ -7,12 +7,12 @@ const SectionMenu = ({
     openSubContent,
     onClick,
     subContents
-}) => <div>
+}) => <div className={`section-menu${openContent === label ? " open" : ""}`}>                                                                                              
     <MenuOption 
         className="section-title"
         icon="/images/icons/arrow.svg"
         label= {label}
-        open={openContent === "professional-info"}
+        open={openContent === label}
         onClick={onClick}
     />
     <div className="section-sub-contents">

@@ -27,6 +27,12 @@ main .page-menu .sections .icon p {
   box-sizing: border-box;
   vertical-align: middle;
 }
+main .page-menu .section-content .section-menu .section-sub-contents {
+  display: none;
+}
+main .page-menu .section-content .section-menu.open .section-sub-contents {
+  display: flex;
+}
 main .page-menu .section-content .section-title {
   margin: 0;
   padding: 0.5rem;
