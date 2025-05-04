@@ -14,7 +14,10 @@ const AboutMe = ({pageMenuRef}) => {
                         label="professional-info"
                         openContent = {content} // pass the current content to the section menu
                         openSubContent = {subContent} // pass the current subContent to the section menu
-                        onClick={() => setContent("professional-info")} // set the content to professional-info when clicked
+                        onClick={() => {
+                            setContent("professional-info") // set the content to professional-info when clicked
+                            setSubContent("bio") // set the subContent to bio when clicked
+                        }} // set the content to professional-info when clicked
                         // pass the subContents to the section menu
                         subContents = {
                             [
@@ -33,7 +36,10 @@ const AboutMe = ({pageMenuRef}) => {
                         label="professional-experience"
                         openContent = {content} // pass the current content to the section menu
                         openSubContent = {subContent} // pass the current subContent to the section menu
-                        onClick={() => setContent("professional-experience")} // set the content to work-experience when clicked
+                        onClick={() => {
+                            setContent("professional-experience") // set the content to professional-experience when clicked
+                            setSubContent("work-history") // set the subContent to work-history when clicked
+                        }} // set the content to work-experience when clicked
                         subContents={
                             [
                                 {
@@ -69,7 +75,7 @@ const AboutMe = ({pageMenuRef}) => {
                     content === "professional-info" ?
                     <ProfessionalInfo 
                         subContent={subContent}
-                    /> : content === "professional-info" ?
+                    /> : content === "professional-experience" ?
                     <ProfessionalExperience 
                         subContent={subContent}
                     /> :

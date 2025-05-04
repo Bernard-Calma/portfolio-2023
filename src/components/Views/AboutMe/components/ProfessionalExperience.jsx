@@ -1,8 +1,8 @@
 const ProfessionalExperience = ({subContent}) => {
     // professional-experience / work-history
-    if (subContent === "bio") return <></>
+    if (subContent === "work-history") return <div>Work</div>
     // professional-experience / education-history
-    if (subContent === "technical-skills") return <></>
+    if (subContent === "education-history") return <></>
     return(
         <div>
             Test
