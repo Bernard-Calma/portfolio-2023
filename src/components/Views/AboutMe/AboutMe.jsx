@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./AboutMe.css"
-import { Markdown, MenuOption, ProfessionalInfo, SectionMenu } from "./components";
+import { MenuOption, ProfessionalExperience, ProfessionalInfo, SectionMenu } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
     const [content, setContent] = useState("professional-info")
@@ -69,7 +69,11 @@ const AboutMe = ({pageMenuRef}) => {
                     content === "professional-info" ?
                     <ProfessionalInfo 
                         subContent={subContent}
-                    /> : <></>
+                    /> : content === "professional-info" ?
+                    <ProfessionalExperience 
+                        subContent={subContent}
+                    /> :
+                    <></>
                 }
 
       </main>
