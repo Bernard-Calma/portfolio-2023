@@ -29,6 +29,12 @@ const AboutMe = ({pageMenuRef}) => {
                             ]
                         }
                     />
+                    <SectionMenu 
+                        label="professional-experience"
+                        openContent = {content} // pass the current content to the section menu
+                        openSubContent = {subContent} // pass the current subContent to the section menu
+                        onClick={() => setContent("professional-experience")} // set the content to work-experience when clicked
+                    />
                     <MenuOption 
                         className="section-title"
                         icon="/images/icons/arrow.svg"
