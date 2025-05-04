@@ -7,7 +7,7 @@ const WorkHistory = ({filters}) => {
             position: "Information Technology Field Technician II",
             startDate: "May 2021",
             endDate: "Present",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Maintain and troubleshouts store systems across multiple locations, optimized travel routes, and supported training and emergency response.",
             category: "information-technology",
         },
         {
@@ -15,7 +15,7 @@ const WorkHistory = ({filters}) => {
             position: "Network Technician",
             startDate: "February 2025",
             endDate: "Present",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Handled network migration from Ubiquiti to Cisco, including configuration and testing of network devices.",
             category: "information-technology",
         },
         {
@@ -31,7 +31,7 @@ const WorkHistory = ({filters}) => {
             position: "React Javascript Developer",
             startDate: "July 2023",
             endDate: "January 2024",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Enhanced search functionality by implementing autocomplete with sorted results using Redux.",
             category: "developer",
         },
         {
@@ -39,7 +39,7 @@ const WorkHistory = ({filters}) => {
             position: "Domain Migration Technician",
             startDate: "November 2020",
             endDate: "February 2021",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Remotely migrated client devices to a new domain, handling setup, scripting, and issue resolution across macOS and Windows.",
             category: "information-technology",
         },
         {
@@ -47,7 +47,7 @@ const WorkHistory = ({filters}) => {
             position: "Subject Matter Expert",
             startDate: "March 2014",
             endDate: "February 2028",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Led multiple teams in a tech support setting, driving performance improvements, coaching staff, and collaborating with management to exceed client expectations and resolve technical issues.",
             category: "information-technology",
         },
         {
@@ -55,7 +55,7 @@ const WorkHistory = ({filters}) => {
             position: "Application Developer",
             startDate: "March 2017",
             endDate: "June 2017",
-            description: "Worked on UI/UX design and implementation for various projects.",
+            description: "Created an application that streamlined troubleshooting, improved support processes, and boosted consultant performance and service levels by 5%.",
             category: "developer"
         },
         
