@@ -67,16 +67,48 @@ main .page-menu .section-content .section-sub-contents .sub-content .menu-option
 main .page-menu .section-content .section-sub-contents .sub-content .menu-option_text.open .icon, main .page-menu .section-content .contacts .sub-content .menu-option_text.open .icon {
   transform: rotate(90deg);
 }
-main .page-menu .section-content .menu-option_text {
+main .page-menu .section-content .menu-option .menu-option_text {
   display: flex;
   align-items: center;
   font-family: "Fira Code", monospace;
   cursor: pointer;
 }
-main .page-menu .section-content .menu-option_text:hover {
+main .page-menu .section-content .menu-option .menu-option_text:hover {
   color: white;
   background-color: rgba(30, 45, 61, 0.4549019608);
   border-radius: 5px;
+}
+main .page-menu .section-content .menu-option .menu-option_filters {
+  display: flex;
+  flex-direction: column;
+}
+main .page-menu .section-content .menu-option .menu-option_filters .filter-item {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+main .page-menu .section-content .menu-option .menu-option_filters .filter-item:hover {
+  color: white;
+  background-color: rgba(30, 45, 61, 0.4549019608);
+  border-radius: 5px;
+}
+main .page-menu .section-content .menu-option .menu-option_filters .filter-item input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid #1e2d3d;
+  border-radius: 0.15em;
+  height: 1.15em;
+  width: 1.15em;
+}
+main .page-menu .section-content .menu-option .menu-option_filters .filter-item input[type=checkbox]:hover {
+  box-shadow: #406083 0 0 1.5px 1px;
+}
+main .page-menu .section-content .menu-option .menu-option_filters .filter-item input[type=checkbox]:checked {
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAxMyAxMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNNS4zODU4NyA3LjI4MDJMMTEuOTcxOCAwLjY5MzU3M0wxMi45ODU2IDEuNzA2NjhMNS4zODU4NyA5LjMwNjQxTDAuODI2MTcyIDQuNzQ2NzFMMS44MzkyOCAzLjczMzYxTDUuMzg1ODcgNy4yODAyWicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
+  background-color: #406083;
+  border: 2px solid #406083;
 }
 main .page-view {
   flex: 1;
