@@ -1,17 +1,19 @@
+import SectionMenu from "./SectionMenu";
 import MenuOption from "./MenuOption";
-import Bio from "./Bio";
 import Markdown from "./Markdown";
 import ProfessionalInfo from "./ProfessionalInfo";
 import ProfessionalExperience from "./ProfessionalExperience";
+import Bio from "./Bio";
 import TechnicalSkills from "./TechnicalSkills";
-import SectionMenu from "./SectionMenu";
+import WorkHistory from "./WorkHistory";
 
 export {
     SectionMenu,
     MenuOption,
-    Bio,
     Markdown,
     ProfessionalInfo,
     ProfessionalExperience,
-    TechnicalSkills
+    Bio,
+    TechnicalSkills,
+    WorkHistory
 }
