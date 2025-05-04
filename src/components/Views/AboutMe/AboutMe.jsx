@@ -34,6 +34,18 @@ const AboutMe = ({pageMenuRef}) => {
                         openContent = {content} // pass the current content to the section menu
                         openSubContent = {subContent} // pass the current subContent to the section menu
                         onClick={() => setContent("professional-experience")} // set the content to work-experience when clicked
+                        subContents={
+                            [
+                                {
+                                    label: "work-history",
+                                    onClick: () => setSubContent("work-history") // set the subContent to work-experience when clicked
+                                },
+                                {
+                                    label: "education-history",
+                                    onClick: () => setSubContent("education-history") // set the subContent to projects when clicked
+                                }
+                            ]
+                        }
                     />
                     <MenuOption 
                         className="section-title"
