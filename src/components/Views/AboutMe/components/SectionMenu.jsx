@@ -25,6 +25,7 @@ const SectionMenu = ({
                         label={<Markdown label={subContent.label} />} // use the Markdown component to render the label
                         open={openSubContent === subContent.label}
                         onClick={subContent.onClick}
+                        filterMenu={subContent.filterMenu} // pass the subMenu to the MenuOption component
                     />
                 ))
             }

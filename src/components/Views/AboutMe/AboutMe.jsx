@@ -44,7 +44,15 @@ const AboutMe = ({pageMenuRef}) => {
                             [
                                 {
                                     label: "work-history",
-                                    onClick: () => setSubContent("work-history") // set the subContent to work-experience when clicked
+                                    onClick: () => setSubContent("work-history"), // set the subContent to work-experience when clicked
+                                    filterMenu: [
+                                        {
+                                            label: "developer"
+                                        },
+                                        {
+                                            label: "information-technology"
+                                        }
+                                    ]
                                 },
                                 {
                                     label: "education-history",
