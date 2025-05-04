@@ -2,7 +2,7 @@ const TechnicalSkills = () => {
     return (
         <div className="page-view technical-skills">
             <div className="page-mainview">
-                <p className="page-title">Technical Skills</p>
+                <p className="page-title">{`professional-info > technicial-skills`}</p>
                 <table className="section-view">
                 <tr>
                     <td valign="top">
@@ -53,7 +53,7 @@ const TechnicalSkills = () => {
             </table>
             </div>
             <div className="page-subview">
-                <p className="page-title">Github Stats</p>
+                <p className="page-title"> // Github Stats</p>
                 <div className="section-view">
                 {/* <img src="	https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bernard-calma"/> */}
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bernard-calma&layout=compact" alt="languages"/>

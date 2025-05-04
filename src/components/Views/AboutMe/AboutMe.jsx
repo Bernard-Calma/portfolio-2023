@@ -9,16 +9,13 @@ const AboutMe = ({pageMenuRef}) => {
     return(
         <main className="about-me">
             <div className="page-menu" ref={pageMenuRef}>
-                <div className="sections">
-                    <img className="icon" src="/images/icons/info-professional.svg" alt="icon" onClick={() => setContent("professional-info")}/>
-                    <img className="icon" src="/images/icons/info-personal.svg" alt="icon" onClick={() => setContent("experience-info")}/>
-                    <img className="icon" src="/images/icons/info-hobbies.svg" alt="icon"/>
-                </div>
                 <div className="section-content">
                     <MenuOption 
                         className="section-title"
                         icon="/images/icons/arrow.svg"
                         label="professional-info"
+                        open={content === "professional-info"}
+                        onClick={() => setContent("professional-info")}
                     />
                     <div className="section-sub-contents">
                     <div className="sub-content">
@@ -34,18 +31,13 @@ const AboutMe = ({pageMenuRef}) => {
                             open={subContent === "technical-skills"}
                             onClick={() => setSubContent("technical-skills")}
                         />
-                        <MenuOption 
-                            icon="/images/icons/caret.svg"
-                            label={<Markdown label="soft-skills" />}
-                            open={subContent === "soft-skills"}
-                            onClick={() => setSubContent("soft-skills")}
-                        />
                     </div>
                     </div>
                     <MenuOption 
                         className="section-title"
                         icon="/images/icons/arrow.svg"
                         label="contacts"
+                        open = {true}
                     />
                     <div className="contacts">
                         <MenuOption

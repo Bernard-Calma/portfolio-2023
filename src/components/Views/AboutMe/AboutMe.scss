@@ -46,8 +46,10 @@ main {
         p {
           margin: 0;
 
-          .icon {
-            transform: rotate(90deg);
+          &.open {
+            .icon {
+              transform: rotate(90deg);
+            }
           }
         };
       }
@@ -221,6 +223,11 @@ main {
             margin: 0.5rem 0;
           }
         }
+      }
+
+      .section-view {
+        flex-direction: column;
+        align-items: center;
       }
     }
   }

@@ -75,60 +75,60 @@ If you're looking for a developer who combines solid technical expertise with a 
 
   return (
     <div className="page-view" >
-    <div className="page-mainview">
-        <p className="page-title"> professional-info <span>X</span></p>
-        <div className="section-view">
-        <div className="bio" style={{ fontFamily: "monospace", whiteSpace: "pre" }}>
-            {displayedLines.map((line, i) => (
-                <p key={i}>
-                {formatLineNumber(i + 1)} {line}
-                </p>
-            ))}
-            {lineIndex < lines.length && (
-                <p>
-                {formatLineNumber(lineIndex + 1)} {currentLine}
-                <span className="cursor">|</span>
-                </p>
-            )}
+        <div className="page-mainview">
+            <p className="page-title"> {`professional-info > bio`}</p>
+            <div className="section-view">
+            <div className="bio" style={{ fontFamily: "monospace", whiteSpace: "pre" }}>
+                {displayedLines.map((line, i) => (
+                    <p key={i}>
+                    {formatLineNumber(i + 1)} {line}
+                    </p>
+                ))}
+                {lineIndex < lines.length && (
+                    <p>
+                    {formatLineNumber(lineIndex + 1)} {currentLine}
+                    <span className="cursor">|</span>
+                    </p>
+                )}
+                </div>
             </div>
         </div>
-    </div>
-    <div className="page-subview">
-        <p className="page-title"> // Code snippet</p>
-        <div className="section-view">
-            <div className="code-snippet">
-                <div className="code-snippet-header">
-                    <img className="icon" src="/images/bc-logo.jpg" alt="icon"/>
-                    <p className="git-username">@bernard-calma</p>
-                </div>
-                <div className="code-snippet-body">
-                    <p>{`useEffect(() => {`} </p> 
-                    <p>{`   if (lineIndex >= lines.length) return;`} </p> 
-                    <p>{`   const line = lines[lineIndex];`}</p>
-                    <p>{`   // Set the interval to type characters at a fixed speed`} </p> 
-                    <p>{`   const interval = setInterval(() => {`} </p> 
-                    <p>{`    if (charIndex < line.length) {`}</p>
-                    <p>{`      const nextChar = line.slice(0, charIndex + 1);{`} </p> 
-                    <p>{`      setCurrentLine(nextChar);`} </p> 
-                    <p>{`      setCharIndex(prev => prev + 1);`}</p>
-                    <p>{`    } else {`} </p> 
-                    <p>{`       // When the line is done, add it to displayed lines`} </p> 
-                    <p>{`       setDisplayedLines(prev => [...prev, line]);`}</p>
-                    <p>{`       setLineIndex(prev => prev + 1);`} </p> 
-                    <p>{`       setCharIndex(0);;`} </p> 
-                    <p>{`       setCurrentLine('');`}</p>
-                    <p>{`       clearInterval(interval); // clear the interval after the line is typed`} </p> 
-                    <p>{`    }`} </p> 
-                    <p>{`    }, 50); // Adjust the 100ms to control typing speed (slower or faster)`}</p>
-                    <p>{``} </p> 
-                    <p>{`   return () => clearInterval(interval); // Cleanup the interval on component unmount`} </p> 
-                    <p>{`}, [charIndex, lineIndex, lines]);`}</p>
-                </div>
+        <div className="page-subview">
+            <p className="page-title"> // Code snippet</p>
+            <div className="section-view">
+                <div className="code-snippet">
+                    <div className="code-snippet-header">
+                        <img className="icon" src="/images/bc-logo.jpg" alt="icon"/>
+                        <p className="git-username">@bernard-calma</p>
+                    </div>
+                    <div className="code-snippet-body">
+                        <p>{`useEffect(() => {`} </p> 
+                        <p>{`   if (lineIndex >= lines.length) return;`} </p> 
+                        <p>{`   const line = lines[lineIndex];`}</p>
+                        <p>{`   // Set the interval to type characters at a fixed speed`} </p> 
+                        <p>{`   const interval = setInterval(() => {`} </p> 
+                        <p>{`    if (charIndex < line.length) {`}</p>
+                        <p>{`      const nextChar = line.slice(0, charIndex + 1);{`} </p> 
+                        <p>{`      setCurrentLine(nextChar);`} </p> 
+                        <p>{`      setCharIndex(prev => prev + 1);`}</p>
+                        <p>{`    } else {`} </p> 
+                        <p>{`       // When the line is done, add it to displayed lines`} </p> 
+                        <p>{`       setDisplayedLines(prev => [...prev, line]);`}</p>
+                        <p>{`       setLineIndex(prev => prev + 1);`} </p> 
+                        <p>{`       setCharIndex(0);;`} </p> 
+                        <p>{`       setCurrentLine('');`}</p>
+                        <p>{`       clearInterval(interval); // clear the interval after the line is typed`} </p> 
+                        <p>{`    }`} </p> 
+                        <p>{`    }, 50); // Adjust the 100ms to control typing speed (slower or faster)`}</p>
+                        <p>{``} </p> 
+                        <p>{`   return () => clearInterval(interval); // Cleanup the interval on component unmount`} </p> 
+                        <p>{`}, [charIndex, lineIndex, lines]);`}</p>
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
   );
 };
 
