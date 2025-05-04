@@ -6,6 +6,7 @@ import ProfessionalExperience from "./ProfessionalExperience";
 import Bio from "./Bio";
 import TechnicalSkills from "./TechnicalSkills";
 import WorkHistory from "./WorkHistory";
+import EducationHistory from "./EducationHistory";
 
 export {
     SectionMenu,
@@ -15,5 +16,6 @@ export {
     ProfessionalExperience,
     Bio,
     TechnicalSkills,
-    WorkHistory
+    WorkHistory,
+    EducationHistory
 }

@@ -132,6 +132,7 @@ main .page-view .page-title span {
 }
 main .page-view .section-view {
   height: 100%;
+  width: 100%;
   padding: 0 1.5rem;
   border-top: 1px solid #1e2d3d;
 }
