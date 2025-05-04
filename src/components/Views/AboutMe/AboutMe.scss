@@ -86,6 +86,7 @@ main {
 
       .menu-option {
         .menu-option_text {
+          margin: 0.5em 0;
           display: flex;
           align-items: center;
           font-family: 'Fira Code', monospace;
@@ -99,39 +100,42 @@ main {
         }
 
         .menu-option_filters {
-          display: flex;
+          display: none;
           flex-direction: column;
 
-          .filter-item {
+          &.open {
             display: flex;
-            align-items: center;
-            
-            padding-left: 1.5rem;;
-            cursor: pointer;
-  
-            &:hover {
-              color: white;
-              background-color: #1e2d3d74;
-              border-radius: 5px;
-            }
-
-            input[type="checkbox"] {
-              -webkit-appearance: none;
-              -moz-appearance: none;
-              background-color: transparent;
-              border: 2px solid #1e2d3d;
-              border-radius: 0.15em;
-              height: 1.15em;
-              width: 1.15em;
-
+            .filter-item {
+              display: flex;
+              align-items: center;
+              
+              padding-left: 1.5rem;;
+              cursor: pointer;
+    
               &:hover {
-                box-shadow: #406083 0 0 1.5px 1px;
+                color: white;
+                background-color: #1e2d3d74;
+                border-radius: 5px;
               }
-
-              &:checked {
-                background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAxMyAxMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNNS4zODU4NyA3LjI4MDJMMTEuOTcxOCAwLjY5MzU3M0wxMi45ODU2IDEuNzA2NjhMNS4zODU4NyA5LjMwNjQxTDAuODI2MTcyIDQuNzQ2NzFMMS44MzkyOCAzLjczMzYxTDUuMzg1ODcgNy4yODAyWicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
-                background-color: #406083;
-                border: 2px solid #406083;
+  
+              input[type="checkbox"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-color: transparent;
+                border: 2px solid #1e2d3d;
+                border-radius: 0.15em;
+                height: 1.15em;
+                width: 1.15em;
+  
+                &:hover {
+                  box-shadow: #406083 0 0 1.5px 1px;
+                }
+  
+                &:checked {
+                  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAxMyAxMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNNS4zODU4NyA3LjI4MDJMMTEuOTcxOCAwLjY5MzU3M0wxMi45ODU2IDEuNzA2NjhMNS4zODU4NyA5LjMwNjQxTDAuODI2MTcyIDQuNzQ2NzFMMS44MzkyOCAzLjczMzYxTDUuMzg1ODcgNy4yODAyWicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
+                  background-color: #406083;
+                  border-color: #406083;
+                }
               }
             }
           }
