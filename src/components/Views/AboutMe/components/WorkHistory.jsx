@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const WorkHistory = () => {
+const WorkHistory = ({filters}) => {
     const [workHistory, setWorkHistory] = useState([
         {
             companyName: "CompuCom",
@@ -68,16 +68,22 @@ const WorkHistory = () => {
                 <p className="page-title">{`professional-experience > work-history`}</p>
                 <table className="section-view">
                     <tbody>
-                        {workHistory.map((job, index) => (
-                            <tr key={index}>
-                                <td valign="top">
-                                    <h3><strong>{job.companyName}</strong></h3>
-                                    <p>{job.position}</p>
-                                    <p>{`${job.startDate} - ${job.endDate}`}</p>
-                                    <p>{job.description}</p>
-                                </td>
-                            </tr>
-                        ))}
+                        {
+                            workHistory.filter((work, index) => {
+                                if (filters.length === 0) return true; // no filters applied, show all work history
+                                return filters.includes(work.category); // filter work history based on selected filters
+                            }
+                            ).map((work, index) => (
+                                <tr key={index}>
+                                    <td valign="top">
+                                        <h3><strong>{work.companyName}</strong></h3>
+                                        <p>{work.position}</p>
+                                        <p>{work.startDate} - {work.endDate}</p>
+                                        <p>{work.description}</p>
+                                    </td>
+                                </tr>
+                            ))
+                        }
                     </tbody>
                 </table>
             </div>
