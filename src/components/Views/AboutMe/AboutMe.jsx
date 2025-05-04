@@ -1,11 +1,26 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./AboutMe.css"
 import { MenuOption, ProfessionalExperience, ProfessionalInfo, SectionMenu } from "./components";
 
 const AboutMe = ({pageMenuRef}) => {
     const [content, setContent] = useState("professional-info")
     const [subContent, setSubContent] = useState("bio")
+
+    const [workHistoryFilters, setWorkHistoryFilters] = useState([]) // state to store the filter menu for work history
     
+    const handleWorkHistoryFilters = (e, filter) => {
+        e.preventDefault() // prevent the default behavior of the event
+        console.log("Work History Filter: ", workHistoryFilters)
+        console.log("Filter: ", filter)
+        // check if the filter is already in the array
+        if (workHistoryFilters.includes(filter)) {
+            // if it is, remove it from the array
+            setWorkHistoryFilters(workHistoryFilters.filter(item => item !== filter))
+        } else {
+            // if it is not, add it to the array
+            setWorkHistoryFilters([...workHistoryFilters, filter])
+        }
+    }
     return(
         <main className="about-me">
             <div className="page-menu" ref={pageMenuRef}>
@@ -47,12 +62,16 @@ const AboutMe = ({pageMenuRef}) => {
                                     onClick: () => setSubContent("work-history"), // set the subContent to work-experience when clicked
                                     filterMenu: [
                                         {
-                                            label: "developer"
+                                            label: "developer",
+                                            filters: workHistoryFilters, // pass the workHistoryFilter state to the filter menu
+                                            addFilter: handleWorkHistoryFilters // add the filter to the workHistoryFilter state
                                         },
                                         {
-                                            label: "information-technology"
+                                            label: "information-technology",
+                                            filters: workHistoryFilters, // pass the workHistoryFilter state to the filter menu
+                                            addFilter:handleWorkHistoryFilters // add the filter to the workHistoryFilter state  
                                         }
-                                    ]
+                                    ],
                                 },
                                 {
                                     label: "education-history",
@@ -86,6 +105,7 @@ const AboutMe = ({pageMenuRef}) => {
                     /> : content === "professional-experience" ?
                     <ProfessionalExperience 
                         subContent={subContent}
+                        filters={workHistoryFilters} // pass the filter menu ref to the professional experience component
                     /> :
                     <></>
                 }
