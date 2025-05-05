@@ -27,6 +27,14 @@ const WorkHistory = ({filters}) => {
             endDate: "Present",
             description: "Handled network migration from Ubiquiti to Cisco, including configuration and testing of network devices.",
             category: "information-technology",
+            detailedDescriptions: [
+                "Configured and tested network devices for migration from Ubiquiti to Cisco.",
+                "Ran new copper and fiber lines to new locations.",
+                "Used scissor and all-terrain to access high elevations and outside equipment.",
+                "Collaborated with cross-functional teams to ensure seamless network transition.",
+                "Provided technical support and troubleshooting during the migration process.",
+                "Documented network configurations and changes for future reference.",
+            ]
         },
         {
             id: 2,
@@ -37,6 +45,12 @@ const WorkHistory = ({filters}) => {
             endDate: "February 2025",
             description: "Developed and maintained web applications using React and Node.js.",
             category: "developer",
+            detailedDescriptions: [
+                "Designed and developed required features for web applications using React, Redux, and CSS",
+                "Implemented responsive design principles to ensure compatibility across devices.",
+                "Optimized web applications for maximum speed and scalability.",
+                "Collaborated with backend developers to integrate RESTful APIs.",
+            ]
         },
         {
             id: 3,
@@ -47,6 +61,11 @@ const WorkHistory = ({filters}) => {
             endDate: "January 2024",
             description: "Enhanced search functionality by implementing autocomplete with sorted results using Redux.",
             category: "developer",
+            detailedDescriptions: [
+                "Integrated Redux for state management to enhance performance.",
+                "Improved search functionality by adding autocomplete feature with sorted results.",
+                
+            ]
         },
         {
             id: 4,
@@ -57,6 +76,12 @@ const WorkHistory = ({filters}) => {
             endDate: "February 2021",
             description: "Remotely migrated client devices to a new domain, handling setup, scripting, and issue resolution across macOS and Windows.",
             category: "information-technology",
+            detailedDescriptions: [
+                "Handled the migration of all client’s company owned equipment to their new domain.",
+                "Reached out to employees to set up a remote appointment to schedule the migration of their machine/s.",
+                "Remote into client’s mac/windows to install required applications and files to run scripts that moves the machine/s and user’s profile to the new domain.",
+                "Troubleshoot and fix any pre and post migration issue to make sure that all files and applications that the client uses are all working and error free.",
+            ]
         },
         {
             id: 5,
@@ -67,6 +92,13 @@ const WorkHistory = ({filters}) => {
             endDate: "February 2028",
             description: "Led multiple teams in a tech support setting, driving performance improvements, coaching staff, and collaborating with management to exceed client expectations and resolve technical issues.",
             category: "information-technology",
+            detailedDescriptions: [
+                "Provided support and managed to multiple teams and projects to improve service level for different account.",
+                "Supervised meetings/huddles with different teams to provide action plans and coaching to improve team member’s stats.",
+                "Collaborate with upper management and other departments to analyze data and process quality to make sure it meets the client’s requirements and exceeds expectations.",
+                "Trained new employees on company policies and procedures.",
+                "Handles customer’s issues and concerns regarding their Internet, Analog/Digital Phone and TV and provides troubleshooting steps to resolve any issue.",
+            ]
         },
         {
             id: 6,
@@ -76,7 +108,12 @@ const WorkHistory = ({filters}) => {
             startDate: "March 2017",
             endDate: "June 2017",
             description: "Created an application that streamlined troubleshooting, improved support processes, and boosted consultant performance and service levels by 5%.",
-            category: "developer"
+            category: "developer",
+            detailedDescriptions: [
+                "Developed an application that improved consultant's metrics, support and leads on handling issue/s by half and improved the account’s service level more than 5%.",
+                "Assembled contact drivers to determine the best resolution and information needed to be displayed that provide faster troubleshooting and resolution for the customer.",
+                "Facilitated training and user tests to monitor and discover issues and improvements for better and accurate results."
+            ]
         },
         
 
