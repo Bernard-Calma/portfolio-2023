@@ -299,6 +299,8 @@ main .page-view.professional-experience .page-subview .section-view img {
   width: 150px;
   height: 150px;
   margin: 0 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .page-view.professional-experience .page-subview .section-view .work-preview {
   display: flex;
