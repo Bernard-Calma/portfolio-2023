@@ -333,4 +333,26 @@ main .page-view.professional-experience .page-subview .section-view .work-previe
   color: #607b96;
   font-size: 14px;
   text-align: left;
+}
+main .page-view.professional-experience .page-subview .section-view .work-preview h4 {
+  margin: 0.5rem 0;
+  font-size: 18px;
+  color: #4d5bce;
+}
+main .page-view.professional-experience .page-subview .section-view .work-preview .technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+main .page-view.professional-experience .page-subview .section-view .work-preview .technologies-list li {
+  margin: 0.25rem;
+  padding: 0.25rem;
+  background-color: #011221;
+  border: 1px solid #1e2d3d;
+  border-radius: 5px;
+  color: #607b96;
+  font-size: 14px;
+  font-family: "Fira Code", monospace;
 }/*# sourceMappingURL=AboutMe.css.map */

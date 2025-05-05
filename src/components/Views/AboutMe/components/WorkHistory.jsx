@@ -16,6 +16,23 @@ const WorkHistory = ({filters}) => {
                 "Provides technical support for store systems, including POS, network, and hardware.",
                 "Optimizes travel routes to minimize downtime and improve efficiency.",
                 "Assist the regional lead on training the new technicians and provide emergency services to store with critical issue/s.",
+            ],
+            technologies: [
+                "Cat6/Fiber cabling",
+                "Register/Terminal/PC/Laptop",
+                "Wireless Access Point",
+                "Modem/Switches/Server",
+                "Prtiner/Scanner/POS",
+                "Lenovo, NCR, Dell, Glory, UTC Retail",
+                "Lexmark, Zebra, Datalogic",
+                "Aruba, Cisco",
+                "Vertiv, Cyberex",
+                "Wren, LiveView",
+                "Dell EMC",
+                "Verifone, Ingenico",
+                "Windows, MacOS, Linux",
+                "DHCP, SSH, WinSCP, RDP, VNC, SecureCRT, Putty",
+                "Servicenow, Remedy, JIRA"
             ]
         },
         {
@@ -34,6 +51,14 @@ const WorkHistory = ({filters}) => {
                 "Collaborated with cross-functional teams to ensure seamless network transition.",
                 "Provided technical support and troubleshooting during the migration process.",
                 "Documented network configurations and changes for future reference.",
+            ],
+            technologies: [
+                "Cisco switches and routers",
+                "Ubiquiti network devices",
+                "Fiber optic cabling",
+                "Copper cabling",
+                "Network testing tools",
+                "Scissor lift and all-terrain vehicles"
             ]
         },
         {
@@ -50,6 +75,15 @@ const WorkHistory = ({filters}) => {
                 "Implemented responsive design principles to ensure compatibility across devices.",
                 "Optimized web applications for maximum speed and scalability.",
                 "Collaborated with backend developers to integrate RESTful APIs.",
+            ],
+            technologies: [
+                "React",
+                "Redux",
+                "Node.js",
+                "CSS",
+                "RESTful APIs",
+                "JavaScript",
+                "HTML"
             ]
         },
         {
@@ -65,6 +99,14 @@ const WorkHistory = ({filters}) => {
                 "Integrated Redux for state management to enhance performance.",
                 "Improved search functionality by adding autocomplete feature with sorted results.",
                 
+            ],
+            technologies: [
+                "React",
+                "Redux",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "RESTful APIs"
             ]
         },
         {
@@ -81,6 +123,14 @@ const WorkHistory = ({filters}) => {
                 "Reached out to employees to set up a remote appointment to schedule the migration of their machine/s.",
                 "Remote into client’s mac/windows to install required applications and files to run scripts that moves the machine/s and user’s profile to the new domain.",
                 "Troubleshoot and fix any pre and post migration issue to make sure that all files and applications that the client uses are all working and error free.",
+            ],
+            technologies: [
+                "macOS",
+                "Windows",
+                "Remote desktop tools",
+                "Scripting languages",
+                "Active Directory",
+                "JAMF"
             ]
         },
         {
@@ -98,6 +148,18 @@ const WorkHistory = ({filters}) => {
                 "Collaborate with upper management and other departments to analyze data and process quality to make sure it meets the client’s requirements and exceeds expectations.",
                 "Trained new employees on company policies and procedures.",
                 "Handles customer’s issues and concerns regarding their Internet, Analog/Digital Phone and TV and provides troubleshooting steps to resolve any issue.",
+            ],
+            technologies: [
+                "Internet, Analog/Digital Phone, ipTV/Satellite",
+                "NID, DSLAM, ONT, CO, VHO",
+                "Copper/Fiber cabling",
+                "Outside plant/Inside plant cabling",
+                "Internet Line Testing",
+                "Network Testing",
+                "Network Troubleshooting",
+                "CRM, Order Management",
+                "Provisioning and Activation",
+                "Six Sigma",
             ]
         },
         {
@@ -113,6 +175,14 @@ const WorkHistory = ({filters}) => {
                 "Developed an application that improved consultant's metrics, support and leads on handling issue/s by half and improved the account’s service level more than 5%.",
                 "Assembled contact drivers to determine the best resolution and information needed to be displayed that provide faster troubleshooting and resolution for the customer.",
                 "Facilitated training and user tests to monitor and discover issues and improvements for better and accurate results."
+            ],
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AutoIT",
+                "Visual Basic",
+                "Project Management",
             ]
         },
         
@@ -169,6 +239,12 @@ const WorkHistory = ({filters}) => {
                                 <p>{workPreview.description}</p>
                             )
                         }
+                        <h4>Technologies Used:</h4>
+                        <ul className="technologies-list">
+                            {workPreview.technologies.map((tech, index) => (
+                                <li key={index}>{tech}</li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>

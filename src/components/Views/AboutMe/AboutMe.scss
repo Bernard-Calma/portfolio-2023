@@ -403,6 +403,30 @@ main {
                 text-align: left;
               }
             }
+
+            h4 {
+              margin: 0.5rem 0;
+              font-size: 18px;
+              color: #4d5bce;
+            }
+
+            .technologies-list {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              margin: 0.5rem 0;
+              li {
+                margin: 0.25rem;
+                padding: 0.25rem;
+                background-color: #011221;
+                border: 1px solid #1e2d3d;
+                border-radius: 5px;
+                color: #607b96;
+                font-size: 14px;
+                font-family: 'Fira Code', monospace;
+              }
+            }
           }
         }
       }
