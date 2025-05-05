@@ -4,11 +4,18 @@ const WorkHistory = ({filters}) => {
     const [workHistory, setWorkHistory] = useState([
         {
             companyName: "CompuCom",
+            companyLogo: "/images/education/compucom.png",
             position: "Information Technology Field Technician II",
             startDate: "May 2021",
             endDate: "Present",
             description: "Maintain and troubleshouts store systems across multiple locations, optimized travel routes, and supported training and emergency response.",
             category: "information-technology",
+            detailedDescriptions: [
+                "Manages preventive maintenance and incidents with little to no supervision for multiple stores.",
+                "Provides technical support for store systems, including POS, network, and hardware.",
+                "Optimizes travel routes to minimize downtime and improve efficiency.",
+                "Assist the regional lead on training the new technicians and provide emergency services to store with critical issue/s.",
+            ]
         },
         {
             companyName: "Robert Half Technologies",
@@ -62,6 +69,8 @@ const WorkHistory = ({filters}) => {
 
     ]);
 
+    const [workPreview, setWorkPreview] = useState(workHistory[0]); // default to the first work history item
+
     return (
         <>
             <div className="page-mainview work-history">
@@ -88,8 +97,25 @@ const WorkHistory = ({filters}) => {
                 </table>
             </div>
             <div className="page-subview">
-                <p className="page-title">{`// <company-name>`}</p>
+                <p className="page-title">{`// ${workPreview.companyName}`}</p>
                 <div className="section-view">
+                    <img src={workPreview.companyLogo} alt={`${workPreview.companyName} logo`} />
+                    <div className="work-preview">
+                        <h3><strong>{workPreview.companyName}</strong></h3>
+                        <p>{workPreview.position}</p>
+                        <p>{workPreview.startDate} - {workPreview.endDate}</p>
+                        {
+                            workPreview.detailedDescriptions && workPreview.detailedDescriptions.length > 0 ? (
+                                <ul>
+                                    {workPreview.detailedDescriptions.map((desc, index) => (
+                                        <li key={index}>{desc}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p>{workPreview.description}</p>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </>
