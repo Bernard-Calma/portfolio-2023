@@ -207,20 +207,30 @@ main {
           font-family: 'Fira Code', monospace;
           font-size: 12px;
           color: #607b96;
-          background-color: #011221;
-          background-clip: border-box;
-          border: 1px solid #1e2d3d;
           border-radius: 5px;
-  
-          th, td {
-            padding: 0.5rem;
-            text-align: left;
-            border-bottom: 1px solid #1e2d3d;
-            li {
-              display: flex;
-              align-items: center;
-              font-family: 'Fira Code', monospace;
-              margin: 0.5rem 0;
+
+          tr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+
+            th, td {
+              padding: 0.5rem;
+
+              h3 {
+                color: #4d5bce;
+                
+              }
+              ul {
+                padding: 0;
+                margin: 0;
+                li {
+                  display: flex;
+                  font-family: 'Fira Code', monospace;
+                  margin: 0.5rem 0;
+                }
+              }
             }
           }
         }
@@ -377,6 +387,17 @@ main {
             padding: 1rem;
             border-radius: 5px;
             margin-bottom: 1rem;
+
+            .position {
+              font-family: 'Fira Code', monospace;
+              font-size: 16px;
+              text-shadow: 0 0 10px white;
+              color: white;
+              background-color: #011221;
+              padding: 0.5rem;
+              border: 1px solid #1e2d3d;
+              box-shadow: 0 0 5px #1e2d3d;
+            }
 
             h3 {
               margin: 0.5rem 0;

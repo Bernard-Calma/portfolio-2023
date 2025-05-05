@@ -226,7 +226,7 @@ const WorkHistory = ({filters}) => {
                     <img src={workPreview.companyLogo} alt={`${workPreview.companyName} logo`} />
                     <div className="work-preview">
                         <h3><strong>{workPreview.companyName}</strong></h3>
-                        <p>{workPreview.position}</p>
+                        <p className="position">{workPreview.position}</p>
                         <p>{workPreview.startDate} - {workPreview.endDate}</p>
                         {
                             workPreview.detailedDescriptions && workPreview.detailedDescriptions.length > 0 ? (
