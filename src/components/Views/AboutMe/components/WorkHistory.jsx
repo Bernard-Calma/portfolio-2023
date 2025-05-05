@@ -3,6 +3,7 @@ import { useState } from "react";
 const WorkHistory = ({filters}) => {
     const [workHistory, setWorkHistory] = useState([
         {
+            id: 0,
             companyName: "CompuCom",
             companyLogo: "/images/education/compucom.png",
             position: "Information Technology Field Technician II",
@@ -18,6 +19,7 @@ const WorkHistory = ({filters}) => {
             ]
         },
         {
+            id: 1,
             companyName: "Robert Half Technologies",
             position: "Network Technician",
             startDate: "February 2025",
@@ -26,6 +28,7 @@ const WorkHistory = ({filters}) => {
             category: "information-technology",
         },
         {
+            id: 2,
             companyName: "Your Voice Solutions, LLC",
             position: "Frontend Developer",
             startDate: "August 2024",
@@ -34,6 +37,7 @@ const WorkHistory = ({filters}) => {
             category: "developer",
         },
         {
+            id: 3,
             companyName: "Atomic Dev Inc.",
             position: "React Javascript Developer",
             startDate: "July 2023",
@@ -42,6 +46,7 @@ const WorkHistory = ({filters}) => {
             category: "developer",
         },
         {
+            id: 4,
             companyName: "Turner Techtronics, Inc.",
             position: "Domain Migration Technician",
             startDate: "November 2020",
@@ -50,6 +55,7 @@ const WorkHistory = ({filters}) => {
             category: "information-technology",
         },
         {
+            id: 5,
             companyName: "Sutherland Global Services",
             position: "Subject Matter Expert",
             startDate: "March 2014",
@@ -58,6 +64,7 @@ const WorkHistory = ({filters}) => {
             category: "information-technology",
         },
         {
+            id: 6,
             companyName: "Sutherland Global Services",
             position: "Application Developer",
             startDate: "March 2017",
@@ -70,6 +77,10 @@ const WorkHistory = ({filters}) => {
     ]);
 
     const [workPreview, setWorkPreview] = useState(workHistory[0]); // default to the first work history item
+
+    const handleWorkPreview = (id) => {
+        setWorkPreview(workHistory[id]); // set the work preview to the selected work history item
+    }
 
     return (
         <>
@@ -85,7 +96,7 @@ const WorkHistory = ({filters}) => {
                             ).map((work, index) => (
                                 <tr key={index}>
                                     <td valign="top">
-                                        <h3><strong>{work.companyName}</strong></h3>
+                                        <h3 onClick={()=>handleWorkPreview(work.id)}><strong>{work.companyName}</strong></h3>
                                         <p>{work.position}</p>
                                         <p>{work.startDate} - {work.endDate}</p>
                                         <p>{work.description}</p>
