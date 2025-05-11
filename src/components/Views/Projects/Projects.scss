@@ -73,4 +73,24 @@
             }
         }
     }
+
+    .page-view {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border:  1px solid #1e2d3d;
+        border-width: 0 1px 1px 0;
+    
+        .page-title {
+          margin: 0;
+          padding: 0.5rem;
+          border-right: 1px solid #1e2d3d;
+          width: fit-content;
+        };
+
+        .page-mainview {
+            border-top: 1px solid #1e2d3d;
+            display: flex;
+        }
+    }
 }

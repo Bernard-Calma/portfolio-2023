@@ -40,8 +40,6 @@ const SectionMenu = () => {
                     addFilter: handleProjectsFilters
                 }))} // pass the subMenu to the MenuOption component
             />
-            <div className="section-sub-contents">
-            </div>
         </div>
     );
 }
