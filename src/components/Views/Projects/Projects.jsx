@@ -1,7 +1,9 @@
+import { SectionMenu } from './components';
+
 const Projects = () => {
     return (
         <main className="projects">
-            
+            <SectionMenu />
             <div className="projects-content">
                 <h1 className="projects-title">Projects</h1>
                 <div className="projects-list">
