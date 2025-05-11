@@ -1,18 +1,10 @@
-import { MenuOption } from "../../../../components/common";
+import { MenuOption, IconText } from "../../../../components/common";
 import { useState } from "react";
 
 const SectionMenu = () => {
     const [projectsFilters, setProjectsFilters] = useState([])
     const [filterList, setFilterList] = useState([
-        "React",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "PostgreSQL",
-        "Python",
+        {label: "React", icon: "/images/skills/react.svg"},
     ]) 
 
     const handleProjectsFilters = (e, filter) => {
@@ -34,7 +26,7 @@ const SectionMenu = () => {
                 label= {"Projects"}
                 open={true}
                 filterMenu={filterList.map((filter, index) => ({
-                    label: filter,
+                    label: <IconText icon={filter.icon} text={filter.label} />, // use the IconText component to render the label
                     filters: projectsFilters,
                     addFilter: handleProjectsFilters
                 }))} // pass the subMenu to the MenuOption component
