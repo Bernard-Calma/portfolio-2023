@@ -5,7 +5,8 @@ const MenuOption = ({icon, label, open = false, className = "menu-option", onCli
             <div className={`menu-option_filters${open ? " open" : ""}`}>
                 { filterMenu?.map((filterMenuItem, index) => (
                     <label className="filter-item" key={index} onClick={(e) => filterMenuItem.addFilter(e, filterMenuItem.label)}>
-                        <input type="checkbox" checked={filterMenuItem.filters.includes(filterMenuItem.label)}/> {filterMenuItem.label}
+                        
+                        <input type="checkbox" checked={filterMenuItem.filters.includes(filterMenuItem.label)}/> <img className="icon" src={filterMenuItem.icon} alt="menu icon" /> {filterMenuItem.label}
                     </label>
                 ))}
             </div>

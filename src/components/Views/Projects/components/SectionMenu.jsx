@@ -34,7 +34,8 @@ const SectionMenu = () => {
                 label= {"Projects"}
                 open={true}
                 filterMenu={filterList.map((filter, index) => ({
-                    label: <IconText icon={filter.icon} text={filter.label} />, // use the IconText component to render the label
+                    icon: filter.icon,
+                    label: filter.label, // use the IconText component to render the label
                     filters: projectsFilters,
                     addFilter: handleProjectsFilters
                 }))} // pass the subMenu to the MenuOption component
