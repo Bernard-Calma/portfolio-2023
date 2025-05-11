@@ -3,7 +3,7 @@ import { useState } from "react";
 const EducationHistory = ({filters}) => {
     const [educationHistory, setEducationHistory] = useState([
         {
-            id: 1,
+            id: 0,
             name: "Arizona State University",
             schoolLogo: "/images/education/ASU.png",
             degree: "Bachelor of Science in Software Engineering",
@@ -23,7 +23,7 @@ const EducationHistory = ({filters}) => {
             ]
         },
         {
-            id: 2,
+            id: 1,
             name: "General Assembly",
             degree: "Software Engineering Immersive",
             schoolLogo: "/images/education/GA.png",
@@ -49,7 +49,7 @@ const EducationHistory = ({filters}) => {
             ]
         },
         {
-            id: 3,
+            id: 2,
             name: "STI College Bacoor",
             degree: "Associate in Computer Technology",
             schoolLogo: "/images/education/STI.png",
@@ -92,7 +92,7 @@ const EducationHistory = ({filters}) => {
                             educationHistory.map((education, index) => (
                                 <tr key={index}>
                                     <td valign="top">
-                                        <h3><strong>{education.name}</strong></h3>
+                                        <h3 onClick={()=>handleSchoolPreview(education.id)}><strong>{education.name}</strong></h3>
                                         <p>{education.degree}</p>
                                         <p>{education.startDate} - {education.endDate}</p>
                                         <p>{education.description}</p>
