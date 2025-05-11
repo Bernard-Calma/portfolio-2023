@@ -11,8 +11,8 @@ const AboutMe = ({pageMenuRef}) => {
     
     const handleWorkHistoryFilters = (e, filter) => {
         e.preventDefault() // prevent the default behavior of the event
-        console.log("Work History Filter: ", workHistoryFilters)
-        console.log("Filter: ", filter)
+        // console.log("Work History Filter: ", workHistoryFilters)
+        // console.log("Filter: ", filter)
         // check if the filter is already in the array
         if (workHistoryFilters.includes(filter)) {
             // if it is, remove it from the array
