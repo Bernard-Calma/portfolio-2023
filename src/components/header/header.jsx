@@ -27,9 +27,9 @@ const Header = ({setMainView, view, pageMenuRef}) => {
     return <header>
         <Link name={"name"} label="bernard_calma" ref={navLinkName}/>
         <nav className="navBar">
-            <Link name={"home"} label="_home" active={view === "Home" && true} onClick={() => handleChangeView("Home")}/>
-            <Link name={"about-me"} label="_about-me" active={view === "AboutMe" && true} onClick={() => handleChangeView("AboutMe")}/>
-            <Link name={"projects"} label="_projects"/>
+            <Link name={"home"} label="_home" active={view === "home" && true} onClick={() => handleChangeView("home")}/>
+            <Link name={"about-me"} label="_about-me" active={view === "about-me" && true} onClick={() => handleChangeView("about-me")}/>
+            <Link name={"projects"} label="_projects" active={view === "projects" && true} onClick={() => handleChangeView("projects")}/>
         </nav>
         <Link name={"contact-me"} label="_contact-me"/>
         {/* <span onClick={(e) => {
