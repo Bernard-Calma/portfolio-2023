@@ -1,5 +1,6 @@
-import Markdown from "./Markdown";
 import MenuOption from "./MenuOption";
+
+import {Markdown} from "../../../../components/common"
 
 const SectionMenu = ({
     label,
