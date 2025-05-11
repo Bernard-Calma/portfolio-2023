@@ -1,5 +1,4 @@
 import SectionMenu from "./SectionMenu";
-import MenuOption from "./MenuOption";
 import ProfessionalInfo from "./ProfessionalInfo";
 import ProfessionalExperience from "./ProfessionalExperience";
 import Bio from "./Bio";
@@ -9,7 +8,6 @@ import EducationHistory from "./EducationHistory";
 
 export {
     SectionMenu,
-    MenuOption,
     ProfessionalInfo,
     ProfessionalExperience,
     Bio,

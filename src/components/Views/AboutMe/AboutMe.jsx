@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./AboutMe.css"
-import { MenuOption, ProfessionalExperience, ProfessionalInfo, SectionMenu } from "./components";
+import { ProfessionalExperience, ProfessionalInfo, SectionMenu } from "./components";
+import { MenuOption } from "../../../components/common";
 
 const AboutMe = ({pageMenuRef}) => {
     const [content, setContent] = useState("professional-info")
