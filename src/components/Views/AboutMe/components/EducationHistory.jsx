@@ -109,7 +109,7 @@ const EducationHistory = ({filters}) => {
                     <div className="school-preview">
                         <img src={schoolPreview.schoolLogo} alt={schoolPreview.name} className="school-logo" />
                         <h3>{schoolPreview.name}</h3>
-                        <p>{schoolPreview.degree}</p>
+                        <p className="degree">{schoolPreview.degree}</p>
                         <p>{schoolPreview.startDate} - {schoolPreview.endDate}</p>
                         {
                             schoolPreview.detailedDescriptions && schoolPreview.detailedDescriptions.length > 0 ? (
