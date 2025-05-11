@@ -367,7 +367,8 @@ main .page-view.professional-experience .page-subview .section-view .work-previe
   margin: 0.25rem;
   padding: 0.25rem;
   background-color: #011221;
-  border: 1px solid #1e2d3d;
+  box-shadow: 0 0 2.5px white;
+  border: 1px soid #1e2d3d;
   border-radius: 5px;
   color: #607b96;
   font-size: 14px;
