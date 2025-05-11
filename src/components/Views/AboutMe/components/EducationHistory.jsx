@@ -104,7 +104,7 @@ const EducationHistory = ({filters}) => {
                 </table>
             </div>
             <div className="page-subview">
-                <p className="page-title">{`// <company-name>`}</p>
+                <p className="page-title">{`// ${schoolPreview.name}`}</p>
                 <div className="section-view">
                     <div className="school-preview">
                         <img src={schoolPreview.schoolLogo} alt={schoolPreview.name} className="school-logo" />
