@@ -4,7 +4,15 @@ import { useState } from "react";
 const SectionMenu = () => {
     const [projectsFilters, setProjectsFilters] = useState([])
     const [filterList, setFilterList] = useState([
-        {label: "React", icon: "/images/skills/react.svg"},
+        {label: "React", icon: "https://img.icons8.com/color/256/react-native.png"},
+        {label: "NodeJS", icon: "https://img.icons8.com/color/256/nodejs.png"},
+        {label: "Redux", icon: "https://img.icons8.com/color/256/redux.png"},
+        {label: "Python", icon: "https://img.icons8.com/color/256/python.png"},
+        {label: "Flask", icon: "images/skills/flask.png"},
+        {label: "Django", icon: "images/skills/django.png"},
+        {label: "MongoDB", icon: "https://img.icons8.com/color/256/mongodb.png"},
+        {label: "PostgreSQL", icon: "https://img.icons8.com/color/256/postgreesql.png"},
+        {label: "Javascript", icon: "https://img.icons8.com/color/256/javascript.png"},
     ]) 
 
     const handleProjectsFilters = (e, filter) => {
@@ -21,7 +29,7 @@ const SectionMenu = () => {
     return (
         <div className="section-menu">
             <MenuOption 
-                className="section-title"
+                className="menu-option"
                 icon="/images/icons/arrow.svg"
                 label= {"Projects"}
                 open={true}

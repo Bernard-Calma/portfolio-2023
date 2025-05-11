@@ -1,8 +1,9 @@
 import { SectionMenu } from './components';
+import './Projects.css';
 
 const Projects = () => {
     return (
-        <main className="projects">
+        <main id="projects">
             <SectionMenu />
             <div className="projects-content">
                 <h1 className="projects-title">Projects</h1>

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url("/public/fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#projects {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  font-family: "FiraCode-Regular", monospace, monospace;
+  font-weight: 100;
+}
+#projects .section-menu {
+  height: 100%;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #1e2d3d;
+}
+#projects .section-menu .menu-option .menu-option_text {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #1e2d3d;
+}
+#projects .section-menu .menu-option .menu-option_text.open {
+  color: white;
+}
+#projects .section-menu .menu-option .menu-option_text.open .icon {
+  transform: rotate(90deg);
+}
+#projects .section-menu .menu-option .menu-option_filters.open {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+#projects .section-menu .menu-option .menu-option_filters.open .filter-item, #projects .section-menu .menu-option .menu-option_filters.open .icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .section-menu .menu-option .menu-option_filters.open .filter-item input[type=checkbox], #projects .section-menu .menu-option .menu-option_filters.open .icon-text input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid #1e2d3d;
+  border-radius: 0.15em;
+  height: 1.15em;
+  width: 1.15em;
+}
+#projects .section-menu .menu-option .menu-option_filters.open .filter-item input[type=checkbox]:hover, #projects .section-menu .menu-option .menu-option_filters.open .icon-text input[type=checkbox]:hover {
+  box-shadow: #406083 0 0 1.5px 1px;
+}
+#projects .section-menu .menu-option .menu-option_filters.open .filter-item input[type=checkbox]:checked, #projects .section-menu .menu-option .menu-option_filters.open .icon-text input[type=checkbox]:checked {
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAxMyAxMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNNS4zODU4NyA3LjI4MDJMMTEuOTcxOCAwLjY5MzU3M0wxMi45ODU2IDEuNzA2NjhMNS4zODU4NyA5LjMwNjQxTDAuODI2MTcyIDQuNzQ2NzFMMS44MzkyOCAzLjczMzYxTDUuMzg1ODcgNy4yODAyWicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
+  background-color: #406083;
+  border-color: #406083;
+}
+#projects .section-menu .menu-option .menu-option_filters.open .filter-item img.icon, #projects .section-menu .menu-option .menu-option_filters.open .icon-text img.icon {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+}/*# sourceMappingURL=Projects.css.map */
