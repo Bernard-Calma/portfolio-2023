@@ -37,28 +37,3 @@ header, footer {
     flex: 1;
   }
 }
-  
-@media screen and (max-width: 900px) { 
-  html {
-      margin: 0;
-  }
-
-  body {
-      overflow: scroll;
-  }
-
-  #App {
-      overflow: hidden;
-      min-height: 90vh;
-      height: 100%;
-      box-shadow: none;
-  }
-
-  header, footer {
-      padding: 0 10px; /* Smaller padding on smaller screens */
-  }
-
-  main {
-      padding: 10px; /* Adjust padding for smaller screens */
-  }
-}
