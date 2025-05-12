@@ -25,13 +25,13 @@ const Projects = () => {
             name: "Autonomous Firefighting Swarm Project",
             description: "Developed robotic designs and programmed autonomous behavior with Arduino and Fusion360.",
             image: "/images/projects/ASUProject.png",
-            tags: ["arduino", "fusion360", "tinkercad", "c#"],
+            tags: ["arduino", "fusion360", "c#"],
             link: "https://drive.google.com/file/d/1Ux5uFwBRnbHCjY8Jwmoaw-i1W4hFTJXl/view"
         },
         {
             id: 3,
             name: "Streamin",
-            description: "Built a video-sharing platform with CRUD for posts, likes, and comments, plus SEO and an accessible UI.",
+            description: "A video-sharing platform with posts, likes, and comments, optimized for SEO and accessibility.",
             image: "/images/projects/Streamin.png",
             tags: ["react", "css", "nodejs", "mongodb"],
             link: "https://streamin-react.herokuapp.com/"
@@ -42,7 +42,7 @@ const Projects = () => {
             name: "HelloTube",
             description: "Created a YouTube clone using React, Redux, SCSS, and the YouTube API.",
             image: "/images/projects/HelloTube.png",
-            tags: ["react", "css"],
+            tags: ["react", "css", "youtube"],
             link: "https://hello-tube-1db40b56a45b.herokuapp.com/"
 
         },
