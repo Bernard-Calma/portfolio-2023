@@ -181,3 +181,16 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    #home {
+        .left {
+            #name {
+                font-size: 42px;
+            }
+            #title {
+                font-size: 28px;
+            }
+        }
+    }
+}

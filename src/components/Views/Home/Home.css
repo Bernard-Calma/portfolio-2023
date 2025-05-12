@@ -162,4 +162,12 @@
     color: #e5e9f0;
     line-height: 1;
   }
+}
+@media screen and (max-width: 600px) {
+  #home .left #name {
+    font-size: 42px;
+  }
+  #home .left #title {
+    font-size: 28px;
+  }
 }/*# sourceMappingURL=Home.css.map */
