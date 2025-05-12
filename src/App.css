@@ -33,4 +33,10 @@ header, footer {
 }
 #App main {
   flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  #App {
+    position: relative;
+  }
 }/*# sourceMappingURL=App.css.map */

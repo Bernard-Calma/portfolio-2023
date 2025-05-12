@@ -37,3 +37,9 @@ header, footer {
     flex: 1;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #App {
+    position: relative;
+  }
+}
