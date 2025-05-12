@@ -9,7 +9,7 @@ const Projects = () => {
             name: "WLTS",
             description: "Developed a React front-end with Kanban boards, calendar, and role-based access for team collaboration.",
             image: "/images/projects/WLTS.png",
-            tags: ["react", "css", "redux"],
+            tags: ["React", "Redux"],
             link: "https://my-ward-demo-8b90a86588e7.herokuapp.com/"
         },
         {
@@ -17,7 +17,7 @@ const Projects = () => {
             name: "Spentrace",
             description: "A simple budgeting app that tracks daily cash flow, calculates available spending, and projects upcoming financial needs.",
             image: "/images/projects/Spentrace.png",
-            tags: ["react", "css", "nodejs", "mongodb"],
+            tags: ["React", "Redux", "NodeJS", "MongoDB"],
             link: "https://spentrace-react.herokuapp.com/"
         },
         {
@@ -25,7 +25,7 @@ const Projects = () => {
             name: "Autonomous Firefighting Swarm Project",
             description: "Developed robotic designs and programmed autonomous behavior with Arduino and Fusion360.",
             image: "/images/projects/ASUProject.png",
-            tags: ["arduino", "fusion360", "c#"],
+            tags: ["Arduino", "Fusion360", "C#"],
             link: "https://drive.google.com/file/d/1Ux5uFwBRnbHCjY8Jwmoaw-i1W4hFTJXl/view"
         },
         {
@@ -33,7 +33,7 @@ const Projects = () => {
             name: "Streamin",
             description: "A video-sharing platform with posts, likes, and comments, optimized for SEO and accessibility.",
             image: "/images/projects/Streamin.png",
-            tags: ["react", "css", "nodejs", "mongodb"],
+            tags: ["React", "NodeJS", "Redux", "MongoDB"],
             link: "https://streamin-react.herokuapp.com/"
 
         },
@@ -42,7 +42,7 @@ const Projects = () => {
             name: "HelloTube",
             description: "Created a YouTube clone using React, Redux, SCSS, and the YouTube API.",
             image: "/images/projects/HelloTube.png",
-            tags: ["react", "css", "youtube"],
+            tags: ["React", "Redux", "youtube"],
             link: "https://hello-tube-1db40b56a45b.herokuapp.com/"
 
         },
@@ -51,7 +51,7 @@ const Projects = () => {
             name: "NexChapter",
             description: "An app to track and manage your online reading list.",
             image: "/images/projects/NexChapters.png",
-            tags: ["react", "css"],
+            tags: ["React", "css", "Python", "PostgreSQL"],
             link: "https://nexchapters.herokuapp.com/"
         }
     ]);
