@@ -54,7 +54,11 @@ const ProjectCard = ({ project }) => {
                                     <img key={index} className="project-tag_icon" src="https://img.icons8.com/external-flat-juicy-fish/256/external-expo-mobile-app-development-flat-flat-juicy-fish.png" alt="Expo" title="Expo" />
                                 );
                                 break;
-                            
+                            case "redux":
+                                return (
+                                    <img key={index} className="project-tag_icon" src="https://img.icons8.com/color/256/redux.png" alt="Redux" title="Redux" />
+                                );
+                                break;
                             default:
                                 break;
                         }
