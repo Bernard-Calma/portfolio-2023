@@ -91,6 +91,104 @@
         .page-mainview {
             border-top: 1px solid #1e2d3d;
             display: flex;
+            font-family: monospace;
+
+            .projects-list {
+                display: grid;
+                align-self: center;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                padding: 50px 80px 40px;
+                align-self: center;
+
+                .project-container {
+                    margin: 2.5px 1.25rem;
+                    min-width: 100%;
+                    width: 100%;
+
+                    p {
+                        font-size: 15px;
+                        --tw-text-opacity: 1;
+                        color: rgb(85 101 232 / var(--tw-text-opacity));
+
+                        & > span.project-name {
+                            color: gray;
+                        }
+                    }
+
+                    .project-card {
+                        position: relative;
+                        background-color: #011221;
+                        border: 1px solid #1e2d3d;
+                        border-radius: 15px;
+                        max-width: 400px;
+                        overflow: hidden;
+
+                        .project-image {
+                            height: 160px;
+                            width: 100%;
+                            overflow: hidden;
+                            position: relative;
+                        }
+
+                        .project-info {
+                            border-top: 1px solid #1e2d3d;
+                            padding: 0 2rem 2rem 2rem;
+                            
+                            .project-description {
+                                color: gray;
+                                padding-bottom: 1rem
+                            }
+
+                            .project-tags {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-top: 1rem;
+                                gap: 0.5rem;
+
+                                .project-tag_icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 32px;
+                                    height: 32px;
+                                    background-color: #1c2b3a;
+                                    border-radius: 50%;
+                                    margin-left: 0.5rem;
+
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                        margin: 0;
+                                        padding: 0;
+                                        filter: invert(100%);
+                                        
+                                        &:hover {
+                                            filter: invert(50%);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .project-link {
+                                padding: 0.75rem;
+                                background-color: #1c2b3a;
+                                --tw-text-opacity: 1;
+                                color: rgb(255 255 255 / var(--tw-text-opacity));
+                                font-size: 1rem;
+                                line-height: 1rem;
+                                border-radius: 0.5rem;
+                                font-family: monospace;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
+
+       
     }
 }
