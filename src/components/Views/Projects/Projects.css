@@ -85,6 +85,7 @@
   border-right: 1px solid #1e2d3d;
   width: -moz-fit-content;
   width: fit-content;
+  white-space: pre-wrap;
 }
 #projects .page-view .page-mainview {
   border: none;
