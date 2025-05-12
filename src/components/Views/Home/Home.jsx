@@ -94,7 +94,7 @@ const Home = () => {
             <div className='blurry-gradient-blue'/>
             <div className='left'>
                 <h1 id='name'>Bernard Calma</h1>
-                <h2 id='title'> {"> Full Stack Developer"}</h2>
+                <h2 id='title'> {"> Software Engineer"}</h2>
                 {/* <p className='introduction'> - More than 2 years of experience on full stack development</p> */}
                 {/* <h1 className='resume'>Resume</h1>
                 <a href="https://docs.google.com/document/d/1FS3ZBXxwShEy43DSy0TpcTurWmtiqI7h"

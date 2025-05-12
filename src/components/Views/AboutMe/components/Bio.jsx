@@ -6,15 +6,15 @@ const Bio = () => {
   const [lineIndex, setLineIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const bio = `I'm Bernard Calma, a front-end developer with over a decade of experience in technical troubleshooting and over a year specializing in modern web development. With a strong foundation in React, Redux, JavaScript, and full-stack technologies, I enjoy crafting intuitive, high-performing user interfaces and scalable applications.
+  const bio = `Hi, I'm Bernard Calma, a Software Engineer with 1 year of full-stack development experience and over 10 years in IT. Specializing in React, Node.js, and MongoDB, I build scalable, high-performance applications and user interfaces.
 
-I've contributed to projects ranging from leadership tracking systems and budgeting tools to auction platforms and automation apps. Whether building from scratch or optimizing existing codebases, I focus on delivering clean, maintainable solutions that enhance user experience and meet project goals.
+With a solid foundation in full-stack technologies, I enjoy developing intuitive, responsive web applications from front-end design to back-end logic. I’ve worked on a variety of projects, including budgeting tools, automation apps, and leadership tracking systems, delivering clean, maintainable solutions that meet user needs and business goals.
 
-My background includes hands-on roles in both startup and enterprise environments, where I’ve collaborated with cross-functional teams and mentored peers to meet tight deadlines and improve workflow efficiency. I’m also well-versed in Agile methodologies, RESTful APIs, and working with a wide range of databases including PostgreSQL and MongoDB.
+My experience spans both startup and enterprise environments, where I’ve collaborated with cross-functional teams and led projects to success. I'm skilled in Agile methodologies, RESTful APIs, and database management (MongoDB, PostgreSQL), always focused on optimizing code for performance and efficiency.
 
-In addition to my technical skill set, I bring strong project management abilities, critical thinking, and a proactive, team-oriented mindset. I'm currently pursuing a BS in Software Engineering and constantly expanding my capabilities through ongoing education and side projects.
+In addition to my technical expertise, I bring strong problem-solving skills, a collaborative mindset, and a passion for continuous learning. I’m currently pursuing a BS in Software Engineering to further enhance my abilities.
 
-If you're looking for a developer who combines solid technical expertise with a collaborative spirit, let’s connect—I’d love to hear about your project!`;
+If you’re looking for a dedicated full-stack developer with a strong IT background, let’s connect—I’d love to contribute to your project!`;
 
   const formatBio = (text, maxLength = 80) => {
     const paragraphs = text.trim().split("\n\n");
