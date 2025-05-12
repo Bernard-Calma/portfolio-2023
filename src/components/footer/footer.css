@@ -21,4 +21,13 @@ footer .social-media {
 }
 footer .social-media i {
   font-size: 22px;
-}/*# sourceMappingURL=Footer.css.map */
+}
+
+@media screen and (max-width: 600px) {
+  footer p {
+    flex: 1;
+  }
+  footer > .navLink.github, footer .navLink.twitter {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

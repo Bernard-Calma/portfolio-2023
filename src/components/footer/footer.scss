@@ -27,3 +27,14 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    footer {
+        p {
+            flex: 1;
+        }
+        & > .navLink.github, .navLink.twitter {
+            display: none;
+        }
+    }
+}
