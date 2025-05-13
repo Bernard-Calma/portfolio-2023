@@ -202,3 +202,38 @@
        
     }
 }
+
+
+@media (max-width: 1600px) {
+   .page-mainview {
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 8px;
+            border:  1px solid #1e2d3d;
+            border-width: 0 0 0 1px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: #2b3744;
+            border-radius: 5px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #fff;
+          }
+    .projects-list {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       }
+   }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #projects {
+        .section-menu {
+            display: none;
+            overflow: unset;
+        }
+    }
+}
