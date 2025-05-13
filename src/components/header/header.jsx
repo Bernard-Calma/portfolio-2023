@@ -1,7 +1,7 @@
 import { Link } from "../common";
 import { useState } from "react";
 
-import "./Header.css"
+import "./header.css"
 import { useEffect, useRef } from "react";
 
 const Header = ({setMainView, view, pageMenuRef}) => {

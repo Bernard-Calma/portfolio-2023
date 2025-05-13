@@ -1,5 +1,5 @@
 import { Link } from "../common";
-import "./Footer.css"
+import "./footer.css"
 
 const Footer = () => {
     return (
