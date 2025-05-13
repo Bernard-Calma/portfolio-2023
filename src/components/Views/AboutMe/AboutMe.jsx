@@ -82,7 +82,7 @@ const AboutMe = ({pageMenuRef}) => {
                         }
                     />
                     <MenuOption 
-                        className="section-title"
+                        className="section-title contacts"
                         icon="/images/icons/arrow.svg"
                         label="contacts"
                         open = {true}

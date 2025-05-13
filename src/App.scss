@@ -41,5 +41,7 @@ header, footer {
 @media screen and (max-width: 600px) {
   #App {
     position: relative;
+    min-height: 80vh;
+    height: auto;
   }
 }

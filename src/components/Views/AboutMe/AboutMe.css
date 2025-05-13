@@ -373,4 +373,42 @@ main .page-view.professional-experience .page-subview .section-view .work-previe
   color: #607b96;
   font-size: 14px;
   font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 1750px) {
+  main.about-me .page-subview {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  main.about-me {
+    flex-direction: column;
+  }
+  main.about-me .page-menu .section-content {
+    width: 100%;
+  }
+  main.about-me .page-menu .section-content .contacts {
+    display: none;
+  }
+  main.about-me .page-view {
+    border: none;
+  }
+  main.about-me .page-view .page-title {
+    width: 100%;
+    border-top: 1px solid #1e2d3d;
+  }
+  main.about-me .page-view .page-mainview {
+    width: 100%;
+  }
+  main.about-me .page-view .page-mainview .section-view {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  main.about-me .page-view .page-mainview .section-view .bio {
+    width: 95%;
+  }
+  main.about-me .page-view .page-mainview .section-view .bio p {
+    white-space: wrap;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

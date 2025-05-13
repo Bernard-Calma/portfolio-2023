@@ -1,9 +1,9 @@
 main {
   justify-content: space-between;
-    flex: 1 1 auto;
-    height: 100%;
-    overflow: hidden;
-    color: rgb(96 123 150);
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  color: rgb(96 123 150);
   
   .page-menu {
     display: flex;
@@ -454,5 +454,54 @@ main {
       }
     }
 
+  }
+}
+
+
+@media (max-width: 1750px) {
+  main.about-me {
+    .page-subview {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.about-me {
+    flex-direction: column;
+
+    .page-menu .section-content {
+      width: 100%;
+
+      .contacts {
+        display: none;
+      }
+    }
+
+    .page-view {
+      border: none;
+      .page-title {
+        width: 100%;
+        border-top: 1px solid #1e2d3d;
+      }
+
+      .page-mainview {
+        width: 100%;
+
+        .section-view {
+          padding: 0.5rem;
+          width: 100%;
+          
+
+          .bio {
+            width: 95%;
+            p {
+              white-space: wrap;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 }
