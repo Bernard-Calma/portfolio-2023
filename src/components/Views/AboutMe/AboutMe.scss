@@ -497,10 +497,17 @@ main {
 
             td {
               width: 100%;
+              margin: 0 !important;
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
+
+              .work-position, .education-degree {
+                color: white;
+                
+              text-align: center;
+              }
 
               ul {
                 width: 100%;

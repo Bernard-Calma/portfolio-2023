@@ -210,7 +210,7 @@ const WorkHistory = ({filters}) => {
                                 <tr key={index}>
                                     <td valign="top">
                                         <h3 onClick={()=>handleWorkPreview(work.id)}><strong>{work.companyName}</strong></h3>
-                                        <p>{work.position}</p>
+                                        <p className="work-position">{work.position}</p>
                                         <p>{work.startDate} - {work.endDate}</p>
                                         <p>{work.description}</p>
                                     </td>

@@ -93,7 +93,7 @@ const EducationHistory = ({filters}) => {
                                 <tr key={index}>
                                     <td valign="top">
                                         <h3 onClick={()=>handleSchoolPreview(education.id)}><strong>{education.name}</strong></h3>
-                                        <p>{education.degree}</p>
+                                        <p className="education-degree">{education.degree}</p>
                                         <p>{education.startDate} - {education.endDate}</p>
                                         <p>{education.description}</p>
                                     </td>

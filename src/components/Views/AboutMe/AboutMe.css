@@ -409,10 +409,15 @@ main .page-view.professional-experience .page-subview .section-view .work-previe
   }
   main.about-me .page-view .page-mainview .section-view tr td {
     width: 100%;
+    margin: 0 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  main.about-me .page-view .page-mainview .section-view tr td .work-position, main.about-me .page-view .page-mainview .section-view tr td .education-degree {
+    color: white;
+    text-align: center;
   }
   main.about-me .page-view .page-mainview .section-view tr td ul {
     width: 100%;
