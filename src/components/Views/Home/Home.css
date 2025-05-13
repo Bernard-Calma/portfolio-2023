@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url("/public/fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#home {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 275px;
+  font-family: "FiraCode-Regular", monospace, monospace;
+  font-weight: 100;
+}
+#home .blurry-gradient-blue, #home .blurry-gradient-green {
+  filter: blur(70px);
+  height: 300px;
+  opacity: 0.5;
+  width: 300px;
+}
+#home .blurry-gradient-blue {
+  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+  border-radius: 0 0 50% 50%;
+  bottom: 25%;
+  position: fixed;
+  right: 5%;
+  rotate: 10deg;
+}
+#home .blurry-gradient-green {
+  background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+  border-radius: 0 50% 0 50%;
+  position: absolute;
+  right: 30%;
+  top: 20%;
+}
+#home .left, #home .right {
+  display: flex;
+  flex-direction: column;
+}
+#home .left #name {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0;
+  font-size: 58px;
+  color: #e5e9f0;
+  line-height: 1;
+}
+#home .left #title {
+  margin-top: 0;
+  font-size: 32px;
+  font-family: "FiraCode-Regular", monospace;
+  line-height: 1;
+  color: #4d5bce;
+}
+#home .left .gitHubConst {
+  color: white;
+  font-size: 18px;
+  font-family: "FiraCode-Regular", monospace;
+}
+#home .left .gitHubConst .variableType {
+  color: #4d5bce;
+}
+#home .left .gitHubConst .variableName {
+  color: #43d9ad;
+}
+#home .left .gitHubConst a {
+  position: relative;
+  color: #e99287;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+#home .right {
+  align-items: center;
+  color: white;
+  position: relative;
+}
+#home .right .skills-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(160deg, #227a60, rgba(76, 0, 255, 0));
+  animation: 0.2s ease-out 0s 1 slideInFromBottom;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#home .right .skills-container h2 {
+  font-family: monospace;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#home .right .skills-container .skillsSubList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+#home .right .skills-container .skillsSubList .skillIconContainer {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 20%;
+  box-sizing: border-box;
+  position: relative;
+  height: 54px;
+  width: 54px;
+}
+#home .right .skills-container .skillsSubList .skillIconContainer .skillIcon, #home .right .skills-container .skillsSubList .skillIconContainer .toolTipContainer {
+  height: inherit;
+  width: inherit;
+}
+#home .right .skills-container .skillsSubList .skillIconContainer .toolTipContainer {
+  position: absolute;
+}
+
+@media (max-width: 1750px) {
+  #home {
+    justify-content: flex-start;
+    gap: 0;
+  }
+  #home .right {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  #home {
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  #home {
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #home .left {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 40px;
+    color: #e5e9f0;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  #home .left #name {
+    font-size: 42px;
+  }
+  #home .left #title {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=Home.css.map */

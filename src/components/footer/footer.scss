@@ -1,0 +1,40 @@
+footer {
+    border-top: 1px solid #1e2d3d;
+
+    p, a, .social-media {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    p, a {
+        justify-content: center;
+        margin: 0;
+        padding: 0 1.5rem;
+        border-right: 1px solid #1e2d3d;
+        color: rgb(96 123 150);
+        font-family: monospace;
+        font-size: 13px;
+        text-decoration: none;
+
+    }
+
+    .social-media {
+        flex: 1;
+        
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        p {
+            flex: 1;
+        }
+        & > .navLink.github, .navLink.twitter {
+            display: none;
+        }
+    }
+}

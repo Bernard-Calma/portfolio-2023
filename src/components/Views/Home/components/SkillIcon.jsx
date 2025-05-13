@@ -1,4 +1,4 @@
-import { ToolTip } from "../common";
+import { ToolTip } from "../../../common";
 
 const SkillIcon = (props) => {
     return (

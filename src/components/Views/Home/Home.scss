@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap');
+@import "../../../Variables/Variables.scss";
+
+#home {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 275px;
+    font-family: $FiraCode-Regular, monospace;
+    font-weight: 100;
+
+    .blurry-gradient-blue, .blurry-gradient-green {
+        filter: blur(70px);
+        height: 300px;
+        opacity: .5;
+        width: 300px;
+    }
+
+    .blurry-gradient-blue {
+        background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+        border-radius: 0 0 50% 50%;
+        bottom: 25%;
+        position: fixed;
+        right: 5%;
+        rotate: 10deg;
+    }
+    .blurry-gradient-green {
+        background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+        border-radius: 0 50% 0 50%;
+        position: absolute;
+        right: 30%;
+        top: 20%;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+
+        #name {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            margin: 0;
+            font-size: 58px;
+            color: #e5e9f0;
+            line-height: 1; 
+        }
+
+        #title {
+            margin-top: 0;
+            font-size: 32px;
+            font-family: $FiraCode-Regular;
+            line-height: 1;
+            color: #4d5bce;
+        }
+
+        .gitHubConst {
+            color: white;
+            font-size: 18px;
+            font-family: $FiraCode-Regular;
+
+            .variableType {
+                color: #4d5bce
+            }
+
+            .variableName {
+                color: #43d9ad
+            }
+
+            a {
+                position: relative;
+                color: #e99287;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+            }
+        }
+    }
+
+    .right {
+        align-items: center;
+        color: white;
+        position: relative;
+
+        .skills-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(160deg, #227a60,  rgba(76, 0, 255, 0));
+
+
+            @keyframes slideInFromBottom {
+                0% {
+                  transform: translateY(20%);
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+
+              animation: 0.2s ease-out 0s 1 slideInFromBottom;
+
+            h2 {
+                font-family: monospace;
+                width: fit-content;
+            }
+            .skillsSubList {     
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+                
+                .skillIconContainer {
+                    display: flex;
+                    justify-content: center;
+                    flex: 0 0 20%;
+                    box-sizing: border-box;
+                    position: relative;
+                    height: 54px;
+                    width: 54px;
+                    .skillIcon, .toolTipContainer {
+                        height: inherit;
+                        width: inherit;
+                    }
+    
+                    .toolTipContainer {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1750px) {
+    #home {
+        justify-content: flex-start;
+        gap: 0;
+
+        .right {
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 900px) {
+    #home {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #home {
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .left {
+            align-items: center;
+            text-align: center;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            margin: 0;
+            font-size: 40px;
+            color: #e5e9f0;
+            line-height: 1; 
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #home {
+        .left {
+            #name {
+                font-size: 42px;
+            }
+            #title {
+                font-size: 28px;
+            }
+        }
+    }
+}
