@@ -84,6 +84,11 @@ const ProjectCard = ({ project }) => {
                                     <img key={index} className="project-tag_icon" src="https://img.icons8.com/color/256/python.png" alt="Python" title="Python" />
                                 );
                                 break;
+                            case "TypeScript":
+                                return (
+                                    <img key={index} className="project-tag_icon" src="https://img.icons8.com/color/256/typescript.png" alt="TypeScript" title="TypeScript" />
+                                );
+                                break;
                             default:
                                 break;
                         }

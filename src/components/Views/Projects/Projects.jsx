@@ -42,7 +42,7 @@ const Projects = () => {
             name: "HelloTube",
             description: "Created a YouTube clone using React, Redux, SCSS, and the YouTube API.",
             image: "/images/projects/HelloTube.png",
-            tags: ["React", "Redux", "youtube"],
+            tags: ["TypeScript", "React", "Redux", "youtube"],
             link: "https://hello-tube-1db40b56a45b.herokuapp.com/"
 
         },
