@@ -34,7 +34,7 @@ const Projects = () => {
             description: "A video-sharing platform with posts, likes, and comments, optimized for SEO and accessibility.",
             image: "/images/projects/Streamin.png",
             tags: ["React", "NodeJS", "Redux", "MongoDB"],
-            link: "https://streamin-react.herokuapp.com/"
+            link: "http://stream-in.herokuapp.com/"
 
         },
         {
