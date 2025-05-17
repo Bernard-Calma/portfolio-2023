@@ -59,7 +59,7 @@ const Projects = () => {
     const [projectsFilters, setProjectsFilters] = useState([])
     const [filterList, setFilterList] = useState([
         {label: "React", icon: "https://img.icons8.com/color/256/react-native.png"},
-        {label: "TypeScript", icom: "https://img.icons8.com/color/256/typescript.png"},
+        {label: "TypeScript", icon: "https://img.icons8.com/color/256/typescript.png"},
         {label: "NodeJS", icon: "https://img.icons8.com/color/256/nodejs.png"},
         {label: "Redux", icon: "https://img.icons8.com/color/256/redux.png"},
         {label: "MongoDB", icon: "https://img.icons8.com/color/256/mongodb.png"},
